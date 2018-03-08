@@ -1,0 +1,31 @@
+RUN	uk.gov.hmcts.reform.cmc.performance.simulations.CreateClaimSimulation		createclaimsimulation	1519981728562	 	2.0
+USER	Create Claim	1	START	1519981729067	1519981729067
+REQUEST	Create Claim	1		Trigger login	1519981729096	1519981729384	OK	 
+REQUEST	Create Claim	1		Trigger login Redirect 1	1519981729417	1519981729459	OK	 
+REQUEST	Create Claim	1		Trigger login Redirect 2	1519981729462	1519981729917	OK	 
+REQUEST	Create Claim	1		Login - submit	1519981734952	1519981735586	OK	 
+REQUEST	Create Claim	1		Make a new money claim	1519981745587	1519981745631	OK	 
+REQUEST	Create Claim	1		Make a new money claim Redirect 1	1519981745634	1519981745868	OK	 
+REQUEST	Create Claim	1		Eligibility start	1519981745872	1519981745919	OK	 
+REQUEST	Create Claim	1		Eligibility start Redirect 1	1519981745922	1519981746197	OK	 
+REQUEST	Create Claim	1		Find out if you can use this service	1519981748197	1519981748249	OK	 
+REQUEST	Create Claim	1		Find out if you can use this service Redirect 1	1519981748251	1519981748441	OK	 
+REQUEST	Create Claim	1		Eligibility - Total amount you’re claiming	1519981750449	1519981750579	OK	 
+REQUEST	Create Claim	1		Eligibility - help with fees POST	1519981752567	1519981752696	OK	 
+REQUEST	Create Claim	1		Eligibility - claimant address POST	1519981754707	1519981754860	OK	 
+REQUEST	Create Claim	1		Eligibility - defendant address POST	1519981756856	1519981756977	OK	 
+REQUEST	Create Claim	1		Eligibility - over 18 POST	1519981758977	1519981759106	OK	 
+REQUEST	Create Claim	1		Eligibility - PERSONAL_CLAIM claimant POST	1519981761107	1519981761240	OK	 
+REQUEST	Create Claim	1		Eligibility - single defendant POST	1519981763237	1519981763356	OK	 
+REQUEST	Create Claim	1		Eligibility - government department POST	1519981765367	1519981765514	OK	 
+REQUEST	Create Claim	1		Eligibility - tenancy deposit POST	1519981767517	1519981767676	OK	 
+REQUEST	Create Claim	1		Eligible Continue	1519981769677	1519981769867	OK	 
+REQUEST	Create Claim	1		Task list - GET	1519981771866	1519981771923	OK	 
+REQUEST	Create Claim	1		Task list - GET Redirect 1	1519981771925	1519981772185	OK	 
+REQUEST	Create Claim	1		Resolving this dispute - GET	1519981774186	1519981774234	OK	 
+REQUEST	Create Claim	1		Resolving this dispute - GET Redirect 1	1519981774236	1519981774425	OK	 
+REQUEST	Create Claim	1		Resolving this dispute - POST	1519981775426	1519981775548	OK	 
+REQUEST	Create Claim	1		Completing claim - GET	1519981777545	1519981777595	OK	 
+REQUEST	Create Claim	1		Completing claim - GET Redirect 1	1519981777597	1519981777804	OK	 
+REQUEST	Create Claim	1		Completing claim - POST	1519981779807	1519981779896	OK	 
+USER	Create Claim	1	END	1519981729067	1519981781897

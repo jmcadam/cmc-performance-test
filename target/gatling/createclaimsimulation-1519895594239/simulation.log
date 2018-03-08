@@ -1,0 +1,9 @@
+RUN	uk.gov.hmcts.reform.cmc.performance.simulations.CreateClaimSimulation		createclaimsimulation	1519895594239	 	2.0
+USER	Create Claim	1	START	1519895594679	1519895594679
+REQUEST	Create Claim	1		Trigger login	1519895594702	1519895594826	OK	 
+REQUEST	Create Claim	1		Trigger login Redirect 1	1519895594855	1519895594879	OK	 
+REQUEST	Create Claim	1		Trigger login Redirect 2	1519895594881	1519895595045	OK	 
+REQUEST	Create Claim	1		Login - submit	1519895596078	1519895596416	OK	 
+REQUEST	Create Claim	1		Login - submit Redirect 1	1519895596419	1519895597132	OK	 
+REQUEST	Create Claim	1		Login - submit Redirect 2	1519895597135	1519895597306	OK	 
+USER	Create Claim	1	END	1519895594679	1519895607303

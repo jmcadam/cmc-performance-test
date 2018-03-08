@@ -1,0 +1,7 @@
+RUN	uk.gov.hmcts.reform.cmc.performance.simulations.CreateClaimSimulation		createclaimsimulation	1520457964064	 	2.0
+USER	Create Claim	1	START	1520457964796	1520457964796
+REQUEST	Create Claim	1		TX01_CMC_Login_LandingLoginPage	1520457964823	1520457965124	OK	 
+REQUEST	Create Claim	1		TX01_CMC_Login_LandingLoginPage Redirect 1	1520457965151	1520457965245	OK	 
+REQUEST	Create Claim	1		TX01_CMC_Login_LandingLoginPage Redirect 2	1520457965247	1520457965547	OK	 
+REQUEST	Create Claim	1		TX02_CMC_Login_SubmitLogin	1520457980574	1520457981137	KO	regex(Make a money claim|Make a new money claim|Draft claim).find.exists, found nothing
+USER	Create Claim	1	END	1520457964796	1520457996138

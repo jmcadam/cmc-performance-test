@@ -1,0 +1,71 @@
+RUN	uk.gov.hmcts.reform.cmc.performance.simulations.CreateClaimSimulation		createclaimsimulation	1520376894498	 	2.0
+USER	Create Claim	1	START	1520376894989	1520376894989
+REQUEST	Create Claim	1		Trigger login	1520376895015	1520376895383	OK	 
+REQUEST	Create Claim	1		Trigger login Redirect 1	1520376895417	1520376895511	OK	 
+REQUEST	Create Claim	1		Trigger login Redirect 2	1520376895513	1520376895909	OK	 
+REQUEST	Create Claim	1		Login - submit	1520376900942	1520376901441	OK	 
+REQUEST	Create Claim	1		Login - submit Redirect 1	1520376901444	1520376901748	OK	 
+REQUEST	Create Claim	1		Login - submit Redirect 2	1520376901751	1520376902244	OK	 
+REQUEST	Create Claim	1		request_21	1520376912242	1520376912458	OK	 
+REQUEST	Create Claim	1		Eligibility start	1520376915462	1520376915634	OK	 
+REQUEST	Create Claim	1		Eligibility - claim value GET	1520376917630	1520376917993	OK	 
+REQUEST	Create Claim	1		Eligibility - claim value POST	1520376918001	1520376918438	OK	 
+REQUEST	Create Claim	1		Eligibility - claim value POST Redirect 1	1520376918440	1520376918711	OK	 
+REQUEST	Create Claim	1		Eligibility - help with fees POST	1520376918721	1520376919107	OK	 
+REQUEST	Create Claim	1		Eligibility - help with fees POST Redirect 1	1520376919109	1520376919492	OK	 
+REQUEST	Create Claim	1		Eligibility - claimant address POST	1520376919497	1520376919976	OK	 
+REQUEST	Create Claim	1		Eligibility - claimant address POST Redirect 1	1520376919978	1520376920322	OK	 
+REQUEST	Create Claim	1		Eligibility - defendant address POST	1520376920326	1520376920795	OK	 
+REQUEST	Create Claim	1		Eligibility - defendant address POST Redirect 1	1520376920797	1520376921138	OK	 
+REQUEST	Create Claim	1		Eligibility - over 18 POST	1520376921143	1520376921614	OK	 
+REQUEST	Create Claim	1		Eligibility - over 18 POST Redirect 1	1520376921616	1520376921900	OK	 
+REQUEST	Create Claim	1		Eligibility - single claimant POST	1520376921905	1520376922434	OK	 
+REQUEST	Create Claim	1		Eligibility - single claimant POST Redirect 1	1520376922437	1520376922703	OK	 
+REQUEST	Create Claim	1		Eligibility - single defendant POST	1520376922708	1520376923151	OK	 
+REQUEST	Create Claim	1		Eligibility - single defendant POST Redirect 1	1520376923154	1520376923558	OK	 
+REQUEST	Create Claim	1		Eligibility - government department POST	1520376923562	1520376924072	OK	 
+REQUEST	Create Claim	1		Eligibility - government department POST Redirect 1	1520376924074	1520376924449	OK	 
+REQUEST	Create Claim	1		Eligibility - tenancy deposit POST	1520376924454	1520376924994	OK	 
+REQUEST	Create Claim	1		Eligibility - tenancy deposit POST Redirect 1	1520376924996	1520376925235	OK	 
+REQUEST	Create Claim	1		Task list - GET	1520376925238	1520376925672	OK	 
+REQUEST	Create Claim	1		Resolving this dispute - GET	1520376927629	1520376927940	OK	 
+REQUEST	Create Claim	1		Resolving this dispute - POST	1520376928951	1520376929499	OK	 
+REQUEST	Create Claim	1		Resolving this dispute - POST Redirect 1	1520376929502	1520376929868	OK	 
+REQUEST	Create Claim	1		Completing claim - GET	1520376931870	1520376932222	OK	 
+REQUEST	Create Claim	1		Completing claim - POST	1520376934211	1520376934659	OK	 
+REQUEST	Create Claim	1		Completing claim - POST Redirect 1	1520376934661	1520376935060	OK	 
+REQUEST	Create Claim	1		Party type selection - GET	1520376937071	1520376937413	OK	 
+REQUEST	Create Claim	1		Party type selection - POST	1520376939409	1520376939738	OK	 
+REQUEST	Create Claim	1		Party type selection - POST Redirect 1	1520376939739	1520376940096	OK	 
+REQUEST	Create Claim	1		Your details - POST	1520376943091	1520376943834	OK	 
+REQUEST	Create Claim	1		Your details - POST Redirect 1	1520376943837	1520376944171	OK	 
+REQUEST	Create Claim	1		Date of birth - POST	1520376946182	1520376946703	OK	 
+REQUEST	Create Claim	1		Date of birth - POST Redirect 1	1520376946705	1520376947459	OK	 
+REQUEST	Create Claim	1		Mobile number - POST	1520376949459	1520376949978	OK	 
+REQUEST	Create Claim	1		Mobile number - POST Redirect 1	1520376949980	1520376950425	OK	 
+REQUEST	Create Claim	1		Party type selection - GET	1520376951420	1520376951757	OK	 
+REQUEST	Create Claim	1		Party type selection - POST	1520376953760	1520376954382	OK	 
+REQUEST	Create Claim	1		Party type selection - POST Redirect 1	1520376954384	1520376954864	OK	 
+REQUEST	Create Claim	1		Their details - POST	1520376957860	1520376958580	OK	 
+REQUEST	Create Claim	1		Their details - POST Redirect 1	1520376958582	1520376958918	OK	 
+REQUEST	Create Claim	1		Email address - POST	1520376960931	1520376961450	OK	 
+REQUEST	Create Claim	1		Email address - POST Redirect 1	1520376961452	1520376961822	OK	 
+REQUEST	Create Claim	1		Amount - GET	1520376963822	1520376964307	OK	 
+REQUEST	Create Claim	1		Amount - POST	1520376966311	1520376966875	OK	 
+REQUEST	Create Claim	1		Amount - POST Redirect 1	1520376966877	1520376967250	OK	 
+REQUEST	Create Claim	1		Interest - POST	1520376970241	1520376970742	OK	 
+REQUEST	Create Claim	1		Interest - POST Redirect 1	1520376970744	1520376971354	OK	 
+REQUEST	Create Claim	1		Fees - POST	1520376973350	1520376973738	OK	 
+REQUEST	Create Claim	1		Fees - POST Redirect 1	1520376973739	1520376974281	OK	 
+REQUEST	Create Claim	1		Total - POST	1520376976291	1520376976634	OK	 
+REQUEST	Create Claim	1		Total - POST Redirect 1	1520376976636	1520376976944	OK	 
+REQUEST	Create Claim	1		Reason - GET	1520376977942	1520376978275	OK	 
+REQUEST	Create Claim	1		Reason - POST	1520376980271	1520376980804	OK	 
+REQUEST	Create Claim	1		Reason - POST Redirect 1	1520376980805	1520376981165	OK	 
+REQUEST	Create Claim	1		Check and send - GET	1520376983172	1520376983846	OK	 
+REQUEST	Create Claim	1		request_438	1520376988841	1520376989205	OK	 
+REQUEST	Create Claim	1		request_438 Redirect 1	1520376989207	1520376990942	OK	 
+REQUEST	Create Claim	1		request_438 Redirect 2	1520376990944	1520376991555	OK	 
+REQUEST	Create Claim	1		request_438 Redirect 3	1520376991557	1520376991874	OK	 
+REQUEST	Create Claim	1		request_451	1520376996879	1520376996981	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 403
+USER	Create Claim	1	END	1520376894989	1520376996987

@@ -1,0 +1,38 @@
+RUN	uk.gov.hmcts.reform.cmc.performance.simulations.CreateClaimSimulation		createclaimsimulation	1519923947485	 	2.0
+USER	Create Claim	1	START	1519923948096	1519923948096
+REQUEST	Create Claim	1		Trigger login	1519923948124	1519923948248	OK	 
+REQUEST	Create Claim	1		Trigger login Redirect 1	1519923948269	1519923948288	OK	 
+REQUEST	Create Claim	1		Trigger login Redirect 2	1519923948290	1519923948532	OK	 
+REQUEST	Create Claim	1		Login - submit	1519923953560	1519923954091	OK	 
+REQUEST	Create Claim	1		Login - submit Redirect 1	1519923954094	1519923954501	OK	 
+REQUEST	Create Claim	1		Login - submit Redirect 2	1519923954503	1519923955025	OK	 
+REQUEST	Create Claim	1		Make a new money claim	1519923965023	1519923965188	OK	 
+REQUEST	Create Claim	1		Eligibility start	1519923965190	1519923965288	OK	 
+REQUEST	Create Claim	1		Find out if you can use this service	1519923967285	1519923967607	OK	 
+REQUEST	Create Claim	1		Eligibility - Total amount you’re claiming	1519923969606	1519923969677	OK	 
+REQUEST	Create Claim	1		Eligibility - help with fees POST	1519923971686	1519923971745	OK	 
+REQUEST	Create Claim	1		Eligibility - claimant address POST	1519923973746	1519923973837	OK	 
+REQUEST	Create Claim	1		Eligibility - defendant address POST	1519923975834	1519923975906	OK	 
+REQUEST	Create Claim	1		Eligibility - over 18 POST	1519923977903	1519923977964	OK	 
+REQUEST	Create Claim	1		Eligibility - PERSONAL_CLAIM claimant POST	1519923979974	1519923980061	OK	 
+REQUEST	Create Claim	1		Eligibility - single defendant POST	1519923982053	1519923982137	OK	 
+REQUEST	Create Claim	1		Eligibility - government department POST	1519923984145	1519923984202	OK	 
+REQUEST	Create Claim	1		Eligibility - tenancy deposit POST	1519923986214	1519923986279	OK	 
+REQUEST	Create Claim	1		Eligible Continue	1519923988266	1519923988499	OK	 
+REQUEST	Create Claim	1		Task list - GET	1519923990504	1519923990975	OK	 
+REQUEST	Create Claim	1		Resolving this dispute - GET	1519923992985	1519923993310	OK	 
+REQUEST	Create Claim	1		Resolving this dispute - POST	1519923994304	1519923994745	OK	 
+REQUEST	Create Claim	1		Resolving this dispute - POST Redirect 1	1519923994746	1519923995053	OK	 
+REQUEST	Create Claim	1		Completing claim - GET	1519923997054	1519923997306	OK	 
+REQUEST	Create Claim	1		Completing claim - POST	1519923999306	1519923999764	OK	 
+REQUEST	Create Claim	1		Completing claim - POST Redirect 1	1519923999766	1519924000070	OK	 
+REQUEST	Create Claim	1		Party type selection - GET	1519924002074	1519924002425	OK	 
+REQUEST	Create Claim	1		Party type selection - POST	1519924004426	1519924004780	OK	 
+REQUEST	Create Claim	1		Party type selection - POST Redirect 1	1519924004781	1519924005090	OK	 
+REQUEST	Create Claim	1		Your details - POST	1519924008094	1519924008773	OK	 
+REQUEST	Create Claim	1		Your details - POST Redirect 1	1519924008775	1519924009080	OK	 
+REQUEST	Create Claim	1		Date of birth - POST	1519924011076	1519924011537	OK	 
+REQUEST	Create Claim	1		Date of birth - POST Redirect 1	1519924011538	1519924011845	OK	 
+REQUEST	Create Claim	1		Mobile number - POST	1519924013845	1519924014405	OK	 
+REQUEST	Create Claim	1		Mobile number - POST Redirect 1	1519924014407	1519924014714	OK	 
+USER	Create Claim	1	END	1519923948096	1519924015724

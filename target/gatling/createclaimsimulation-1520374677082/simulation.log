@@ -1,0 +1,71 @@
+RUN	uk.gov.hmcts.reform.cmc.performance.simulations.CreateClaimSimulation		createclaimsimulation	1520374677082	 	2.0
+USER	Create Claim	1	START	1520374677738	1520374677738
+REQUEST	Create Claim	1		Trigger login	1520374677766	1520374678070	OK	 
+REQUEST	Create Claim	1		Trigger login Redirect 1	1520374678104	1520374678193	OK	 
+REQUEST	Create Claim	1		Trigger login Redirect 2	1520374678196	1520374678567	OK	 
+REQUEST	Create Claim	1		Login - submit	1520374683600	1520374684011	OK	 
+REQUEST	Create Claim	1		Login - submit Redirect 1	1520374684014	1520374684420	OK	 
+REQUEST	Create Claim	1		Login - submit Redirect 2	1520374684423	1520374684974	OK	 
+REQUEST	Create Claim	1		request_21	1520374694963	1520374695136	OK	 
+REQUEST	Create Claim	1		Eligibility start	1520374698144	1520374698342	OK	 
+REQUEST	Create Claim	1		Eligibility - claim value GET	1520374700344	1520374700730	OK	 
+REQUEST	Create Claim	1		Eligibility - claim value POST	1520374700739	1520374701214	OK	 
+REQUEST	Create Claim	1		Eligibility - claim value POST Redirect 1	1520374701216	1520374701553	OK	 
+REQUEST	Create Claim	1		Eligibility - help with fees POST	1520374701557	1520374702034	OK	 
+REQUEST	Create Claim	1		Eligibility - help with fees POST Redirect 1	1520374702036	1520374702444	OK	 
+REQUEST	Create Claim	1		Eligibility - claimant address POST	1520374702449	1520374702973	OK	 
+REQUEST	Create Claim	1		Eligibility - claimant address POST Redirect 1	1520374702975	1520374703366	OK	 
+REQUEST	Create Claim	1		Eligibility - defendant address POST	1520374703369	1520374703979	OK	 
+REQUEST	Create Claim	1		Eligibility - defendant address POST Redirect 1	1520374703981	1520374704285	OK	 
+REQUEST	Create Claim	1		Eligibility - over 18 POST	1520374704290	1520374704741	OK	 
+REQUEST	Create Claim	1		Eligibility - over 18 POST Redirect 1	1520374704743	1520374705038	OK	 
+REQUEST	Create Claim	1		Eligibility - single claimant POST	1520374705042	1520374705665	OK	 
+REQUEST	Create Claim	1		Eligibility - single claimant POST Redirect 1	1520374705667	1520374706028	OK	 
+REQUEST	Create Claim	1		Eligibility - single defendant POST	1520374706031	1520374706641	OK	 
+REQUEST	Create Claim	1		Eligibility - single defendant POST Redirect 1	1520374706643	1520374707389	OK	 
+REQUEST	Create Claim	1		Eligibility - government department POST	1520374707393	1520374707908	OK	 
+REQUEST	Create Claim	1		Eligibility - government department POST Redirect 1	1520374707910	1520374708350	OK	 
+REQUEST	Create Claim	1		Eligibility - tenancy deposit POST	1520374708354	1520374708830	OK	 
+REQUEST	Create Claim	1		Eligibility - tenancy deposit POST Redirect 1	1520374708832	1520374709005	OK	 
+REQUEST	Create Claim	1		Task list - GET	1520374709008	1520374709369	OK	 
+REQUEST	Create Claim	1		Resolving this dispute - GET	1520374711334	1520374711761	OK	 
+REQUEST	Create Claim	1		Resolving this dispute - POST	1520374712763	1520374713605	OK	 
+REQUEST	Create Claim	1		Resolving this dispute - POST Redirect 1	1520374713607	1520374714045	OK	 
+REQUEST	Create Claim	1		Completing claim - GET	1520374716045	1520374716397	OK	 
+REQUEST	Create Claim	1		Completing claim - POST	1520374718394	1520374718930	OK	 
+REQUEST	Create Claim	1		Completing claim - POST Redirect 1	1520374718933	1520374719372	OK	 
+REQUEST	Create Claim	1		Party type selection - GET	1520374721373	1520374721743	OK	 
+REQUEST	Create Claim	1		Party type selection - POST	1520374723743	1520374724050	OK	 
+REQUEST	Create Claim	1		Party type selection - POST Redirect 1	1520374724052	1520374724666	OK	 
+REQUEST	Create Claim	1		Your details - POST	1520374727664	1520374728351	OK	 
+REQUEST	Create Claim	1		Your details - POST Redirect 1	1520374728353	1520374728690	OK	 
+REQUEST	Create Claim	1		Date of birth - POST	1520374730693	1520374731064	OK	 
+REQUEST	Create Claim	1		Date of birth - POST Redirect 1	1520374731065	1520374731455	OK	 
+REQUEST	Create Claim	1		Mobile number - POST	1520374733464	1520374733881	OK	 
+REQUEST	Create Claim	1		Mobile number - POST Redirect 1	1520374733883	1520374734222	OK	 
+REQUEST	Create Claim	1		Party type selection - GET	1520374735214	1520374735556	OK	 
+REQUEST	Create Claim	1		Party type selection - POST	1520374737564	1520374737837	OK	 
+REQUEST	Create Claim	1		Party type selection - POST Redirect 1	1520374737838	1520374738213	OK	 
+REQUEST	Create Claim	1		Their details - POST	1520374741214	1520374742073	OK	 
+REQUEST	Create Claim	1		Their details - POST Redirect 1	1520374742074	1520374742483	OK	 
+REQUEST	Create Claim	1		Email address - POST	1520374744484	1520374744912	OK	 
+REQUEST	Create Claim	1		Email address - POST Redirect 1	1520374744915	1520374745278	OK	 
+REQUEST	Create Claim	1		Amount - GET	1520374747274	1520374747641	OK	 
+REQUEST	Create Claim	1		Amount - POST	1520374749643	1520374750061	OK	 
+REQUEST	Create Claim	1		Amount - POST Redirect 1	1520374750062	1520374750397	OK	 
+REQUEST	Create Claim	1		Interest - POST	1520374753395	1520374753848	OK	 
+REQUEST	Create Claim	1		Interest - POST Redirect 1	1520374753850	1520374754465	OK	 
+REQUEST	Create Claim	1		Fees - POST	1520374756474	1520374757023	OK	 
+REQUEST	Create Claim	1		Fees - POST Redirect 1	1520374757024	1520374757678	OK	 
+REQUEST	Create Claim	1		Total - POST	1520374759673	1520374759993	OK	 
+REQUEST	Create Claim	1		Total - POST Redirect 1	1520374759995	1520374760368	OK	 
+REQUEST	Create Claim	1		Reason - GET	1520374761363	1520374761670	OK	 
+REQUEST	Create Claim	1		Reason - POST	1520374763673	1520374764191	OK	 
+REQUEST	Create Claim	1		Reason - POST Redirect 1	1520374764193	1520374764567	OK	 
+REQUEST	Create Claim	1		Check and send - GET	1520374766575	1520374767228	OK	 
+REQUEST	Create Claim	1		request_438	1520374772223	1520374772589	OK	 
+REQUEST	Create Claim	1		request_438 Redirect 1	1520374772591	1520374774433	OK	 
+REQUEST	Create Claim	1		request_438 Redirect 2	1520374774434	1520374775250	OK	 
+REQUEST	Create Claim	1		request_438 Redirect 3	1520374775252	1520374775879	OK	 
+REQUEST	Create Claim	1		request_451	1520374780884	1520374780933	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 403
+USER	Create Claim	1	END	1520374677738	1520374780940

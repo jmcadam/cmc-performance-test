@@ -1,0 +1,52 @@
+RUN	uk.gov.hmcts.reform.cmc.performance.simulations.CreateClaimSimulation		createclaimsimulation	1519940454673	 	2.0
+USER	Create Claim	1	START	1519940455129	1519940455129
+REQUEST	Create Claim	1		Trigger login	1519940455155	1519940455425	OK	 
+REQUEST	Create Claim	1		Trigger login Redirect 1	1519940455448	1519940455497	OK	 
+REQUEST	Create Claim	1		Trigger login Redirect 2	1519940455499	1519940455907	OK	 
+REQUEST	Create Claim	1		Login - submit	1519940460934	1519940461536	OK	 
+REQUEST	Create Claim	1		Make a new money claim	1519940471538	1519940471612	OK	 
+REQUEST	Create Claim	1		Make a new money claim Redirect 1	1519940471613	1519940471881	OK	 
+REQUEST	Create Claim	1		Eligibility start	1519940471883	1519940471927	OK	 
+REQUEST	Create Claim	1		Eligibility start Redirect 1	1519940471928	1519940472129	OK	 
+REQUEST	Create Claim	1		Find out if you can use this service	1519940474128	1519940474174	OK	 
+REQUEST	Create Claim	1		Find out if you can use this service Redirect 1	1519940474175	1519940474366	OK	 
+REQUEST	Create Claim	1		Eligibility - Total amount you’re claiming	1519940476370	1519940476492	OK	 
+REQUEST	Create Claim	1		Eligibility - help with fees POST	1519940478488	1519940478604	OK	 
+REQUEST	Create Claim	1		Eligibility - claimant address POST	1519940480617	1519940480750	OK	 
+REQUEST	Create Claim	1		Eligibility - defendant address POST	1519940482748	1519940482866	OK	 
+REQUEST	Create Claim	1		Eligibility - over 18 POST	1519940484867	1519940484981	OK	 
+REQUEST	Create Claim	1		Eligibility - PERSONAL_CLAIM claimant POST	1519940486976	1519940487112	OK	 
+REQUEST	Create Claim	1		Eligibility - single defendant POST	1519940489117	1519940489237	OK	 
+REQUEST	Create Claim	1		Eligibility - government department POST	1519940491239	1519940491357	OK	 
+REQUEST	Create Claim	1		Eligibility - tenancy deposit POST	1519940493357	1519940493473	OK	 
+REQUEST	Create Claim	1		Eligible Continue	1519940495478	1519940495634	OK	 
+REQUEST	Create Claim	1		Task list - GET	1519940497628	1519940497676	OK	 
+REQUEST	Create Claim	1		Task list - GET Redirect 1	1519940497678	1519940497825	OK	 
+REQUEST	Create Claim	1		Resolving this dispute - GET	1519940499838	1519940499883	OK	 
+REQUEST	Create Claim	1		Resolving this dispute - GET Redirect 1	1519940499884	1519940500031	OK	 
+REQUEST	Create Claim	1		Resolving this dispute - POST	1519940501017	1519940501132	OK	 
+REQUEST	Create Claim	1		Completing claim - GET	1519940503138	1519940503218	OK	 
+REQUEST	Create Claim	1		Completing claim - GET Redirect 1	1519940503219	1519940503489	OK	 
+REQUEST	Create Claim	1		Completing claim - POST	1519940505487	1519940505619	OK	 
+REQUEST	Create Claim	1		Party type selection - GET	1519940507629	1519940507675	OK	 
+REQUEST	Create Claim	1		Party type selection - GET Redirect 1	1519940507676	1519940507928	OK	 
+REQUEST	Create Claim	1		Party type selection - POST	1519940509928	1519940510057	OK	 
+REQUEST	Create Claim	1		Your details - POST	1519940513058	1519940513181	OK	 
+REQUEST	Create Claim	1		Date of birth - POST	1519940515177	1519940515299	OK	 
+REQUEST	Create Claim	1		Mobile number - POST	1519940517297	1519940517414	OK	 
+REQUEST	Create Claim	1		Party type selection - GET	1519940518417	1519940518492	OK	 
+REQUEST	Create Claim	1		Party type selection - GET Redirect 1	1519940518494	1519940518615	OK	 
+REQUEST	Create Claim	1		Party type selection - POST	1519940520617	1519940520746	OK	 
+REQUEST	Create Claim	1		Their details - POST	1519940523748	1519940523862	OK	 
+REQUEST	Create Claim	1		Email address - POST	1519940525857	1519940525991	OK	 
+REQUEST	Create Claim	1		Amount - GET	1519940527998	1519940528050	OK	 
+REQUEST	Create Claim	1		Amount - GET Redirect 1	1519940528051	1519940528300	OK	 
+REQUEST	Create Claim	1		Amount - POST	1519940530297	1519940530421	OK	 
+REQUEST	Create Claim	1		Interest - POST	1519940533419	1519940533584	OK	 
+REQUEST	Create Claim	1		Fees - POST	1519940535589	1519940535702	OK	 
+REQUEST	Create Claim	1		Total - POST	1519940537707	1519940537824	OK	 
+REQUEST	Create Claim	1		Reason - GET	1519940538827	1519940538827	KO	j.n.UnknownHostException: moneyclaim.nonprod.platform.hmcts.net$: nodename nor servname provided, or not known
+REQUEST	Create Claim	1		Reason - POST	1519940540828	1519940540950	OK	 
+REQUEST	Create Claim	1		Check and send - GET	1519940542948	1519940543023	OK	 
+REQUEST	Create Claim	1		Check and send - GET Redirect 1	1519940543024	1519940543257	OK	 
+USER	Create Claim	1	END	1519940455129	1519940545259

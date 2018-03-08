@@ -1,0 +1,463 @@
+ASSERTION	AAMEAAEBBgAAAAAAAIizQA==
+ASSERTION	AAIBAAIGAAAAAAAAAPA/
+RUN	uk.gov.hmcts.reform.cmc.performance.simulations.CreateClaimSimulation		createclaimsimulation	1519854577041	 	2.0
+USER	Create Claim	1	START	1519854577600	1519854577600
+REQUEST	Create Claim	1		Trigger login	1519854577627	1519854577885	OK	 
+REQUEST	Create Claim	1		Trigger login Redirect 1	1519854577908	1519854577953	OK	 
+REQUEST	Create Claim	1		Trigger login Redirect 2	1519854577955	1519854578369	OK	 
+USER	Create Claim	2	START	1519854578725	1519854578725
+REQUEST	Create Claim	1		govuk-template.css?0.23.0 Redirect 2	1519854578504	1519854578831	OK	 
+REQUEST	Create Claim	1		govuk-template-print.css?0.23.0 Redirect 2	1519854578505	1519854578892	OK	 
+REQUEST	Create Claim	1		gov.uk_logotype_crown_invert_trans.png?0.23.0 Redirect 2	1519854578508	1519854578896	OK	 
+REQUEST	Create Claim	1		govuk-template.js?0.23.0 Redirect 2	1519854578841	1519854578921	OK	 
+REQUEST	Create Claim	2		Trigger login	1519854578725	1519854578949	OK	 
+REQUEST	Create Claim	2		Trigger login Redirect 1	1519854578950	1519854578992	OK	 
+REQUEST	Create Claim	1		details.polyfill.js Redirect 2	1519854578896	1519854579024	OK	 
+REQUEST	Create Claim	1		selection-buttons.js Redirect 2	1519854578930	1519854579086	OK	 
+REQUEST	Create Claim	1		favicon.ico?0.23.0 Redirect 2	1519854578507	1519854579150	OK	 
+REQUEST	Create Claim	1		shim-links-with-button-role.js Redirect 2	1519854579025	1519854579150	OK	 
+REQUEST	Create Claim	1		show-hide-content.js Redirect 2	1519854579088	1519854579193	OK	 
+REQUEST	Create Claim	1		application.js Redirect 2	1519854579152	1519854579266	OK	 
+REQUEST	Create Claim	2		Trigger login Redirect 2	1519854578993	1519854579527	OK	 
+REQUEST	Create Claim	1		application.css Redirect 2	1519854578508	1519854579712	OK	 
+USER	Create Claim	3	START	1519854579723	1519854579723
+REQUEST	Create Claim	2		govuk-template.css?0.23.0 Redirect 2	1519854579545	1519854579758	OK	 
+REQUEST	Create Claim	2		govuk-template.js?0.23.0 Redirect 2	1519854579760	1519854579835	OK	 
+REQUEST	Create Claim	2		gov.uk_logotype_crown_invert_trans.png?0.23.0 Redirect 2	1519854579547	1519854579871	OK	 
+REQUEST	Create Claim	3		Trigger login	1519854579723	1519854579877	OK	 
+REQUEST	Create Claim	3		Trigger login Redirect 1	1519854579878	1519854579912	OK	 
+REQUEST	Create Claim	2		govuk-template-print.css?0.23.0 Redirect 2	1519854579545	1519854579940	OK	 
+REQUEST	Create Claim	2		details.polyfill.js Redirect 2	1519854579836	1519854579965	OK	 
+REQUEST	Create Claim	2		favicon.ico?0.23.0 Redirect 2	1519854579546	1519854579975	OK	 
+REQUEST	Create Claim	2		selection-buttons.js Redirect 2	1519854579942	1519854580085	OK	 
+REQUEST	Create Claim	2		shim-links-with-button-role.js Redirect 2	1519854579967	1519854580090	OK	 
+REQUEST	Create Claim	2		show-hide-content.js Redirect 2	1519854579976	1519854580114	OK	 
+REQUEST	Create Claim	2		application.js Redirect 2	1519854580086	1519854580226	OK	 
+REQUEST	Create Claim	2		application.css Redirect 2	1519854579547	1519854580345	OK	 
+REQUEST	Create Claim	3		Trigger login Redirect 2	1519854579914	1519854580469	OK	 
+USER	Create Claim	4	START	1519854580612	1519854580612
+REQUEST	Create Claim	3		govuk-template.css?0.23.0 Redirect 2	1519854580481	1519854580737	OK	 
+REQUEST	Create Claim	4		Trigger login	1519854580612	1519854580781	OK	 
+REQUEST	Create Claim	1		fonts.css?0.23.0 Redirect 2	1519854578505	1519854580791	OK	 
+REQUEST	Create Claim	4		Trigger login Redirect 1	1519854580782	1519854580826	OK	 
+REQUEST	Create Claim	3		govuk-template.js?0.23.0 Redirect 2	1519854580739	1519854580836	OK	 
+REQUEST	Create Claim	1		jquery-1.11.3.js Redirect 2	1519854578898	1519854580868	OK	 
+REQUEST	Create Claim	3		govuk-template-print.css?0.23.0 Redirect 2	1519854580481	1519854580899	OK	 
+REQUEST	Create Claim	3		gov.uk_logotype_crown_invert_trans.png?0.23.0 Redirect 2	1519854580483	1519854580899	OK	 
+REQUEST	Create Claim	3		details.polyfill.js Redirect 2	1519854580837	1519854580969	OK	 
+REQUEST	Create Claim	2		fonts.css?0.23.0 Redirect 2	1519854579546	1519854581008	OK	 
+REQUEST	Create Claim	3		favicon.ico?0.23.0 Redirect 2	1519854580482	1519854581012	OK	 
+REQUEST	Create Claim	3		selection-buttons.js Redirect 2	1519854580901	1519854581013	OK	 
+REQUEST	Create Claim	3		shim-links-with-button-role.js Redirect 2	1519854580970	1519854581068	OK	 
+REQUEST	Create Claim	3		application.js Redirect 2	1519854581014	1519854581097	OK	 
+REQUEST	Create Claim	3		show-hide-content.js Redirect 2	1519854581013	1519854581101	OK	 
+REQUEST	Create Claim	2		jquery-1.11.3.js Redirect 2	1519854579872	1519854581140	OK	 
+REQUEST	Create Claim	3		application.css Redirect 2	1519854580483	1519854581200	OK	 
+REQUEST	Create Claim	4		Trigger login Redirect 2	1519854580827	1519854581257	OK	 
+REQUEST	Create Claim	4		govuk-template.css?0.23.0 Redirect 2	1519854581271	1519854581458	OK	 
+REQUEST	Create Claim	4		gov.uk_logotype_crown_invert_trans.png?0.23.0 Redirect 2	1519854581273	1519854581490	OK	 
+REQUEST	Create Claim	4		govuk-template-print.css?0.23.0 Redirect 2	1519854581271	1519854581499	OK	 
+REQUEST	Create Claim	4		govuk-template.js?0.23.0 Redirect 2	1519854581460	1519854581559	OK	 
+REQUEST	Create Claim	4		details.polyfill.js Redirect 2	1519854581491	1519854581594	OK	 
+USER	Create Claim	5	START	1519854581613	1519854581613
+REQUEST	Create Claim	4		favicon.ico?0.23.0 Redirect 2	1519854581272	1519854581618	OK	 
+REQUEST	Create Claim	3		fonts.css?0.23.0 Redirect 2	1519854580482	1519854581626	OK	 
+REQUEST	Create Claim	4		selection-buttons.js Redirect 2	1519854581560	1519854581637	OK	 
+REQUEST	Create Claim	4		shim-links-with-button-role.js Redirect 2	1519854581595	1519854581676	OK	 
+REQUEST	Create Claim	4		show-hide-content.js Redirect 2	1519854581619	1519854581707	OK	 
+REQUEST	Create Claim	4		application.js Redirect 2	1519854581638	1519854581724	OK	 
+REQUEST	Create Claim	3		jquery-1.11.3.js Redirect 2	1519854580900	1519854581730	OK	 
+REQUEST	Create Claim	4		application.css Redirect 2	1519854581273	1519854581777	OK	 
+REQUEST	Create Claim	5		Trigger login	1519854581614	1519854581777	OK	 
+REQUEST	Create Claim	5		Trigger login Redirect 1	1519854581779	1519854581815	OK	 
+REQUEST	Create Claim	5		Trigger login Redirect 2	1519854581817	1519854582092	OK	 
+REQUEST	Create Claim	4		fonts.css?0.23.0 Redirect 2	1519854581272	1519854582102	OK	 
+REQUEST	Create Claim	4		jquery-1.11.3.js Redirect 2	1519854581500	1519854582156	OK	 
+REQUEST	Create Claim	5		govuk-template.css?0.23.0 Redirect 2	1519854582105	1519854582219	OK	 
+REQUEST	Create Claim	5		govuk-template.js?0.23.0 Redirect 2	1519854582220	1519854582268	OK	 
+REQUEST	Create Claim	1		Login - submit	1519854581890	1519854582300	OK	 
+REQUEST	Create Claim	5		gov.uk_logotype_crown_invert_trans.png?0.23.0 Redirect 2	1519854582107	1519854582319	OK	 
+REQUEST	Create Claim	5		govuk-template-print.css?0.23.0 Redirect 2	1519854582106	1519854582323	OK	 
+REQUEST	Create Claim	5		details.polyfill.js Redirect 2	1519854582269	1519854582330	OK	 
+REQUEST	Create Claim	5		favicon.ico?0.23.0 Redirect 2	1519854582106	1519854582371	OK	 
+REQUEST	Create Claim	5		selection-buttons.js Redirect 2	1519854582325	1519854582383	OK	 
+REQUEST	Create Claim	5		shim-links-with-button-role.js Redirect 2	1519854582331	1519854582387	OK	 
+REQUEST	Create Claim	5		show-hide-content.js Redirect 2	1519854582371	1519854582431	OK	 
+REQUEST	Create Claim	5		application.js Redirect 2	1519854582384	1519854582447	OK	 
+REQUEST	Create Claim	5		application.css Redirect 2	1519854582107	1519854582510	OK	 
+REQUEST	Create Claim	2		Login - submit	1519854582153	1519854582581	OK	 
+USER	Create Claim	6	START	1519854582613	1519854582613
+REQUEST	Create Claim	1		Login - submit Redirect 1	1519854582301	1519854582785	OK	 
+REQUEST	Create Claim	5		fonts.css?0.23.0 Redirect 2	1519854582106	1519854582806	OK	 
+REQUEST	Create Claim	6		Trigger login	1519854582613	1519854582881	OK	 
+REQUEST	Create Claim	5		jquery-1.11.3.js Redirect 2	1519854582321	1519854582896	OK	 
+REQUEST	Create Claim	6		Trigger login Redirect 1	1519854582883	1519854582927	OK	 
+REQUEST	Create Claim	2		Login - submit Redirect 1	1519854582582	1519854583035	OK	 
+REQUEST	Create Claim	3		Login - submit	1519854582745	1519854583163	OK	 
+REQUEST	Create Claim	6		Trigger login Redirect 2	1519854582929	1519854583189	OK	 
+REQUEST	Create Claim	6		govuk-template.css?0.23.0 Redirect 2	1519854583199	1519854583306	OK	 
+REQUEST	Create Claim	1		Login - submit Redirect 2	1519854582786	1519854583310	KO	regex(Make a money claim).find.exists, found nothing
+REQUEST	Create Claim	6		govuk-template.js?0.23.0 Redirect 2	1519854583308	1519854583370	OK	 
+REQUEST	Create Claim	6		gov.uk_logotype_crown_invert_trans.png?0.23.0 Redirect 2	1519854583201	1519854583413	OK	 
+REQUEST	Create Claim	6		govuk-template-print.css?0.23.0 Redirect 2	1519854583200	1519854583413	OK	 
+REQUEST	Create Claim	6		details.polyfill.js Redirect 2	1519854583372	1519854583444	OK	 
+REQUEST	Create Claim	2		Login - submit Redirect 2	1519854583036	1519854583454	KO	regex(Make a money claim).find.exists, found nothing
+REQUEST	Create Claim	6		favicon.ico?0.23.0 Redirect 2	1519854583200	1519854583459	OK	 
+REQUEST	Create Claim	6		selection-buttons.js Redirect 2	1519854583415	1519854583471	OK	 
+REQUEST	Create Claim	6		shim-links-with-button-role.js Redirect 2	1519854583445	1519854583503	OK	 
+REQUEST	Create Claim	6		show-hide-content.js Redirect 2	1519854583460	1519854583514	OK	 
+REQUEST	Create Claim	6		application.js Redirect 2	1519854583472	1519854583544	OK	 
+REQUEST	Create Claim	3		Login - submit Redirect 1	1519854583164	1519854583601	OK	 
+USER	Create Claim	7	START	1519854583612	1519854583612
+REQUEST	Create Claim	4		Login - submit	1519854583175	1519854583626	OK	 
+REQUEST	Create Claim	6		application.css Redirect 2	1519854583201	1519854583626	OK	 
+REQUEST	Create Claim	7		Trigger login	1519854583612	1519854583760	OK	 
+REQUEST	Create Claim	7		Trigger login Redirect 1	1519854583761	1519854583810	OK	 
+REQUEST	Create Claim	6		fonts.css?0.23.0 Redirect 2	1519854583200	1519854583912	OK	 
+REQUEST	Create Claim	6		jquery-1.11.3.js Redirect 2	1519854583414	1519854583977	OK	 
+REQUEST	Create Claim	3		Login - submit Redirect 2	1519854583602	1519854583977	KO	regex(Make a money claim).find.exists, found nothing
+REQUEST	Create Claim	7		Trigger login Redirect 2	1519854583811	1519854584052	OK	 
+REQUEST	Create Claim	7		govuk-template.css?0.23.0 Redirect 2	1519854584059	1519854584168	OK	 
+REQUEST	Create Claim	7		govuk-template.js?0.23.0 Redirect 2	1519854584171	1519854584227	OK	 
+REQUEST	Create Claim	7		govuk-template-print.css?0.23.0 Redirect 2	1519854584059	1519854584252	OK	 
+REQUEST	Create Claim	7		gov.uk_logotype_crown_invert_trans.png?0.23.0 Redirect 2	1519854584061	1519854584252	OK	 
+REQUEST	Create Claim	7		details.polyfill.js Redirect 2	1519854584228	1519854584291	OK	 
+REQUEST	Create Claim	7		favicon.ico?0.23.0 Redirect 2	1519854584060	1519854584302	OK	 
+REQUEST	Create Claim	5		Login - submit	1519854583913	1519854584313	OK	 
+REQUEST	Create Claim	7		selection-buttons.js Redirect 2	1519854584254	1519854584318	OK	 
+REQUEST	Create Claim	7		shim-links-with-button-role.js Redirect 2	1519854584292	1519854584351	OK	 
+REQUEST	Create Claim	7		show-hide-content.js Redirect 2	1519854584303	1519854584365	OK	 
+REQUEST	Create Claim	7		application.js Redirect 2	1519854584319	1519854584381	OK	 
+REQUEST	Create Claim	4		Login - submit Redirect 1	1519854583627	1519854584381	OK	 
+REQUEST	Create Claim	7		application.css Redirect 2	1519854584060	1519854584426	OK	 
+REQUEST	Create Claim	1		Eligibility start	1519854584313	1519854584468	OK	 
+REQUEST	Create Claim	1		govuk-template.css?0.23.0	1519854584475	1519854584571	OK	 
+REQUEST	Create Claim	2		Eligibility start	1519854584463	1519854584591	OK	 
+USER	Create Claim	8	START	1519854584615	1519854584615
+REQUEST	Create Claim	1		govuk-template.js?0.23.0	1519854584573	1519854584663	OK	 
+REQUEST	Create Claim	5		Login - submit Redirect 1	1519854584314	1519854584683	OK	 
+REQUEST	Create Claim	1		application.css	1519854584476	1519854584685	OK	 
+REQUEST	Create Claim	1		favicon.ico?0.23.0	1519854584476	1519854584690	OK	 
+REQUEST	Create Claim	7		jquery-1.11.3.js Redirect 2	1519854584253	1519854584804	OK	 
+REQUEST	Create Claim	7		fonts.css?0.23.0 Redirect 2	1519854584060	1519854584804	OK	 
+REQUEST	Create Claim	1		govuk-template-print.css?0.23.0	1519854584475	1519854584805	OK	 
+REQUEST	Create Claim	1		gov.uk_logotype_crown_invert_trans.png?0.23.0	1519854584477	1519854584806	OK	 
+REQUEST	Create Claim	1		jquery.min.js	1519854584665	1519854584808	OK	 
+REQUEST	Create Claim	4		Login - submit Redirect 2	1519854584382	1519854584817	KO	regex(Make a money claim).find.exists, found nothing
+REQUEST	Create Claim	2		govuk-template.css?0.23.0	1519854584593	1519854584910	OK	 
+REQUEST	Create Claim	2		gov.uk_logotype_crown_invert_trans.png?0.23.0	1519854584594	1519854584983	OK	 
+REQUEST	Create Claim	2		govuk-template-print.css?0.23.0	1519854584593	1519854584983	OK	 
+REQUEST	Create Claim	1		application.js	1519854584807	1519854584983	OK	 
+REQUEST	Create Claim	1		analytics.js	1519854584813	1519854584987	OK	 
+REQUEST	Create Claim	1		shim-links-with-button-role.js	1519854584691	1519854584990	OK	 
+REQUEST	Create Claim	8		Trigger login	1519854584615	1519854585009	OK	 
+REQUEST	Create Claim	1		detectJavascript.js	1519854584808	1519854585009	OK	 
+REQUEST	Create Claim	1		fonts.css?0.23.0	1519854584476	1519854585011	OK	 
+REQUEST	Create Claim	2		favicon.ico?0.23.0	1519854584594	1519854585012	OK	 
+REQUEST	Create Claim	2		govuk-template.js?0.23.0	1519854584912	1519854585017	OK	 
+REQUEST	Create Claim	2		application.css	1519854584594	1519854585039	OK	 
+REQUEST	Create Claim	1		show-hide-content.js	1519854584800	1519854585040	OK	 
+REQUEST	Create Claim	5		Login - submit Redirect 2	1519854584684	1519854585080	KO	regex(Make a money claim).find.exists, found nothing
+REQUEST	Create Claim	2		application.js	1519854585018	1519854585108	OK	 
+REQUEST	Create Claim	2		detectJavascript.js	1519854585041	1519854585112	OK	 
+REQUEST	Create Claim	8		Trigger login Redirect 1	1519854585010	1519854585113	OK	 
+REQUEST	Create Claim	1		analytics-custom-event-sender.js?2017-10-11	1519854584985	1519854585117	OK	 
+REQUEST	Create Claim	2		shim-links-with-button-role.js	1519854584986	1519854585119	OK	 
+REQUEST	Create Claim	2		show-hide-content.js	1519854585014	1519854585128	OK	 
+REQUEST	Create Claim	2		fonts.css?0.23.0	1519854584593	1519854585137	OK	 
+REQUEST	Create Claim	2		jquery.min.js	1519854584985	1519854585148	OK	 
+REQUEST	Create Claim	2		analytics.js	1519854585109	1519854585193	OK	 
+REQUEST	Create Claim	3		Eligibility start	1519854584985	1519854585195	OK	 
+REQUEST	Create Claim	2		analytics-custom-event-sender.js?2017-10-11	1519854585113	1519854585197	OK	 
+REQUEST	Create Claim	3		gov.uk_logotype_crown_invert_trans.png?0.23.0	1519854585198	1519854585313	OK	 
+REQUEST	Create Claim	3		govuk-template-print.css?0.23.0	1519854585198	1519854585328	OK	 
+REQUEST	Create Claim	3		favicon.ico?0.23.0	1519854585198	1519854585339	OK	 
+REQUEST	Create Claim	3		application.css	1519854585198	1519854585346	OK	 
+REQUEST	Create Claim	3		govuk-template.css?0.23.0	1519854585197	1519854585347	OK	 
+REQUEST	Create Claim	3		govuk-template.js?0.23.0	1519854585314	1519854585362	OK	 
+REQUEST	Create Claim	8		Trigger login Redirect 2	1519854585114	1519854585366	OK	 
+REQUEST	Create Claim	3		fonts.css?0.23.0	1519854585198	1519854585399	OK	 
+REQUEST	Create Claim	3		shim-links-with-button-role.js	1519854585340	1519854585461	OK	 
+REQUEST	Create Claim	3		jquery.min.js	1519854585329	1519854585462	OK	 
+REQUEST	Create Claim	3		detectJavascript.js	1519854585364	1519854585465	OK	 
+REQUEST	Create Claim	3		application.js	1519854585348	1519854585472	OK	 
+REQUEST	Create Claim	3		show-hide-content.js	1519854585348	1519854585476	OK	 
+REQUEST	Create Claim	3		analytics.js	1519854585401	1519854585485	OK	 
+REQUEST	Create Claim	6		Login - submit	1519854584995	1519854585491	OK	 
+REQUEST	Create Claim	8		govuk-template.css?0.23.0 Redirect 2	1519854585376	1519854585492	OK	 
+REQUEST	Create Claim	3		analytics-custom-event-sender.js?2017-10-11	1519854585462	1519854585516	OK	 
+REQUEST	Create Claim	8		govuk-template.js?0.23.0 Redirect 2	1519854585493	1519854585551	OK	 
+REQUEST	Create Claim	8		gov.uk_logotype_crown_invert_trans.png?0.23.0 Redirect 2	1519854585378	1519854585562	OK	 
+REQUEST	Create Claim	8		govuk-template-print.css?0.23.0 Redirect 2	1519854585376	1519854585585	OK	 
+USER	Create Claim	9	START	1519854585615	1519854585615
+REQUEST	Create Claim	8		favicon.ico?0.23.0 Redirect 2	1519854585377	1519854585626	OK	 
+REQUEST	Create Claim	8		details.polyfill.js Redirect 2	1519854585552	1519854585627	OK	 
+REQUEST	Create Claim	8		selection-buttons.js Redirect 2	1519854585586	1519854585669	OK	 
+REQUEST	Create Claim	8		shim-links-with-button-role.js Redirect 2	1519854585627	1519854585690	OK	 
+REQUEST	Create Claim	8		show-hide-content.js Redirect 2	1519854585628	1519854585704	OK	 
+REQUEST	Create Claim	8		application.js Redirect 2	1519854585670	1519854585720	OK	 
+REQUEST	Create Claim	9		Trigger login	1519854585615	1519854585758	OK	 
+REQUEST	Create Claim	8		application.css Redirect 2	1519854585377	1519854585786	OK	 
+REQUEST	Create Claim	6		Login - submit Redirect 1	1519854585491	1519854585800	OK	 
+REQUEST	Create Claim	9		Trigger login Redirect 1	1519854585759	1519854585802	OK	 
+REQUEST	Create Claim	4		Eligibility start	1519854585826	1519854585996	OK	 
+REQUEST	Create Claim	8		fonts.css?0.23.0 Redirect 2	1519854585377	1519854586082	OK	 
+REQUEST	Create Claim	9		Trigger login Redirect 2	1519854585803	1519854586082	OK	 
+REQUEST	Create Claim	4		govuk-template-print.css?0.23.0	1519854585999	1519854586108	OK	 
+REQUEST	Create Claim	4		govuk-template.css?0.23.0	1519854585999	1519854586111	OK	 
+REQUEST	Create Claim	8		jquery-1.11.3.js Redirect 2	1519854585563	1519854586129	OK	 
+REQUEST	Create Claim	4		favicon.ico?0.23.0	1519854585999	1519854586134	OK	 
+REQUEST	Create Claim	4		gov.uk_logotype_crown_invert_trans.png?0.23.0	1519854586000	1519854586142	OK	 
+REQUEST	Create Claim	6		Login - submit Redirect 2	1519854585801	1519854586196	KO	regex(Make a money claim).find.exists, found nothing
+REQUEST	Create Claim	4		application.css	1519854585999	1519854586201	OK	 
+REQUEST	Create Claim	9		govuk-template.css?0.23.0 Redirect 2	1519854586088	1519854586202	OK	 
+REQUEST	Create Claim	4		govuk-template.js?0.23.0	1519854586109	1519854586215	OK	 
+REQUEST	Create Claim	4		shim-links-with-button-role.js	1519854586135	1519854586221	OK	 
+REQUEST	Create Claim	4		show-hide-content.js	1519854586143	1519854586237	OK	 
+REQUEST	Create Claim	4		jquery.min.js	1519854586112	1519854586238	OK	 
+REQUEST	Create Claim	7		Login - submit	1519854585826	1519854586248	OK	 
+REQUEST	Create Claim	5		Eligibility start	1519854586083	1519854586264	OK	 
+REQUEST	Create Claim	4		application.js	1519854586202	1519854586270	OK	 
+REQUEST	Create Claim	9		govuk-template.js?0.23.0 Redirect 2	1519854586203	1519854586272	OK	 
+REQUEST	Create Claim	9		govuk-template-print.css?0.23.0 Redirect 2	1519854586088	1519854586287	OK	 
+REQUEST	Create Claim	9		gov.uk_logotype_crown_invert_trans.png?0.23.0 Redirect 2	1519854586089	1519854586287	OK	 
+REQUEST	Create Claim	4		fonts.css?0.23.0	1519854585999	1519854586293	OK	 
+REQUEST	Create Claim	4		detectJavascript.js	1519854586216	1519854586297	OK	 
+REQUEST	Create Claim	4		analytics-custom-event-sender.js?2017-10-11	1519854586239	1519854586304	OK	 
+REQUEST	Create Claim	4		analytics.js	1519854586223	1519854586326	OK	 
+REQUEST	Create Claim	9		details.polyfill.js Redirect 2	1519854586273	1519854586329	OK	 
+REQUEST	Create Claim	9		favicon.ico?0.23.0 Redirect 2	1519854586089	1519854586336	OK	 
+REQUEST	Create Claim	5		govuk-template.css?0.23.0	1519854586267	1519854586340	OK	 
+REQUEST	Create Claim	5		govuk-template-print.css?0.23.0	1519854586268	1519854586351	OK	 
+REQUEST	Create Claim	9		selection-buttons.js Redirect 2	1519854586289	1519854586352	OK	 
+REQUEST	Create Claim	5		gov.uk_logotype_crown_invert_trans.png?0.23.0	1519854586268	1519854586361	OK	 
+REQUEST	Create Claim	9		shim-links-with-button-role.js Redirect 2	1519854586330	1519854586396	OK	 
+REQUEST	Create Claim	9		application.js Redirect 2	1519854586353	1519854586404	OK	 
+REQUEST	Create Claim	9		show-hide-content.js Redirect 2	1519854586338	1519854586425	OK	 
+REQUEST	Create Claim	5		application.css	1519854586268	1519854586425	OK	 
+REQUEST	Create Claim	5		favicon.ico?0.23.0	1519854586268	1519854586434	OK	 
+REQUEST	Create Claim	5		shim-links-with-button-role.js	1519854586362	1519854586443	OK	 
+REQUEST	Create Claim	9		application.css Redirect 2	1519854586089	1519854586468	OK	 
+REQUEST	Create Claim	5		govuk-template.js?0.23.0	1519854586341	1519854586470	OK	 
+REQUEST	Create Claim	5		jquery.min.js	1519854586352	1519854586485	OK	 
+REQUEST	Create Claim	5		detectJavascript.js	1519854586444	1519854586504	OK	 
+REQUEST	Create Claim	5		analytics-custom-event-sender.js?2017-10-11	1519854586486	1519854586546	OK	 
+REQUEST	Create Claim	5		show-hide-content.js	1519854586427	1519854586547	OK	 
+REQUEST	Create Claim	5		application.js	1519854586435	1519854586548	OK	 
+REQUEST	Create Claim	5		analytics.js	1519854586470	1519854586558	OK	 
+REQUEST	Create Claim	5		fonts.css?0.23.0	1519854586268	1519854586567	OK	 
+REQUEST	Create Claim	7		Login - submit Redirect 1	1519854586249	1519854586598	OK	 
+USER	Create Claim	10	START	1519854586612	1519854586612
+REQUEST	Create Claim	10		Trigger login	1519854586612	1519854586773	OK	 
+REQUEST	Create Claim	9		fonts.css?0.23.0 Redirect 2	1519854586089	1519854586773	OK	 
+REQUEST	Create Claim	10		Trigger login Redirect 1	1519854586774	1519854586814	OK	 
+REQUEST	Create Claim	9		jquery-1.11.3.js Redirect 2	1519854586288	1519854586896	OK	 
+REQUEST	Create Claim	7		Login - submit Redirect 2	1519854586599	1519854587040	KO	regex(Make a money claim).find.exists, found nothing
+REQUEST	Create Claim	10		Trigger login Redirect 2	1519854586815	1519854587074	OK	 
+REQUEST	Create Claim	10		govuk-template.css?0.23.0 Redirect 2	1519854587083	1519854587189	OK	 
+REQUEST	Create Claim	10		govuk-template.js?0.23.0 Redirect 2	1519854587190	1519854587252	OK	 
+REQUEST	Create Claim	10		govuk-template-print.css?0.23.0 Redirect 2	1519854587083	1519854587287	OK	 
+REQUEST	Create Claim	10		gov.uk_logotype_crown_invert_trans.png?0.23.0 Redirect 2	1519854587084	1519854587287	OK	 
+REQUEST	Create Claim	10		details.polyfill.js Redirect 2	1519854587253	1519854587311	OK	 
+REQUEST	Create Claim	6		Eligibility start	1519854587205	1519854587328	OK	 
+REQUEST	Create Claim	10		favicon.ico?0.23.0 Redirect 2	1519854587083	1519854587348	OK	 
+REQUEST	Create Claim	10		selection-buttons.js Redirect 2	1519854587288	1519854587352	OK	 
+REQUEST	Create Claim	10		shim-links-with-button-role.js Redirect 2	1519854587312	1519854587383	OK	 
+REQUEST	Create Claim	10		application.js Redirect 2	1519854587353	1519854587420	OK	 
+REQUEST	Create Claim	1		Eligibility - tenancy deposit GET	1519854587123	1519854587424	OK	 
+REQUEST	Create Claim	10		show-hide-content.js Redirect 2	1519854587349	1519854587428	OK	 
+REQUEST	Create Claim	6		govuk-template-print.css?0.23.0	1519854587330	1519854587448	OK	 
+REQUEST	Create Claim	6		favicon.ico?0.23.0	1519854587330	1519854587454	OK	 
+REQUEST	Create Claim	6		gov.uk_logotype_crown_invert_trans.png?0.23.0	1519854587331	1519854587456	OK	 
+REQUEST	Create Claim	10		application.css Redirect 2	1519854587084	1519854587457	OK	 
+REQUEST	Create Claim	2		Eligibility - tenancy deposit GET	1519854587205	1519854587480	OK	 
+REQUEST	Create Claim	6		govuk-template.css?0.23.0	1519854587329	1519854587484	OK	 
+REQUEST	Create Claim	6		shim-links-with-button-role.js	1519854587457	1519854587566	OK	 
+REQUEST	Create Claim	6		application.css	1519854587330	1519854587583	OK	 
+REQUEST	Create Claim	8		Login - submit	1519854587144	1519854587586	OK	 
+REQUEST	Create Claim	6		govuk-template.js?0.23.0	1519854587449	1519854587591	OK	 
+REQUEST	Create Claim	6		show-hide-content.js	1519854587487	1519854587620	OK	 
+REQUEST	Create Claim	6		jquery.min.js	1519854587456	1519854587626	OK	 
+REQUEST	Create Claim	6		application.js	1519854587567	1519854587663	OK	 
+REQUEST	Create Claim	6		detectJavascript.js	1519854587585	1519854587672	OK	 
+REQUEST	Create Claim	10		fonts.css?0.23.0 Redirect 2	1519854587083	1519854587711	OK	 
+REQUEST	Create Claim	10		jquery-1.11.3.js Redirect 2	1519854587288	1519854587755	OK	 
+REQUEST	Create Claim	6		analytics.js	1519854587591	1519854587758	OK	 
+REQUEST	Create Claim	6		analytics-custom-event-sender.js?2017-10-11	1519854587621	1519854587773	OK	 
+REQUEST	Create Claim	6		fonts.css?0.23.0	1519854587330	1519854587796	OK	 
+REQUEST	Create Claim	1		Eligibility - tenancy deposit POST	1519854587434	1519854587939	OK	 
+REQUEST	Create Claim	8		Login - submit Redirect 1	1519854587586	1519854588006	OK	 
+REQUEST	Create Claim	1		Eligibility - tenancy deposit POST Redirect 1	1519854587940	1519854588094	KO	css((input[name='_csrf'],Some(value))).find.exists, found nothing
+REQUEST	Create Claim	2		Eligibility - tenancy deposit POST	1519854587488	1519854588119	OK	 
+REQUEST	Create Claim	7		Eligibility start	1519854588045	1519854588196	OK	 
+REQUEST	Create Claim	7		favicon.ico?0.23.0	1519854588198	1519854588281	OK	 
+REQUEST	Create Claim	2		Eligibility - tenancy deposit POST Redirect 1	1519854588120	1519854588282	KO	css((input[name='_csrf'],Some(value))).find.exists, found nothing
+REQUEST	Create Claim	3		Eligibility - tenancy deposit GET	1519854587514	1519854588285	OK	 
+REQUEST	Create Claim	7		govuk-template.css?0.23.0	1519854588198	1519854588309	OK	 
+REQUEST	Create Claim	7		govuk-template-print.css?0.23.0	1519854588198	1519854588315	OK	 
+REQUEST	Create Claim	7		gov.uk_logotype_crown_invert_trans.png?0.23.0	1519854588199	1519854588317	OK	 
+REQUEST	Create Claim	7		application.css	1519854588199	1519854588373	OK	 
+REQUEST	Create Claim	8		Login - submit Redirect 2	1519854588007	1519854588404	KO	regex(Make a money claim).find.exists, found nothing
+REQUEST	Create Claim	9		Login - submit	1519854587915	1519854588410	OK	 
+REQUEST	Create Claim	7		application.js	1519854588374	1519854588522	OK	 
+REQUEST	Create Claim	7		show-hide-content.js	1519854588317	1519854588522	OK	 
+REQUEST	Create Claim	7		shim-links-with-button-role.js	1519854588316	1519854588522	OK	 
+REQUEST	Create Claim	7		govuk-template.js?0.23.0	1519854588282	1519854588525	OK	 
+REQUEST	Create Claim	7		jquery.min.js	1519854588310	1519854588527	OK	 
+REQUEST	Create Claim	7		fonts.css?0.23.0	1519854588198	1519854588531	OK	 
+REQUEST	Create Claim	7		detectJavascript.js	1519854588525	1519854588595	OK	 
+REQUEST	Create Claim	7		analytics.js	1519854588527	1519854588600	OK	 
+REQUEST	Create Claim	1		Eligibility - claim value POST	1519854588097	1519854588637	OK	 
+REQUEST	Create Claim	7		analytics-custom-event-sender.js?2017-10-11	1519854588527	1519854588638	OK	 
+REQUEST	Create Claim	4		Eligibility - tenancy deposit GET	1519854588324	1519854588762	OK	 
+REQUEST	Create Claim	3		Eligibility - tenancy deposit POST	1519854588292	1519854588880	OK	 
+REQUEST	Create Claim	2		Eligibility - claim value POST	1519854588284	1519854588911	OK	 
+REQUEST	Create Claim	9		Login - submit Redirect 1	1519854588411	1519854588960	OK	 
+REQUEST	Create Claim	3		Eligibility - tenancy deposit POST Redirect 1	1519854588881	1519854589006	KO	css((input[name='_csrf'],Some(value))).find.exists, found nothing
+REQUEST	Create Claim	5		Eligibility - tenancy deposit GET	1519854588574	1519854589027	OK	 
+REQUEST	Create Claim	1		Eligibility - claim value POST Redirect 1	1519854588638	1519854589037	OK	 
+REQUEST	Create Claim	2		Eligibility - claim value POST Redirect 1	1519854588911	1519854589201	OK	 
+REQUEST	Create Claim	10		Login - submit	1519854588775	1519854589251	OK	 
+REQUEST	Create Claim	4		Eligibility - tenancy deposit POST	1519854588768	1519854589298	OK	 
+REQUEST	Create Claim	1		Eligibility - single claimant POST	1519854589043	1519854589331	OK	 
+REQUEST	Create Claim	9		Login - submit Redirect 2	1519854588961	1519854589376	KO	regex(Make a money claim).find.exists, found nothing
+REQUEST	Create Claim	4		Eligibility - tenancy deposit POST Redirect 1	1519854589299	1519854589520	KO	css((input[name='_csrf'],Some(value))).find.exists, found nothing
+REQUEST	Create Claim	8		Eligibility start	1519854589415	1519854589563	OK	 
+REQUEST	Create Claim	2		Eligibility - single claimant POST	1519854589207	1519854589584	OK	 
+REQUEST	Create Claim	5		Eligibility - tenancy deposit POST	1519854589034	1519854589593	OK	 
+REQUEST	Create Claim	3		Eligibility - claim value POST	1519854589008	1519854589695	OK	 
+REQUEST	Create Claim	1		Eligibility - single defendant POST	1519854589337	1519854589706	OK	 
+REQUEST	Create Claim	8		govuk-template.css?0.23.0	1519854589565	1519854589887	OK	 
+REQUEST	Create Claim	8		favicon.ico?0.23.0	1519854589566	1519854589930	OK	 
+REQUEST	Create Claim	5		Eligibility - tenancy deposit POST Redirect 1	1519854589594	1519854589945	KO	css((input[name='_csrf'],Some(value))).find.exists, found nothing
+REQUEST	Create Claim	10		Login - submit Redirect 1	1519854589251	1519854589947	OK	 
+REQUEST	Create Claim	8		govuk-template.js?0.23.0	1519854589887	1519854589951	OK	 
+REQUEST	Create Claim	8		application.css	1519854589566	1519854589995	OK	 
+REQUEST	Create Claim	8		show-hide-content.js	1519854589996	1519854590046	OK	 
+REQUEST	Create Claim	8		fonts.css?0.23.0	1519854589565	1519854590067	OK	 
+REQUEST	Create Claim	8		jquery.min.js	1519854589931	1519854590072	OK	 
+REQUEST	Create Claim	2		Eligibility - single defendant POST	1519854589589	1519854590130	OK	 
+REQUEST	Create Claim	8		shim-links-with-button-role.js	1519854589951	1519854590136	OK	 
+REQUEST	Create Claim	8		gov.uk_logotype_crown_invert_trans.png?0.23.0	1519854589566	1519854590182	OK	 
+REQUEST	Create Claim	8		govuk-template-print.css?0.23.0	1519854589565	1519854590184	OK	 
+REQUEST	Create Claim	3		Eligibility - claim value POST Redirect 1	1519854589696	1519854590188	OK	 
+REQUEST	Create Claim	1		Eligibility - over 18 POST	1519854589711	1519854590203	OK	 
+REQUEST	Create Claim	8		application.js	1519854590046	1519854590223	OK	 
+REQUEST	Create Claim	8		detectJavascript.js	1519854590068	1519854590227	OK	 
+REQUEST	Create Claim	8		analytics.js	1519854590073	1519854590242	OK	 
+REQUEST	Create Claim	6		Eligibility - tenancy deposit GET	1519854589792	1519854590258	OK	 
+REQUEST	Create Claim	4		Eligibility - claim value POST	1519854589522	1519854590281	OK	 
+REQUEST	Create Claim	8		analytics-custom-event-sender.js?2017-10-11	1519854590137	1519854590300	OK	 
+REQUEST	Create Claim	10		Login - submit Redirect 2	1519854589948	1519854590454	KO	regex(Make a money claim).find.exists, found nothing
+REQUEST	Create Claim	2		Eligibility - over 18 POST	1519854590136	1519854590471	OK	 
+REQUEST	Create Claim	9		Eligibility start	1519854590385	1519854590565	OK	 
+REQUEST	Create Claim	5		Eligibility - claim value POST	1519854589946	1519854590682	OK	 
+REQUEST	Create Claim	3		Eligibility - single claimant POST	1519854590195	1519854590682	OK	 
+REQUEST	Create Claim	4		Eligibility - claim value POST Redirect 1	1519854590282	1519854590682	OK	 
+REQUEST	Create Claim	9		favicon.ico?0.23.0	1519854590567	1519854590698	OK	 
+REQUEST	Create Claim	9		govuk-template-print.css?0.23.0	1519854590567	1519854590713	OK	 
+REQUEST	Create Claim	9		gov.uk_logotype_crown_invert_trans.png?0.23.0	1519854590568	1519854590716	OK	 
+REQUEST	Create Claim	9		govuk-template.css?0.23.0	1519854590567	1519854590777	OK	 
+REQUEST	Create Claim	9		govuk-template.js?0.23.0	1519854590699	1519854590813	OK	 
+REQUEST	Create Claim	9		jquery.min.js	1519854590714	1519854590813	OK	 
+REQUEST	Create Claim	9		shim-links-with-button-role.js	1519854590717	1519854590827	OK	 
+REQUEST	Create Claim	9		show-hide-content.js	1519854590778	1519854590842	OK	 
+REQUEST	Create Claim	9		application.css	1519854590567	1519854590857	OK	 
+REQUEST	Create Claim	6		Eligibility - tenancy deposit POST	1519854590263	1519854590899	OK	 
+REQUEST	Create Claim	1		Eligibility - help with fees POST	1519854590207	1519854590900	OK	 
+REQUEST	Create Claim	2		Eligibility - help with fees POST	1519854590476	1519854590911	OK	 
+REQUEST	Create Claim	7		Eligibility - tenancy deposit GET	1519854590633	1519854590914	OK	 
+REQUEST	Create Claim	9		fonts.css?0.23.0	1519854590567	1519854590959	OK	 
+REQUEST	Create Claim	9		application.js	1519854590814	1519854590977	OK	 
+REQUEST	Create Claim	9		analytics.js	1519854590828	1519854590985	OK	 
+REQUEST	Create Claim	9		analytics-custom-event-sender.js?2017-10-11	1519854590842	1519854590992	OK	 
+REQUEST	Create Claim	9		detectJavascript.js	1519854590814	1519854590992	OK	 
+REQUEST	Create Claim	5		Eligibility - claim value POST Redirect 1	1519854590683	1519854591014	OK	 
+REQUEST	Create Claim	6		Eligibility - tenancy deposit POST Redirect 1	1519854590899	1519854591083	KO	css((input[name='_csrf'],Some(value))).find.exists, found nothing
+REQUEST	Create Claim	4		Eligibility - single claimant POST	1519854590689	1519854591114	OK	 
+REQUEST	Create Claim	3		Eligibility - single defendant POST	1519854590689	1519854591150	OK	 
+REQUEST	Create Claim	1		Eligibility - help with fees POST Redirect 1	1519854590900	1519854591371	OK	 
+REQUEST	Create Claim	2		Eligibility - help with fees POST Redirect 1	1519854590911	1519854591370	OK	 
+REQUEST	Create Claim	5		Eligibility - single claimant POST	1519854591020	1519854591375	OK	 
+REQUEST	Create Claim	7		Eligibility - tenancy deposit POST	1519854590919	1519854591376	OK	 
+REQUEST	Create Claim	4		Eligibility - single defendant POST	1519854591119	1519854591406	OK	 
+REQUEST	Create Claim	3		Eligibility - over 18 POST	1519854591155	1519854591465	OK	 
+REQUEST	Create Claim	7		Eligibility - tenancy deposit POST Redirect 1	1519854591377	1519854591545	KO	css((input[name='_csrf'],Some(value))).find.exists, found nothing
+REQUEST	Create Claim	6		Eligibility - claim value POST	1519854591085	1519854591622	OK	 
+REQUEST	Create Claim	10		Eligibility start	1519854591455	1519854591681	OK	 
+REQUEST	Create Claim	5		Eligibility - single defendant POST	1519854591382	1519854591786	OK	 
+REQUEST	Create Claim	4		Eligibility - over 18 POST	1519854591410	1519854591795	OK	 
+REQUEST	Create Claim	10		gov.uk_logotype_crown_invert_trans.png?0.23.0	1519854591684	1519854591817	OK	 
+REQUEST	Create Claim	10		govuk-template.css?0.23.0	1519854591683	1519854591849	OK	 
+REQUEST	Create Claim	10		favicon.ico?0.23.0	1519854591684	1519854591868	OK	 
+REQUEST	Create Claim	10		govuk-template-print.css?0.23.0	1519854591683	1519854591877	OK	 
+REQUEST	Create Claim	10		application.css	1519854591684	1519854591910	OK	 
+REQUEST	Create Claim	10		govuk-template.js?0.23.0	1519854591818	1519854591927	OK	 
+REQUEST	Create Claim	10		jquery.min.js	1519854591850	1519854591969	OK	 
+REQUEST	Create Claim	10		show-hide-content.js	1519854591878	1519854591972	OK	 
+REQUEST	Create Claim	7		Eligibility - claim value POST	1519854591546	1519854591972	OK	 
+REQUEST	Create Claim	10		shim-links-with-button-role.js	1519854591869	1519854591978	OK	 
+REQUEST	Create Claim	10		application.js	1519854591911	1519854591980	OK	 
+REQUEST	Create Claim	6		Eligibility - claim value POST Redirect 1	1519854591623	1519854592038	OK	 
+REQUEST	Create Claim	1		Eligibility - claimant address POST	1519854591380	1519854592061	OK	 
+REQUEST	Create Claim	2		Eligibility - claimant address POST	1519854591382	1519854592061	OK	 
+REQUEST	Create Claim	10		detectJavascript.js	1519854591928	1519854592062	OK	 
+REQUEST	Create Claim	3		Eligibility - help with fees POST	1519854591469	1519854592098	OK	 
+REQUEST	Create Claim	10		analytics.js	1519854591970	1519854592101	OK	 
+REQUEST	Create Claim	10		analytics-custom-event-sender.js?2017-10-11	1519854591972	1519854592109	OK	 
+REQUEST	Create Claim	5		Eligibility - over 18 POST	1519854591792	1519854592110	OK	 
+REQUEST	Create Claim	10		fonts.css?0.23.0	1519854591684	1519854592175	OK	 
+REQUEST	Create Claim	4		Eligibility - help with fees POST	1519854591800	1519854592279	OK	 
+REQUEST	Create Claim	7		Eligibility - claim value POST Redirect 1	1519854591973	1519854592287	OK	 
+REQUEST	Create Claim	3		Eligibility - help with fees POST Redirect 1	1519854592099	1519854592408	OK	 
+REQUEST	Create Claim	6		Eligibility - single claimant POST	1519854592043	1519854592436	OK	 
+REQUEST	Create Claim	2		Eligibility - claimant address POST Redirect 1	1519854592062	1519854592450	OK	 
+REQUEST	Create Claim	1		Eligibility - claimant address POST Redirect 1	1519854592062	1519854592474	OK	 
+REQUEST	Create Claim	4		Eligibility - help with fees POST Redirect 1	1519854592280	1519854592544	OK	 
+REQUEST	Create Claim	7		Eligibility - single claimant POST	1519854592291	1519854592569	OK	 
+REQUEST	Create Claim	8		Eligibility - tenancy deposit GET	1519854592292	1519854592653	OK	 
+REQUEST	Create Claim	5		Eligibility - help with fees POST	1519854592114	1519854592670	OK	 
+REQUEST	Create Claim	6		Eligibility - single defendant POST	1519854592440	1519854592803	OK	 
+REQUEST	Create Claim	7		Eligibility - single defendant POST	1519854592573	1519854592832	OK	 
+REQUEST	Create Claim	3		Eligibility - claimant address POST	1519854592413	1519854592942	OK	 
+REQUEST	Create Claim	5		Eligibility - help with fees POST Redirect 1	1519854592671	1519854593023	OK	 
+REQUEST	Create Claim	2		Eligibility - defendant address POST	1519854592454	1519854593129	OK	 
+REQUEST	Create Claim	7		Eligibility - over 18 POST	1519854592837	1519854593133	OK	 
+REQUEST	Create Claim	1		Eligibility - defendant address POST	1519854592478	1519854593157	OK	 
+REQUEST	Create Claim	4		Eligibility - claimant address POST	1519854592549	1519854593183	OK	 
+REQUEST	Create Claim	6		Eligibility - over 18 POST	1519854592807	1519854593186	OK	 
+REQUEST	Create Claim	8		Eligibility - tenancy deposit POST	1519854592657	1519854593362	OK	 
+REQUEST	Create Claim	1		Eligibility - defendant address POST Redirect 1	1519854593158	1519854593483	OK	 
+REQUEST	Create Claim	2		Eligibility - defendant address POST Redirect 1	1519854593130	1519854593497	OK	 
+REQUEST	Create Claim	8		Eligibility - tenancy deposit POST Redirect 1	1519854593363	1519854593504	KO	css((input[name='_csrf'],Some(value))).find.exists, found nothing
+REQUEST	Create Claim	9		Eligibility - tenancy deposit GET	1519854592995	1519854593531	OK	 
+REQUEST	Create Claim	3		Eligibility - claimant address POST Redirect 1	1519854592943	1519854593544	OK	 
+REQUEST	Create Claim	7		Eligibility - help with fees POST	1519854593136	1519854593571	OK	 
+REQUEST	Create Claim	4		Eligibility - claimant address POST Redirect 1	1519854593184	1519854593590	OK	 
+REQUEST	Create Claim	5		Eligibility - claimant address POST	1519854593026	1519854593691	OK	 
+REQUEST	Create Claim	1		Eligibility - government department POST	1519854593487	1519854593713	KO	regex(You can use this service).find.exists, found nothing
+REQUEST	Create Claim	6		Eligibility - help with fees POST	1519854593189	1519854593738	OK	 
+REQUEST	Create Claim	7		Eligibility - help with fees POST Redirect 1	1519854593572	1519854593809	OK	 
+REQUEST	Create Claim	2		Eligibility - government department POST	1519854593502	1519854593814	KO	regex(You can use this service).find.exists, found nothing
+REQUEST	Create Claim	8		Eligibility - claim value POST	1519854593505	1519854593893	OK	 
+REQUEST	Create Claim	5		Eligibility - claimant address POST Redirect 1	1519854593692	1519854593984	OK	 
+REQUEST	Create Claim	1		Task list - GET	1519854593714	1519854593996	OK	 
+REQUEST	Create Claim	3		Eligibility - defendant address POST	1519854593547	1519854594020	OK	 
+REQUEST	Create Claim	9		Eligibility - tenancy deposit POST	1519854593535	1519854594032	OK	 
+REQUEST	Create Claim	4		Eligibility - defendant address POST	1519854593594	1519854594052	OK	 
+REQUEST	Create Claim	6		Eligibility - help with fees POST Redirect 1	1519854593738	1519854594065	OK	 
+REQUEST	Create Claim	2		Task list - GET	1519854593815	1519854594090	OK	 
+REQUEST	Create Claim	8		Eligibility - claim value POST Redirect 1	1519854593894	1519854594171	OK	 
+REQUEST	Create Claim	7		Eligibility - claimant address POST	1519854593812	1519854594172	OK	 
+REQUEST	Create Claim	9		Eligibility - tenancy deposit POST Redirect 1	1519854594033	1519854594175	KO	css((input[name='_csrf'],Some(value))).find.exists, found nothing
+REQUEST	Create Claim	4		Eligibility - defendant address POST Redirect 1	1519854594053	1519854594317	OK	 
+REQUEST	Create Claim	3		Eligibility - defendant address POST Redirect 1	1519854594021	1519854594330	OK	 
+REQUEST	Create Claim	5		Eligibility - defendant address POST	1519854593987	1519854594472	OK	 
+REQUEST	Create Claim	7		Eligibility - claimant address POST Redirect 1	1519854594172	1519854594476	OK	 
+REQUEST	Create Claim	8		Eligibility - single claimant POST	1519854594174	1519854594553	OK	 
+REQUEST	Create Claim	10		Eligibility - tenancy deposit GET	1519854594173	1519854594557	OK	 
+REQUEST	Create Claim	4		Eligibility - government department POST	1519854594320	1519854594594	KO	regex(You can use this service).find.exists, found nothing
+REQUEST	Create Claim	6		Eligibility - claimant address POST	1519854594068	1519854594604	OK	 
+REQUEST	Create Claim	3		Eligibility - government department POST	1519854594333	1519854594638	KO	regex(You can use this service).find.exists, found nothing
+REQUEST	Create Claim	9		Eligibility - claim value POST	1519854594176	1519854594746	OK	 
+REQUEST	Create Claim	5		Eligibility - defendant address POST Redirect 1	1519854594473	1519854594769	OK	 

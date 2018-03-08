@@ -1,0 +1,22 @@
+RUN	uk.gov.hmcts.reform.cmc.performance.simulations.CreateClaimSimulation		createclaimsimulation	1519920310072	 	2.0
+USER	Create Claim	1	START	1519920310501	1519920310501
+REQUEST	Create Claim	1		Trigger login	1519920310526	1519920310716	OK	 
+REQUEST	Create Claim	1		Trigger login Redirect 1	1519920310738	1519920310792	OK	 
+REQUEST	Create Claim	1		Trigger login Redirect 2	1519920310795	1519920311247	OK	 
+REQUEST	Create Claim	1		Login - submit	1519920312283	1519920312714	OK	 
+REQUEST	Create Claim	1		Login - submit Redirect 1	1519920312715	1519920313225	OK	 
+REQUEST	Create Claim	1		Login - submit Redirect 2	1519920313227	1519920313745	KO	regex(Make a new money claim).find.exists, found nothing
+REQUEST	Create Claim	1		Make a new money claim	1519920323745	1519920323917	OK	 
+REQUEST	Create Claim	1		Eligibility start	1519920323920	1519920324059	OK	 
+REQUEST	Create Claim	1		Find out if you can use this service	1519920326045	1519920326432	OK	 
+REQUEST	Create Claim	1		Eligibility - Total amount you’re claiming	1519920328446	1519920331399	OK	 
+REQUEST	Create Claim	1		Eligibility - help with fees POST	1519920333388	1519920333485	OK	 
+REQUEST	Create Claim	1		Eligibility - claimant address POST	1519920335497	1519920335626	OK	 
+REQUEST	Create Claim	1		Eligibility - defendant address POST	1519920337626	1519920337745	OK	 
+REQUEST	Create Claim	1		Eligibility - over 18 POST	1519920339745	1519920339817	OK	 
+REQUEST	Create Claim	1		Eligibility - PERSONAL_CLAIM claimant POST	1519920341817	1519920341957	OK	 
+REQUEST	Create Claim	1		Eligibility - single defendant POST	1519920343956	1519920344033	OK	 
+REQUEST	Create Claim	1		Eligibility - government department POST	1519920346046	1519920346138	OK	 
+REQUEST	Create Claim	1		Eligibility - tenancy deposit POST	1519920348126	1519920348345	KO	css((input[name='_csrf'],Some(value))).find.exists, found nothing
+REQUEST	Create Claim	1		request_174	1519920350356	1519920350701	KO	regex(You can use this service).find.exists, found nothing
+USER	Create Claim	1	END	1519920310501	1519920352708

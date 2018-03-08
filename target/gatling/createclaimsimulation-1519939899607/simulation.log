@@ -1,0 +1,53 @@
+RUN	uk.gov.hmcts.reform.cmc.performance.simulations.CreateClaimSimulation		createclaimsimulation	1519939899607	 	2.0
+USER	Create Claim	1	START	1519939900080	1519939900080
+REQUEST	Create Claim	1		Trigger login	1519939900109	1519939900300	OK	 
+REQUEST	Create Claim	1		Trigger login Redirect 1	1519939900321	1519939900361	OK	 
+REQUEST	Create Claim	1		Trigger login Redirect 2	1519939900363	1519939900697	OK	 
+REQUEST	Create Claim	1		Login - submit	1519939905721	1519939906330	OK	 
+REQUEST	Create Claim	1		Make a new money claim	1519939916344	1519939916400	OK	 
+REQUEST	Create Claim	1		Make a new money claim Redirect 1	1519939916402	1519939916567	OK	 
+REQUEST	Create Claim	1		Eligibility start	1519939916569	1519939916611	OK	 
+REQUEST	Create Claim	1		Eligibility start Redirect 1	1519939916612	1519939916786	OK	 
+REQUEST	Create Claim	1		Find out if you can use this service	1519939918774	1519939918828	OK	 
+REQUEST	Create Claim	1		Find out if you can use this service Redirect 1	1519939918829	1519939919005	OK	 
+REQUEST	Create Claim	1		Eligibility - Total amount you’re claiming	1519939921005	1519939921127	OK	 
+REQUEST	Create Claim	1		Eligibility - help with fees POST	1519939923133	1519939923258	OK	 
+REQUEST	Create Claim	1		Eligibility - claimant address POST	1519939925252	1519939925369	OK	 
+REQUEST	Create Claim	1		Eligibility - defendant address POST	1519939927372	1519939927501	OK	 
+REQUEST	Create Claim	1		Eligibility - over 18 POST	1519939929515	1519939929641	OK	 
+REQUEST	Create Claim	1		Eligibility - PERSONAL_CLAIM claimant POST	1519939931642	1519939931760	OK	 
+REQUEST	Create Claim	1		Eligibility - single defendant POST	1519939933753	1519939933866	OK	 
+REQUEST	Create Claim	1		Eligibility - government department POST	1519939935875	1519939935988	OK	 
+REQUEST	Create Claim	1		Eligibility - tenancy deposit POST	1519939937982	1519939938102	OK	 
+REQUEST	Create Claim	1		Eligible Continue	1519939940112	1519939940290	OK	 
+REQUEST	Create Claim	1		Task list - GET	1519939942292	1519939942364	OK	 
+REQUEST	Create Claim	1		Task list - GET Redirect 1	1519939942366	1519939942583	OK	 
+REQUEST	Create Claim	1		Resolving this dispute - GET	1519939944584	1519939944640	OK	 
+REQUEST	Create Claim	1		Resolving this dispute - GET Redirect 1	1519939944642	1519939944903	OK	 
+REQUEST	Create Claim	1		Resolving this dispute - POST	1519939945903	1519939946028	OK	 
+REQUEST	Create Claim	1		Completing claim - GET	1519939948022	1519939948074	OK	 
+REQUEST	Create Claim	1		Completing claim - GET Redirect 1	1519939948075	1519939948228	OK	 
+REQUEST	Create Claim	1		Completing claim - POST	1519939950223	1519939950338	OK	 
+REQUEST	Create Claim	1		Party type selection - GET	1519939952345	1519939952389	OK	 
+REQUEST	Create Claim	1		Party type selection - GET Redirect 1	1519939952391	1519939952533	OK	 
+REQUEST	Create Claim	1		Party type selection - POST	1519939954542	1519939954657	OK	 
+REQUEST	Create Claim	1		Your details - POST	1519939957654	1519939957781	OK	 
+REQUEST	Create Claim	1		Date of birth - POST	1519939959785	1519939959936	OK	 
+REQUEST	Create Claim	1		Mobile number - POST	1519939961934	1519939962057	OK	 
+REQUEST	Create Claim	1		Party type selection - GET	1519939963055	1519939963122	OK	 
+REQUEST	Create Claim	1		Party type selection - GET Redirect 1	1519939963124	1519939963308	OK	 
+REQUEST	Create Claim	1		Party type selection - POST	1519939965305	1519939965424	OK	 
+REQUEST	Create Claim	1		Their details - POST	1519939968433	1519939968559	OK	 
+REQUEST	Create Claim	1		Email address - POST	1519939970554	1519939970678	OK	 
+REQUEST	Create Claim	1		Amount - GET	1519939972685	1519939972747	OK	 
+REQUEST	Create Claim	1		Amount - GET Redirect 1	1519939972748	1519939972903	OK	 
+REQUEST	Create Claim	1		Amount - POST	1519939974904	1519939975011	OK	 
+REQUEST	Create Claim	1		Interest - POST	1519939978014	1519939978137	OK	 
+REQUEST	Create Claim	1		Fees - POST	1519939980133	1519939980218	OK	 
+REQUEST	Create Claim	1		Total - POST	1519939982214	1519939982302	OK	 
+REQUEST	Create Claim	1		Reason - GET	1519939983313	1519939983362	OK	 
+REQUEST	Create Claim	1		Reason - GET Redirect 1	1519939983363	1519939983612	OK	 
+REQUEST	Create Claim	1		Reason - POST	1519939985615	1519939985734	OK	 
+REQUEST	Create Claim	1		Check and send - GET	1519939987734	1519939987780	OK	 
+REQUEST	Create Claim	1		Check and send - GET Redirect 1	1519939987781	1519939988015	OK	 
+USER	Create Claim	1	END	1519939900080	1519939990015

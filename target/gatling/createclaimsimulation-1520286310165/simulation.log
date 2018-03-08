@@ -1,0 +1,65 @@
+RUN	uk.gov.hmcts.reform.cmc.performance.simulations.CreateClaimSimulation		createclaimsimulation	1520286310165	 	2.0
+USER	Create Claim	1	START	1520286310627	1520286310627
+REQUEST	Create Claim	1		Trigger login	1520286310653	1520286310884	OK	 
+REQUEST	Create Claim	1		Trigger login Redirect 1	1520286310913	1520286311004	OK	 
+REQUEST	Create Claim	1		Trigger login Redirect 2	1520286311006	1520286311355	OK	 
+REQUEST	Create Claim	1		Login - submit	1520286316383	1520286316876	OK	 
+REQUEST	Create Claim	1		Login - submit Redirect 1	1520286316879	1520286317702	OK	 
+REQUEST	Create Claim	1		Login - submit Redirect 2	1520286317706	1520286317932	OK	 
+REQUEST	Create Claim	1		Eligibility start	1520286327937	1520286328073	OK	 
+REQUEST	Create Claim	1		Eligibility - claim value GET	1520286330076	1520286330497	OK	 
+REQUEST	Create Claim	1		Eligibility - claim value POST	1520286330503	1520286331008	OK	 
+REQUEST	Create Claim	1		Eligibility - claim value POST Redirect 1	1520286331010	1520286331368	OK	 
+REQUEST	Create Claim	1		Eligibility - help with fees POST	1520286331375	1520286331827	OK	 
+REQUEST	Create Claim	1		Eligibility - help with fees POST Redirect 1	1520286331829	1520286332178	OK	 
+REQUEST	Create Claim	1		Eligibility - claimant address POST	1520286332183	1520286332749	OK	 
+REQUEST	Create Claim	1		Eligibility - claimant address POST Redirect 1	1520286332751	1520286333194	OK	 
+REQUEST	Create Claim	1		Eligibility - defendant address POST	1520286333199	1520286333671	OK	 
+REQUEST	Create Claim	1		Eligibility - defendant address POST Redirect 1	1520286333673	1520286334011	OK	 
+REQUEST	Create Claim	1		Eligibility - over 18 POST	1520286334014	1520286334489	OK	 
+REQUEST	Create Claim	1		Eligibility - over 18 POST Redirect 1	1520286334491	1520286334833	OK	 
+REQUEST	Create Claim	1		Eligibility - single claimant POST	1520286334837	1520286335411	OK	 
+REQUEST	Create Claim	1		Eligibility - single claimant POST Redirect 1	1520286335413	1520286335751	OK	 
+REQUEST	Create Claim	1		Eligibility - single defendant POST	1520286335755	1520286336229	OK	 
+REQUEST	Create Claim	1		Eligibility - single defendant POST Redirect 1	1520286336231	1520286336577	OK	 
+REQUEST	Create Claim	1		Eligibility - government department POST	1520286336582	1520286337050	OK	 
+REQUEST	Create Claim	1		Eligibility - government department POST Redirect 1	1520286337052	1520286337501	OK	 
+REQUEST	Create Claim	1		Eligibility - tenancy deposit POST	1520286337505	1520286337971	OK	 
+REQUEST	Create Claim	1		Eligibility - tenancy deposit POST Redirect 1	1520286337973	1520286338147	OK	 
+REQUEST	Create Claim	1		Task list - GET	1520286338150	1520286338529	OK	 
+REQUEST	Create Claim	1		Resolving this dispute - GET	1520286340486	1520286340870	OK	 
+REQUEST	Create Claim	1		Resolving this dispute - POST	1520286341866	1520286342375	OK	 
+REQUEST	Create Claim	1		Resolving this dispute - POST Redirect 1	1520286342377	1520286342713	OK	 
+REQUEST	Create Claim	1		Completing claim - GET	1520286344727	1520286345037	OK	 
+REQUEST	Create Claim	1		Completing claim - POST	1520286347037	1520286347495	OK	 
+REQUEST	Create Claim	1		Completing claim - POST Redirect 1	1520286347497	1520286347836	OK	 
+REQUEST	Create Claim	1		Party type selection - GET	1520286349837	1520286350201	OK	 
+REQUEST	Create Claim	1		Party type selection - POST	1520286352197	1520286352717	OK	 
+REQUEST	Create Claim	1		Party type selection - POST Redirect 1	1520286352719	1520286353113	OK	 
+REQUEST	Create Claim	1		Your details - POST	1520286356117	1520286356916	OK	 
+REQUEST	Create Claim	1		Your details - POST Redirect 1	1520286356917	1520286357225	OK	 
+REQUEST	Create Claim	1		Date of birth - POST	1520286359227	1520286359783	OK	 
+REQUEST	Create Claim	1		Date of birth - POST Redirect 1	1520286359785	1520286360091	OK	 
+REQUEST	Create Claim	1		Mobile number - POST	1520286362086	1520286362548	OK	 
+REQUEST	Create Claim	1		Mobile number - POST Redirect 1	1520286362550	1520286362891	OK	 
+REQUEST	Create Claim	1		Party type selection - GET	1520286363886	1520286364218	OK	 
+REQUEST	Create Claim	1		Party type selection - POST	1520286366226	1520286366644	OK	 
+REQUEST	Create Claim	1		Party type selection - POST Redirect 1	1520286366645	1520286366994	OK	 
+REQUEST	Create Claim	1		Their details - POST	1520286369987	1520286370741	OK	 
+REQUEST	Create Claim	1		Their details - POST Redirect 1	1520286370743	1520286371053	OK	 
+REQUEST	Create Claim	1		Email address - POST	1520286373066	1520286373511	OK	 
+REQUEST	Create Claim	1		Email address - POST Redirect 1	1520286373513	1520286373851	OK	 
+REQUEST	Create Claim	1		Amount - GET	1520286375847	1520286376313	OK	 
+REQUEST	Create Claim	1		Amount - POST	1520286378316	1520286378832	OK	 
+REQUEST	Create Claim	1		Amount - POST Redirect 1	1520286378834	1520286379168	OK	 
+REQUEST	Create Claim	1		Interest - POST	1520286382167	1520286382722	OK	 
+REQUEST	Create Claim	1		Interest - POST Redirect 1	1520286382724	1520286383367	OK	 
+REQUEST	Create Claim	1		Fees - POST	1520286385366	1520286385691	OK	 
+REQUEST	Create Claim	1		Fees - POST Redirect 1	1520286385693	1520286386102	OK	 
+REQUEST	Create Claim	1		Total - POST	1520286388117	1520286388456	OK	 
+REQUEST	Create Claim	1		Total - POST Redirect 1	1520286388458	1520286388795	OK	 
+REQUEST	Create Claim	1		Reason - GET	1520286389786	1520286390230	OK	 
+REQUEST	Create Claim	1		Reason - POST	1520286392227	1520286392757	OK	 
+REQUEST	Create Claim	1		Reason - POST Redirect 1	1520286392759	1520286393110	OK	 
+REQUEST	Create Claim	1		Check and send - GET	1520286395107	1520286395695	OK	 
+USER	Create Claim	1	END	1520286310627	1520286397698

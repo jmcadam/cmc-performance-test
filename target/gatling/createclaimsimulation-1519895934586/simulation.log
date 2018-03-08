@@ -1,0 +1,57 @@
+RUN	uk.gov.hmcts.reform.cmc.performance.simulations.CreateClaimSimulation		createclaimsimulation	1519895934586	 	2.0
+USER	Create Claim	1	START	1519895935017	1519895935017
+REQUEST	Create Claim	1		Trigger login	1519895935043	1519895936309	OK	 
+REQUEST	Create Claim	1		Trigger login Redirect 1	1519895936332	1519895936361	OK	 
+REQUEST	Create Claim	1		Trigger login Redirect 2	1519895936363	1519895936700	OK	 
+REQUEST	Create Claim	1		Login - submit	1519895937726	1519895938131	OK	 
+REQUEST	Create Claim	1		Login - submit Redirect 1	1519895938132	1519895938643	OK	 
+REQUEST	Create Claim	1		Login - submit Redirect 2	1519895938645	1519895938957	OK	 
+REQUEST	Create Claim	1		Eligibility start	1519895948960	1519895949054	OK	 
+REQUEST	Create Claim	1		Eligibility - tenancy deposit GET	1519895951050	1519895951341	OK	 
+REQUEST	Create Claim	1		Eligibility - tenancy deposit POST	1519895951346	1519895951751	OK	 
+REQUEST	Create Claim	1		Eligibility - tenancy deposit POST Redirect 1	1519895951752	1519895951833	KO	css((input[name='_csrf'],Some(value))).find.exists, found nothing
+REQUEST	Create Claim	1		Eligibility - claim value POST	1519895951846	1519895952182	OK	 
+REQUEST	Create Claim	1		Eligibility - claim value POST Redirect 1	1519895952183	1519895952467	OK	 
+REQUEST	Create Claim	1		Eligibility - single claimant POST	1519895952470	1519895952776	OK	 
+REQUEST	Create Claim	1		Eligibility - single defendant POST	1519895952782	1519895952991	OK	 
+REQUEST	Create Claim	1		Eligibility - over 18 POST	1519895952995	1519895953288	OK	 
+REQUEST	Create Claim	1		Eligibility - help with fees POST	1519895953291	1519895953696	OK	 
+REQUEST	Create Claim	1		Eligibility - help with fees POST Redirect 1	1519895953697	1519895954003	OK	 
+REQUEST	Create Claim	1		Eligibility - claimant address POST	1519895954007	1519895954412	OK	 
+REQUEST	Create Claim	1		Eligibility - claimant address POST Redirect 1	1519895954413	1519895954661	OK	 
+REQUEST	Create Claim	1		Eligibility - defendant address POST	1519895954667	1519895955029	OK	 
+REQUEST	Create Claim	1		Eligibility - defendant address POST Redirect 1	1519895955031	1519895955334	OK	 
+REQUEST	Create Claim	1		Eligibility - government department POST	1519895955338	1519895955650	KO	regex(You can use this service).find.exists, found nothing
+REQUEST	Create Claim	1		Task list - GET	1519895955653	1519895956054	OK	 
+REQUEST	Create Claim	1		Resolving this dispute - GET	1519895958021	1519895958304	OK	 
+REQUEST	Create Claim	1		Resolving this dispute - POST	1519895959301	1519895959648	OK	 
+REQUEST	Create Claim	1		Resolving this dispute - POST Redirect 1	1519895959649	1519895959942	OK	 
+REQUEST	Create Claim	1		Completing claim - GET	1519895961950	1519895962157	OK	 
+REQUEST	Create Claim	1		Completing claim - POST	1519895964159	1519895964652	OK	 
+REQUEST	Create Claim	1		Completing claim - POST Redirect 1	1519895964655	1519895964960	OK	 
+REQUEST	Create Claim	1		Party type selection - GET	1519895966960	1519895967213	OK	 
+REQUEST	Create Claim	1		Party type selection - POST	1519895969210	1519895969465	OK	 
+REQUEST	Create Claim	1		Party type selection - POST Redirect 1	1519895969466	1519895969881	OK	 
+REQUEST	Create Claim	1		Your details - POST	1519895972879	1519895973567	OK	 
+REQUEST	Create Claim	1		Date of birth - POST	1519895975581	1519895975927	OK	 
+REQUEST	Create Claim	1		Mobile number - POST	1519895977921	1519895978179	OK	 
+REQUEST	Create Claim	1		Party type selection - GET	1519895979178	1519895979502	OK	 
+REQUEST	Create Claim	1		Party type selection - POST	1519895981501	1519895982225	OK	 
+REQUEST	Create Claim	1		Party type selection - POST Redirect 1	1519895982226	1519895982767	OK	 
+REQUEST	Create Claim	1		Their details - POST	1519895985780	1519895986362	OK	 
+REQUEST	Create Claim	1		Email address - POST	1519895988350	1519895988618	OK	 
+REQUEST	Create Claim	1		Amount - GET	1519895990630	1519895990970	OK	 
+REQUEST	Create Claim	1		Amount - POST	1519895992970	1519895993427	OK	 
+REQUEST	Create Claim	1		Amount - POST Redirect 1	1519895993428	1519895993737	OK	 
+REQUEST	Create Claim	1		Interest - POST	1519895996740	1519895997215	OK	 
+REQUEST	Create Claim	1		Interest - POST Redirect 1	1519895997217	1519895997732	OK	 
+REQUEST	Create Claim	1		Fees - POST	1519895999727	1519895999981	OK	 
+REQUEST	Create Claim	1		Fees - POST Redirect 1	1519895999982	1519896000389	OK	 
+REQUEST	Create Claim	1		Total - POST	1519896002390	1519896002643	OK	 
+REQUEST	Create Claim	1		Total - POST Redirect 1	1519896002644	1519896002850	OK	 
+REQUEST	Create Claim	1		Reason - GET	1519896003849	1519896004233	OK	 
+REQUEST	Create Claim	1		Reason - POST	1519896006230	1519896006636	OK	 
+REQUEST	Create Claim	1		Reason - POST Redirect 1	1519896006637	1519896006944	OK	 
+REQUEST	Create Claim	1		Check and send - GET	1519896008950	1519896009197	OK	 
+REQUEST	Create Claim	1		Check and send - GET Redirect 1	1519896009198	1519896009505	OK	 
+USER	Create Claim	1	END	1519895935017	1519896011511

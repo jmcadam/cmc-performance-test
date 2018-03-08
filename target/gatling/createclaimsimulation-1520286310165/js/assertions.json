@@ -1,0 +1,10 @@
+{
+  "simulation": "uk.gov.hmcts.reform.cmc.performance.simulations.CreateClaimSimulation",
+  "simulationId": "createclaimsimulation",
+  "start": 1520286310165,
+  "description": "",
+  "scenarios": ["Create Claim"],
+  "assertions": [
+
+  ]
+}

@@ -1,0 +1,22 @@
+RUN	uk.gov.hmcts.reform.cmc.performance.simulations.CreateClaimSimulation		createclaimsimulation	1519921397769	 	2.0
+USER	Create Claim	1	START	1519921398236	1519921398236
+REQUEST	Create Claim	1		Trigger login	1519921398263	1519921398428	OK	 
+REQUEST	Create Claim	1		Trigger login Redirect 1	1519921398450	1519921398468	OK	 
+REQUEST	Create Claim	1		Trigger login Redirect 2	1519921398470	1519921398687	OK	 
+REQUEST	Create Claim	1		Login - submit	1519921403709	1519921404195	OK	 
+REQUEST	Create Claim	1		Login - submit Redirect 1	1519921404196	1519921404811	OK	 
+REQUEST	Create Claim	1		Login - submit Redirect 2	1519921404813	1519921405231	KO	regex(Make a new money claim).find.exists, found nothing
+REQUEST	Create Claim	1		Make a new money claim	1519921415237	1519921415355	OK	 
+REQUEST	Create Claim	1		Eligibility start	1519921415358	1519921415473	OK	 
+REQUEST	Create Claim	1		Find out if you can use this service	1519921417476	1519921418026	OK	 
+REQUEST	Create Claim	1		Eligibility - Total amount you’re claiming	1519921420026	1519921420146	OK	 
+REQUEST	Create Claim	1		Eligibility - help with fees POST	1519921422148	1519921422241	OK	 
+REQUEST	Create Claim	1		Eligibility - claimant address POST	1519921424237	1519921424328	OK	 
+REQUEST	Create Claim	1		Eligibility - defendant address POST	1519921426336	1519921426427	OK	 
+REQUEST	Create Claim	1		Eligibility - over 18 POST	1519921428426	1519921428518	OK	 
+REQUEST	Create Claim	1		Eligibility - PERSONAL_CLAIM claimant POST	1519921430516	1519921430593	OK	 
+REQUEST	Create Claim	1		Eligibility - single defendant POST	1519921432606	1519921432669	OK	 
+REQUEST	Create Claim	1		Eligibility - government department POST	1519921434657	1519921434753	OK	 
+REQUEST	Create Claim	1		Eligibility - tenancy deposit POST	1519921436767	1519921436876	OK	 
+REQUEST	Create Claim	1		Eligible Continue	1519921438867	1519921439321	KO	regex(You can use this service).find.exists, found nothing
+USER	Create Claim	1	END	1519921398236	1519921441317

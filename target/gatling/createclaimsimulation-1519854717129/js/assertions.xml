@@ -1,0 +1,251 @@
+<testsuite name="uk.gov.hmcts.reform.cmc.performance.simulations.CreateClaimSimulation" tests="83" errors="0" failures="3" time="0">
+<testcase name="Global: max of response time is less than 5000.0" status="true" time="0">
+  <system-out>Global: max of response time is less than 5000.0</system-out>
+</testcase>
+<testcase name="Trigger login: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Trigger login: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Trigger login Redirect 1: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Trigger login Redirect 1: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Trigger login Redirect 2: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Trigger login Redirect 2: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="govuk-template.css?0.23.0 Redirect 2: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>govuk-template.css?0.23.0 Redirect 2: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="govuk-template-print.css?0.23.0 Redirect 2: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>govuk-template-print.css?0.23.0 Redirect 2: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="favicon.ico?0.23.0 Redirect 2: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>favicon.ico?0.23.0 Redirect 2: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="fonts.css?0.23.0 Redirect 2: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>fonts.css?0.23.0 Redirect 2: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="application.css Redirect 2: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>application.css Redirect 2: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="gov.uk_logotype_crown_invert_trans.png?0.23.0 Redirect 2: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>gov.uk_logotype_crown_invert_trans.png?0.23.0 Redirect 2: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="govuk-template.js?0.23.0 Redirect 2: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>govuk-template.js?0.23.0 Redirect 2: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="details.polyfill.js Redirect 2: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>details.polyfill.js Redirect 2: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="jquery-1.11.3.js Redirect 2: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>jquery-1.11.3.js Redirect 2: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="selection-buttons.js Redirect 2: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>selection-buttons.js Redirect 2: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="shim-links-with-button-role.js Redirect 2: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>shim-links-with-button-role.js Redirect 2: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="show-hide-content.js Redirect 2: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>show-hide-content.js Redirect 2: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="application.js Redirect 2: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>application.js Redirect 2: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Login - submit: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Login - submit: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Login - submit Redirect 1: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Login - submit Redirect 1: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Login - submit Redirect 2: count of failed requests is less than 1.0" status="false" time="0">
+  <failure type="Login - submit Redirect 2">Actual value: 1.0</failure>
+</testcase>
+<testcase name="Eligibility start: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Eligibility start: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="govuk-template-print.css?0.23.0: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>govuk-template-print.css?0.23.0: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="govuk-template.css?0.23.0: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>govuk-template.css?0.23.0: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="fonts.css?0.23.0: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>fonts.css?0.23.0: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="favicon.ico?0.23.0: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>favicon.ico?0.23.0: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="application.css: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>application.css: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="gov.uk_logotype_crown_invert_trans.png?0.23.0: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>gov.uk_logotype_crown_invert_trans.png?0.23.0: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="govuk-template.js?0.23.0: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>govuk-template.js?0.23.0: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="jquery.min.js: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>jquery.min.js: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="shim-links-with-button-role.js: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>shim-links-with-button-role.js: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="show-hide-content.js: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>show-hide-content.js: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="application.js: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>application.js: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="detectJavascript.js: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>detectJavascript.js: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="analytics.js: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>analytics.js: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="analytics-custom-event-sender.js?2017-10-11: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>analytics-custom-event-sender.js?2017-10-11: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Eligibility - tenancy deposit GET: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Eligibility - tenancy deposit GET: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Eligibility - tenancy deposit POST: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Eligibility - tenancy deposit POST: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Eligibility - tenancy deposit POST Redirect 1: count of failed requests is less than 1.0" status="false" time="0">
+  <failure type="Eligibility - tenancy deposit POST Redirect 1">Actual value: 1.0</failure>
+</testcase>
+<testcase name="Eligibility - claim value POST: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Eligibility - claim value POST: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Eligibility - claim value POST Redirect 1: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Eligibility - claim value POST Redirect 1: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Eligibility - single claimant POST: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Eligibility - single claimant POST: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Eligibility - single defendant POST: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Eligibility - single defendant POST: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Eligibility - over 18 POST: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Eligibility - over 18 POST: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Eligibility - help with fees POST: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Eligibility - help with fees POST: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Eligibility - help with fees POST Redirect 1: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Eligibility - help with fees POST Redirect 1: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Eligibility - claimant address POST: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Eligibility - claimant address POST: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Eligibility - claimant address POST Redirect 1: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Eligibility - claimant address POST Redirect 1: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Eligibility - defendant address POST: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Eligibility - defendant address POST: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Eligibility - defendant address POST Redirect 1: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Eligibility - defendant address POST Redirect 1: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Eligibility - government department POST: count of failed requests is less than 1.0" status="false" time="0">
+  <failure type="Eligibility - government department POST">Actual value: 1.0</failure>
+</testcase>
+<testcase name="Task list - GET: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Task list - GET: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Resolving this dispute - GET: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Resolving this dispute - GET: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Resolving this dispute - POST: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Resolving this dispute - POST: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Resolving this dispute - POST Redirect 1: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Resolving this dispute - POST Redirect 1: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Completing claim - GET: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Completing claim - GET: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Completing claim - POST: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Completing claim - POST: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Completing claim - POST Redirect 1: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Completing claim - POST Redirect 1: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Party type selection - GET: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Party type selection - GET: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Party type selection - POST: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Party type selection - POST: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Party type selection - POST Redirect 1: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Party type selection - POST Redirect 1: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="classlist-polyfill.js Redirect 1: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>classlist-polyfill.js Redirect 1: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="nodelist-foreach-polyfill.js Redirect 1: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>nodelist-foreach-polyfill.js Redirect 1: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="postcode-lookup.js Redirect 1: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>postcode-lookup.js Redirect 1: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="startswith-polyfill.js Redirect 1: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>startswith-polyfill.js Redirect 1: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Your details - POST: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Your details - POST: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Date of birth - POST: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Date of birth - POST: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Mobile number - POST: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Mobile number - POST: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Their details - POST: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Their details - POST: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Email address - POST: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Email address - POST: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Amount - GET: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Amount - GET: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Amount - POST: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Amount - POST: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Amount - POST Redirect 1: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Amount - POST Redirect 1: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Interest - POST: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Interest - POST: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Interest - POST Redirect 1: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Interest - POST Redirect 1: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Fees - POST: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Fees - POST: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Fees - POST Redirect 1: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Fees - POST Redirect 1: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Total - POST: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Total - POST: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Total - POST Redirect 1: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Total - POST Redirect 1: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Reason - GET: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Reason - GET: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Reason - POST: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Reason - POST: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Reason - POST Redirect 1: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Reason - POST Redirect 1: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Check and send - GET: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Check and send - GET: count of failed requests is less than 1.0</system-out>
+</testcase>
+<testcase name="Check and send - GET Redirect 1: count of failed requests is less than 1.0" status="true" time="0">
+  <system-out>Check and send - GET Redirect 1: count of failed requests is less than 1.0</system-out>
+</testcase>
+</testsuite>
