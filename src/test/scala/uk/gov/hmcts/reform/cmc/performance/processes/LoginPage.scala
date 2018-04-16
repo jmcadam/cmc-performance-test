@@ -12,7 +12,7 @@ object LoginPage {
 
   val thinktime = Environment.thinkTime
   
-    val feeder = csv("IdamUserDataTestEnv.csv").circular 
+    val feeder = csv("IdamUserDataPreprodEnv.csv").circular
    
   //def logIn(user: User)(implicit postHeaders: Map[String, String]): ChainBuilder = {
  val logIn =   exec(http("TX01_CMC_Login_LandingLoginPage")
@@ -45,6 +45,13 @@ object LoginPage {
       
       .pause(thinktime)
  // }
+
+  val citizenLogout = exec(http("TX050_CMC_Logout")
+    .get("/logout")
+    .check(regex("Sign in")))
+    .pause(thinktime)
+
+
 
   //def legalLogIn(user: User)(implicit postHeaders: Map[String, String]): ChainBuilder = {
    val legalLogIn =  exec(http("Trigger login")

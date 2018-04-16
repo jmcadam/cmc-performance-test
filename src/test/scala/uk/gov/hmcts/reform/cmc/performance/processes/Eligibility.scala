@@ -13,7 +13,8 @@ object Eligibility {
   val thinktime = Environment.thinkTime
 
   def run(implicit postHeaders: Map[String, String]): ChainBuilder = {
-    val eligibilityPath = "/claim/eligibility"
+   // val eligibilityPath = "/claim/eligibility"
+    val eligibilityPath = "/eligibility"
 
       exec(http("TX03_CMC_Eligibility_MakeNewClaim")
 			.get("/claim/start")
@@ -22,16 +23,17 @@ object Eligibility {
 		
      .exec(http("TX04_CMC_Eligibility_FindoutEligibilityPage")
       .get(eligibilityPath)
-      .check(regex("Find out if you can use this service")))
+       .check(regex("Find out if you can use this service")))
+      //.check(regex("Try the new online service")))
       .pause(thinktime)
       
-      .exec(http("TX05_CMC_Eligibility_TotalAmountYouAreclaiming")
+      .exec(http("TX05_CMC_Eligibility_TotalAmountYouAreclaiming_GET")
         .get(s"$eligibilityPath/claim-value")
         .check(CsrfCheck.save)
         .check(regex("Total amount you’re claiming")))
         .pause(thinktime)
         
-      .exec(http("TX06_CMC_Eligibility_TotalAmountYouAreclaiming")
+      .exec(http("TX06_CMC_Eligibility_TotalAmountYouAreclaiming_POST")
         .post(s"$eligibilityPath/claim-value")
         .formParam(csrfParameter, csrfTemplate)
         .formParam("claimValue", "UNDER_10000")
@@ -46,7 +48,7 @@ object Eligibility {
         .formParam("helpWithFees", "no")
         .check(CurrentPageCheck.save)
         .check(CsrfCheck.save)
-        .check(regex("Do you live in the UK?")))
+        .check(regex("Do you have an address in the UK"))) //
         .pause(thinktime)
         
       .exec(http("TX08_CMC_Eligibility_ClaimantAddress")
@@ -64,7 +66,7 @@ object Eligibility {
         .formParam("defendantAddress", "yes")
         .check(CurrentPageCheck.save)
         .check(CsrfCheck.save)
-        .check(regex("Are you and the person you’re claiming against 18 or older?")))
+        .check(regex("Are you 18 or over?"))) //Are you 18 or over?
         .pause(thinktime)
         
       .exec(http("TX010_CMC_Eligibility_Over18")
@@ -73,9 +75,20 @@ object Eligibility {
         .formParam("eighteenOrOver", "yes")
         .check(CurrentPageCheck.save)
         .check(CsrfCheck.save)
-        .check(regex("Who are you making the claim for?")))
+        .check(regex("Do you believe the person you’re claiming against is 18 or over?"))) //Do you believe the person you’re claiming against is 18 or over?
         .pause(thinktime)
-        
+
+        //Who are you making the claim for?
+
+        .exec(http("TX010_CMC_Eligibility_DefendantAge")
+        .post(currentPageTemplate)
+        .formParam(csrfParameter, csrfTemplate)
+        .formParam("defendantAge", "yes")
+        .check(CurrentPageCheck.save)
+        .check(CsrfCheck.save)
+        .check(regex("Who are you making the claim for?"))) //Do you believe the person you’re claiming against is 18 or over?
+        .pause(thinktime)
+
       .exec(http("TX011_CMC_Eligibility_SingleClaimant")
         .post(currentPageTemplate)
         .formParam(csrfParameter, csrfTemplate)

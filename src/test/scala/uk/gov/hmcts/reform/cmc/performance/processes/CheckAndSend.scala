@@ -57,11 +57,17 @@ object CheckAndSend {
 			.formParam("chargeId", "${_csrfCardDetailPageChargeId}")
 			.check(regex("Claim submitted")))
 			.pause(thinktime)
-			
-			.exec(http("TX050_CMC_Logout")
-			.get("/logout")
-			.check(regex("Sign in")))
-			.pause(thinktime)
+
+	  /*	.exec(http("TX040_CMC_ClaimSubmitted_getPDF_GET")
+			.get("/claim/${_csrfCardDetailPageChargeId}/receipt")
+			)
+			.pause(thinktime)*/
+
+		//https://www.moneyclaims.demo.platform.hmcts.net/claim/e360df48-6ca0-48bd-aa69-c5ae7d0ad452/receipt
+		/*	.exec(http("TX050_CMC_Logout")
+				.get("/logout")
+				.check(regex("Sign in")))
+			.pause(thinktime) */
   }
 
 }

@@ -17,7 +17,7 @@ object TheirDetails {
       .get("/claim/defendant-party-type-selection")
       .check(CsrfCheck.save)
       .check(CurrentPageCheck.save)
-       .check(regex("We need to know if you’re claiming against them as an individual")))
+       .check(regex("Who are you making the claim against")))
       .pause(thinktime)
       
       .exec(http("TX026_CMC_TheirDetail_PartyTypeSelection_POST")

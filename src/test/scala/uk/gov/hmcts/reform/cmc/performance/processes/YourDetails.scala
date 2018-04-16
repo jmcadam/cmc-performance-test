@@ -68,7 +68,7 @@ object YourDetails {
         	.formParam("saveAndContinue", "Save and continue")
         .check(CsrfCheck.save)
         .check(CurrentPageCheck.save)
-        .check(regex("Add a phone number")))
+        .check(regex("Enter a contact number")))
       .pause(thinktime)
       
       .exec(http("TX024_CMC_YourDetail_AddPhoneNumber-POST")
