@@ -16,18 +16,18 @@ object Eligibility {
    // val eligibilityPath = "/claim/eligibility"
     val eligibilityPath = "/eligibility"
 
-      exec(http("TX03_CMC_Eligibility_MakeNewClaim")
-			.get("/claim/start")
-			.check(regex("Make a money claim")))
-		.pause(thinktime)
-		
-     .exec(http("TX04_CMC_Eligibility_FindoutEligibilityPage")
-      .get(eligibilityPath)
-       .check(regex("Find out if you can use this service")))
-      //.check(regex("Try the new online service")))
-      .pause(thinktime)
+//      exec(http("TX03_CMC_Eligibility_MakeNewClaim")
+//			.get("/claim/start")
+//			.check(regex("Make a money claim")))
+//		.pause(thinktime)
+//
+//     .exec(http("TX04_CMC_Eligibility_FindoutEligibilityPage")
+//      .get(eligibilityPath)
+//       .check(regex("Find out if you can use this service")))
+//      //.check(regex("Try the new online service")))
+//      .pause(thinktime)
       
-      .exec(http("TX05_CMC_Eligibility_TotalAmountYouAreclaiming_GET")
+      exec(http("TX05_CMC_Eligibility_TotalAmountYouAreclaiming_GET")
         .get(s"$eligibilityPath/claim-value")
         .check(CsrfCheck.save)
         .check(regex("Total amount you’re claiming")))
@@ -48,7 +48,7 @@ object Eligibility {
         .formParam("helpWithFees", "no")
         .check(CurrentPageCheck.save)
         .check(CsrfCheck.save)
-        .check(regex("Do you have an address in the UK"))) //
+        .check(regex("Do you have a postal address in the UK?"))) //
         .pause(thinktime)
         
       .exec(http("TX08_CMC_Eligibility_ClaimantAddress")
@@ -57,9 +57,9 @@ object Eligibility {
         .formParam("claimantAddress", "yes")
         .check(CurrentPageCheck.save)
         .check(CsrfCheck.save)
-        .check(regex("Does the person or organisation you’re claiming against have an address in England or Wales?")))
+        .check(regex("Does the person or organisation you’re claiming against have a postal address in England or Wales?")))
         .pause(thinktime)
-        
+
       .exec(http("TX09_CMC_Eligibility_DefendantAddress")
         .post(currentPageTemplate)
         .formParam(csrfParameter, csrfTemplate)

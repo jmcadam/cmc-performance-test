@@ -41,7 +41,7 @@ object LoginPage {
         .formParam("client_id", "${clientId}")
         .formParam("scope", "")
         .formParam("state", "${state}")
-        .check(regex("Make a money claim|Make a new money claim|Draft claim")))
+        .check(regex("Find out if you can make a claim using this service")))
       
       .pause(thinktime)
  // }

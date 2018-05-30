@@ -1,0 +1,10 @@
+{
+  "simulation": "uk.gov.hmcts.reform.cmc.performance.simulations.CreateDefendantSimulation",
+  "simulationId": "createdefendantsimulation",
+  "start": 1527176032993,
+  "description": "",
+  "scenarios": ["Create Defendant Response"],
+  "assertions": [
+
+  ]
+}

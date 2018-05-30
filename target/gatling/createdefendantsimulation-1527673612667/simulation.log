@@ -1,0 +1,35 @@
+RUN	uk.gov.hmcts.reform.cmc.performance.simulations.CreateDefendantSimulation		createdefendantsimulation	1527673612667	 	2.0
+USER	Create Defendant Response	1	START	1527673613297	1527673613297
+REQUEST	Create Defendant Response	1		TX01_CMC_Def_LandingPage_Get	1527673613330	1527673613466	OK	 
+REQUEST	Create Defendant Response	1		TX01_CMC_Def_LandingPage_Post	1527673616506	1527673616535	OK	 
+REQUEST	Create Defendant Response	1		TX01_CMC_Def_LandingPage_Post Redirect 1	1527673616539	1527673616574	OK	 
+REQUEST	Create Defendant Response	1		TX02_CMC_Def_Login_ClaimNumber	1527673619581	1527673619635	OK	 
+REQUEST	Create Defendant Response	1		TX02_CMC_Def_Login_ClaimNumber Redirect 1	1527673619638	1527673619833	OK	 
+REQUEST	Create Defendant Response	1		TX03_CMC_Def_Login_LoginPage	1527673622835	1527673623029	OK	 
+REQUEST	Create Defendant Response	1		TX03_CMC_Def_Login_LoginPage Redirect 1	1527673623031	1527673623439	OK	 
+REQUEST	Create Defendant Response	1		TX03_CMC_Def_Login_LoginPage Redirect 2	1527673623441	1527673623723	OK	 
+REQUEST	Create Defendant Response	1		TX04_CMC_Def_FirstContact_ClaimSummary	1527673626728	1527673627023	OK	 
+REQUEST	Create Defendant Response	1		TX04_CMC_Def_FirstContact_ClaimSummary Redirect 1	1527673627026	1527673627244	OK	 
+REQUEST	Create Defendant Response	1		TX05_CMC_Def_Login_Receiver	1527673630245	1527673630337	KO	css((.form-group>input[name='pinnumber'],Some(value))).find.exists, found nothing
+GROUP	Failed to build request TX06_CMC_Def_Login_As_Defendant: No attribute named 'continue' is defined 	1527673633345
+REQUEST	Create Defendant Response	1		TX07_CMC_Def_Response_dashBoard	1527673636360	1527673636658	OK	 
+REQUEST	Create Defendant Response	1		TX08_CMC_Def_Response_Case_TaskList_Get	1527673639655	1527673639902	OK	 
+REQUEST	Create Defendant Response	1		Response_YourDetails_Get	1527673642903	1527673643104	OK	 
+REQUEST	Create Defendant Response	1		Response_YourDetails_Post	1527673646097	1527673646216	OK	 
+REQUEST	Create Defendant Response	1		Response_DOB	1527673649220	1527673649318	OK	 
+REQUEST	Create Defendant Response	1		Response_Mobile	1527673652318	1527673652410	OK	 
+REQUEST	Create Defendant Response	1		Response_MoreTimeRequest_Get	1527673655423	1527673655556	OK	 
+REQUEST	Create Defendant Response	1		Response_MoreTimeRequest_Post	1527673655573	1527673655679	OK	 
+REQUEST	Create Defendant Response	1		Response_ResponseType_Get	1527673658662	1527673658881	OK	 
+REQUEST	Create Defendant Response	1		Response_ResponseType_Post	1527673658885	1527673658988	OK	 
+REQUEST	Create Defendant Response	1		Response_Reject_All_Of_Claim_Get	1527673661977	1527673662155	OK	 
+REQUEST	Create Defendant Response	1		Response_Reject_All_Of_Claim_Post	1527673662158	1527673662355	OK	 
+REQUEST	Create Defendant Response	1		Response_Your_Defence_Post_Get	1527673665361	1527673665630	OK	 
+REQUEST	Create Defendant Response	1		Response_Your_Defence_Post	1527673665633	1527673665726	OK	 
+REQUEST	Create Defendant Response	1		Response_TimeLine	1527673668734	1527673668834	OK	 
+REQUEST	Create Defendant Response	1		Response_Evidence	1527673671828	1527673671929	OK	 
+REQUEST	Create Defendant Response	1		Response_Free_Mediation_Get	1527673674932	1527673675044	OK	 
+REQUEST	Create Defendant Response	1		Response_Free_Mediation_Post	1527673675047	1527673675132	OK	 
+REQUEST	Create Defendant Response	1		Response_CheckAndSend_Get	1527673678130	1527673678436	OK	 
+REQUEST	Create Defendant Response	1		Response_CheckAndSend_Post	1527673678439	1527673678528	OK	 
+USER	Create Defendant Response	1	END	1527673613297	1527673681530

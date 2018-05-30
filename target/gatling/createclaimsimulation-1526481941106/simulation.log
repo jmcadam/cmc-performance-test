@@ -1,0 +1,79 @@
+RUN	uk.gov.hmcts.reform.cmc.performance.simulations.CreateClaimSimulation		createclaimsimulation	1526481941106	 	2.0
+USER	Create Claim	1	START	1526481942076	1526481942076
+REQUEST	Create Claim	1		TX01_CMC_Login_LandingLoginPage	1526481942109	1526481942679	OK	 
+REQUEST	Create Claim	1		TX01_CMC_Login_LandingLoginPage Redirect 1	1526481942730	1526481942842	OK	 
+REQUEST	Create Claim	1		TX01_CMC_Login_LandingLoginPage Redirect 2	1526481942845	1526481943564	OK	 
+REQUEST	Create Claim	1		TX02_CMC_Login_SubmitLogin	1526481946609	1526481947145	OK	 
+REQUEST	Create Claim	1		TX02_CMC_Login_SubmitLogin Redirect 1	1526481947147	1526481958192	KO	regex(Make a money claim|Make a new money claim|Draft claim).find.exists, found nothing
+REQUEST	Create Claim	1		TX03_CMC_Eligibility_MakeNewClaim	1526481961204	1526481961550	KO	regex(Make a money claim).find.exists, found nothing
+REQUEST	Create Claim	1		TX04_CMC_Eligibility_FindoutEligibilityPage	1526481964539	1526481964824	OK	 
+REQUEST	Create Claim	1		TX05_CMC_Eligibility_TotalAmountYouAreclaiming_GET	1526481967840	1526481968074	OK	 
+REQUEST	Create Claim	1		TX06_CMC_Eligibility_TotalAmountYouAreclaiming_POST	1526481971056	1526481971834	OK	 
+REQUEST	Create Claim	1		TX06_CMC_Eligibility_TotalAmountYouAreclaiming_POST Redirect 1	1526481971837	1526481972111	OK	 
+REQUEST	Create Claim	1		TX07_CMC_Eligibility_HelpWithCourtyFees	1526481975105	1526481975365	OK	 
+REQUEST	Create Claim	1		TX07_CMC_Eligibility_HelpWithCourtyFees Redirect 1	1526481975367	1526481975637	KO	regex(Do you have an address in the UK).find.exists, found nothing
+REQUEST	Create Claim	1		TX08_CMC_Eligibility_ClaimantAddress	1526481978644	1526481978953	OK	 
+REQUEST	Create Claim	1		TX08_CMC_Eligibility_ClaimantAddress Redirect 1	1526481978956	1526481979227	KO	regex(Does the person or organisation you’re claiming against have an address in England or Wales?).find.exists, found nothing
+REQUEST	Create Claim	1		TX09_CMC_Eligibility_DefendantAddress	1526481982221	1526481982418	OK	 
+REQUEST	Create Claim	1		TX09_CMC_Eligibility_DefendantAddress Redirect 1	1526481982421	1526481982655	OK	 
+REQUEST	Create Claim	1		TX010_CMC_Eligibility_Over18	1526481985665	1526481986007	OK	 
+REQUEST	Create Claim	1		TX010_CMC_Eligibility_Over18 Redirect 1	1526481986010	1526481986232	OK	 
+REQUEST	Create Claim	1		TX010_CMC_Eligibility_DefendantAge	1526481989251	1526481989523	OK	 
+REQUEST	Create Claim	1		TX010_CMC_Eligibility_DefendantAge Redirect 1	1526481989525	1526481989762	OK	 
+REQUEST	Create Claim	1		TX011_CMC_Eligibility_SingleClaimant	1526481992755	1526481992941	OK	 
+REQUEST	Create Claim	1		TX011_CMC_Eligibility_SingleClaimant Redirect 1	1526481992944	1526481993131	OK	 
+REQUEST	Create Claim	1		TX012_CMC_Eligibility_SingleDefendant	1526481996134	1526481996386	OK	 
+REQUEST	Create Claim	1		TX012_CMC_Eligibility_SingleDefendant Redirect 1	1526481996389	1526481996718	OK	 
+REQUEST	Create Claim	1		TX013_CMC_Eligibility_GovernmentDepartment	1526481999720	1526481999948	OK	 
+REQUEST	Create Claim	1		TX013_CMC_Eligibility_GovernmentDepartment Redirect 1	1526481999951	1526482000184	OK	 
+REQUEST	Create Claim	1		TX014_CMC_Eligibility_TenancyDeposit	1526482003194	1526482003393	OK	 
+REQUEST	Create Claim	1		TX014_CMC_Eligibility_TenancyDeposit Redirect 1	1526482003395	1526482003855	OK	 
+REQUEST	Create Claim	1		TX015_CMC_ResolvingThisDispute_Tasklist	1526482006843	1526482007250	OK	 
+REQUEST	Create Claim	1		TX016_CMC_ResolvingThisDispute_ResolvingThisDispute-GET	1526482010268	1526482010605	OK	 
+REQUEST	Create Claim	1		TX017_CMC_ResolvingThisDispute_ResolvingThisDispute-POST	1526482013586	1526482014036	OK	 
+REQUEST	Create Claim	1		TX017_CMC_ResolvingThisDispute_ResolvingThisDispute-POST Redirect 1	1526482014038	1526482014442	OK	 
+REQUEST	Create Claim	1		TX018_CMC_Completingclaim_CompletingClaim-GET	1526482017434	1526482018013	OK	 
+REQUEST	Create Claim	1		TX019_CMC_Completingclaim_CompletingClaim-POST	1526482021032	1526482021369	OK	 
+REQUEST	Create Claim	1		TX019_CMC_Completingclaim_CompletingClaim-POST Redirect 1	1526482021373	1526482021672	OK	 
+REQUEST	Create Claim	1		TX020_CMC_YourDetail_PartyTypeSelection-GET	1526482024674	1526482025041	OK	 
+REQUEST	Create Claim	1		TX021_CMC_YourDetail_PartyTypeSelection-POST	1526482028024	1526482028597	OK	 
+REQUEST	Create Claim	1		TX021_CMC_YourDetail_PartyTypeSelection-POST Redirect 1	1526482028599	1526482029361	OK	 
+REQUEST	Create Claim	1		TX022_CMC_YourDetail_YourDetails-POST	1526482032379	1526482032980	OK	 
+REQUEST	Create Claim	1		TX022_CMC_YourDetail_YourDetails-POST Redirect 1	1526482032982	1526482033313	OK	 
+REQUEST	Create Claim	1		TX023_CMC_YourDetail_DateOfBirth-POST	1526482036314	1526482036828	OK	 
+REQUEST	Create Claim	1		TX023_CMC_YourDetail_DateOfBirth-POST Redirect 1	1526482036830	1526482037163	OK	 
+REQUEST	Create Claim	1		TX024_CMC_YourDetail_AddPhoneNumber-POST	1526482040164	1526482040616	OK	 
+REQUEST	Create Claim	1		TX024_CMC_YourDetail_AddPhoneNumber-POST Redirect 1	1526482040617	1526482040915	OK	 
+REQUEST	Create Claim	1		TX025_CMC_TheirDetail_PartyTypeSelection_GET	1526482043914	1526482044362	OK	 
+REQUEST	Create Claim	1		TX026_CMC_TheirDetail_PartyTypeSelection_POST	1526482047370	1526482049365	OK	 
+REQUEST	Create Claim	1		TX026_CMC_TheirDetail_PartyTypeSelection_POST Redirect 1	1526482049367	1526482049657	OK	 
+REQUEST	Create Claim	1		TX027_CMC_TheirDetail_TheirDetails_POST	1526482052654	1526482053363	OK	 
+REQUEST	Create Claim	1		TX027_CMC_TheirDetail_TheirDetails_POST Redirect 1	1526482053364	1526482053790	OK	 
+REQUEST	Create Claim	1		TX028_CMC_TheirDetail_EmailAddress_POST	1526482056794	1526482057240	OK	 
+REQUEST	Create Claim	1		TX028_CMC_TheirDetail_EmailAddress_POST Redirect 1	1526482057242	1526482057610	OK	 
+REQUEST	Create Claim	1		TX029_CMC_ClaimAmout_ClaimAmount_GET	1526482060599	1526482060931	OK	 
+REQUEST	Create Claim	1		TX030_CMC_ClaimAmout_ClaimAmount_POST	1526482063937	1526482064338	OK	 
+REQUEST	Create Claim	1		TX030_CMC_ClaimAmout_ClaimAmount_POST Redirect 1	1526482064339	1526482064813	OK	 
+REQUEST	Create Claim	1		TX031_CMC_ClaimAmout_Interest_POST	1526482067820	1526482068368	OK	 
+REQUEST	Create Claim	1		TX031_CMC_ClaimAmout_Interest_POST Redirect 1	1526482068370	1526482069244	OK	 
+REQUEST	Create Claim	1		TX033_CMC_ClaimAmout_TotalAmount_POST	1526482072224	1526482072515	OK	 
+REQUEST	Create Claim	1		TX033_CMC_ClaimAmout_TotalAmount_POST Redirect 1	1526482072517	1526482072881	OK	 
+REQUEST	Create Claim	1		TX034_CMC_ClaimDetail_Reason_GET	1526482075910	1526482076292	OK	 
+REQUEST	Create Claim	1		TX035_CMC_ClaimDetail_Reason_POST	1526482079291	1526482079848	OK	 
+REQUEST	Create Claim	1		TX035_CMC_ClaimDetail_Reason_POST Redirect 1	1526482079850	1526482080209	OK	 
+REQUEST	Create Claim	1		TX035_CMC_ClaimDetail_Timeline_POST	1526482083193	1526482083687	OK	 
+REQUEST	Create Claim	1		TX035_CMC_ClaimDetail_Timeline_POST Redirect 1	1526482083689	1526482084004	OK	 
+REQUEST	Create Claim	1		TX035.1_CMC_ClaimDetail_Timeline_Evidence_POST	1526482087018	1526482087391	OK	 
+REQUEST	Create Claim	1		TX035.1_CMC_ClaimDetail_Timeline_Evidence_POST Redirect 1	1526482087394	1526482087849	OK	 
+REQUEST	Create Claim	1		TX036_CMC_CheckAndSend_Checkandsend_GET	1526482090854	1526482091306	OK	 
+REQUEST	Create Claim	1		TX037_CMC_CheckAndSend_Checkandsend_POST	1526482094303	1526482094678	OK	 
+REQUEST	Create Claim	1		TX037_CMC_CheckAndSend_Checkandsend_POST Redirect 1	1526482094680	1526482095769	OK	 
+REQUEST	Create Claim	1		TX037_CMC_CheckAndSend_Checkandsend_POST Redirect 2	1526482095771	1526482099886	OK	 
+REQUEST	Create Claim	1		TX037_CMC_CheckAndSend_Checkandsend_POST Redirect 3	1526482099888	1526482100115	OK	 
+REQUEST	Create Claim	1		TX038_CMC_CardDetail_SubmitCardDetail	1526482103113	1526482103493	OK	 
+REQUEST	Create Claim	1		TX038_CMC_CardDetail_SubmitCardDetail Redirect 1	1526482103493	1526482103711	OK	 
+REQUEST	Create Claim	1		TX039_CMC_CardDetail_ConfirmCardDetail	1526482106713	1526482107102	OK	 
+REQUEST	Create Claim	1		TX039_CMC_CardDetail_ConfirmCardDetail Redirect 1	1526482107104	1526482107533	OK	 
+REQUEST	Create Claim	1		TX039_CMC_CardDetail_ConfirmCardDetail Redirect 2	1526482107534	1526482109945	OK	 
+REQUEST	Create Claim	1		TX039_CMC_CardDetail_ConfirmCardDetail Redirect 3	1526482109948	1526482110513	OK	 
+USER	Create Claim	1	END	1526481942076	1526482113508
