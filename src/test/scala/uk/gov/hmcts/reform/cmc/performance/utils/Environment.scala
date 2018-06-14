@@ -4,8 +4,8 @@ object Environment {
   val httpConfig = scala.util.Properties.envOrElse("httpConfig", "http")
   
   //val cmcBashURL = scala.util.Properties.envOrElse("baseURL", "https://www-dev.moneyclaim.reform.hmcts.net")
-  //val cmcBashURL = scala.util.Properties.envOrElse("baseURL", "https://www.moneyclaims.demo.platform.hmcts.net")
-  val cmcBashURL = scala.util.Properties.envOrElse("baseURL", "https://moneyclaim.nonprod.platform.hmcts.net")
+  val cmcBashURL = scala.util.Properties.envOrElse("baseURL", "https://www.moneyclaims.demo.platform.hmcts.net")
+ // val cmcBashURL = scala.util.Properties.envOrElse("baseURL", "https://moneyclaim.nonprod.platform.hmcts.net")
   //val cmcBashURL = scala.util.Properties.envOrElse("baseURL", "https://www-demo.moneyclaim.reform.hmcts.net")
   //val cmcBashURL = scala.util.Properties.envOrElse("baseURL", "https://moneyclaim.nonprod.platform.hmcts.net")
   //val iadmURL = "https://idam-test.dev.ccidam.reform.hmcts.net"
@@ -13,6 +13,7 @@ object Environment {
   
   val users = scala.util.Properties.envOrElse("numberOfUser", "10")
   val maxResponseTime = scala.util.Properties.envOrElse("maxResponseTime", "500")
+  val idamCookieName="SESSION_ID"
   
   val commonHeader = Map(
 		"Accept" -> "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",

@@ -6,7 +6,7 @@ import io.gatling.http.Predef._
 
 class CMCDefendant extends Simulation {
 
-	val httpProtocol = http
+	val httpProtocol = http.proxy(Proxy("proxyout.reform.hmcts.net",8080))
 		.baseURL("https://moneyclaim.nonprod.platform.hmcts.net")
 		.inferHtmlResources(BlackList(""".*\.js""", """.*\.css""", """.*\.gif""", """.*\.jpeg""", """.*\.jpg""", """.*\.ico""", """.*\.woff""", """.*\.(t|o)tf""", """.*\.png"""), WhiteList())
 		.acceptHeader("text/html, application/xhtml+xml, application/xml; q=0.9, */*; q=0.8")

@@ -41,12 +41,12 @@ class CreateClaimSimulation extends Simulation{
       pace(WaitForNextIteration)
 
   setUp(createClaimScenario
-    .inject(rampUsers(1).over(5 seconds))
+    .inject(rampUsers(1).over(10 seconds))
     .protocols(httpProtocol))
-   // .maxDuration(10 minutes)
-   // .assertions(
-   //   global.responseTime.max.lt(5000),
-   //   forAll.failedRequests.count.lt(1)
-  //  )
+    .maxDuration(90 minutes)
+    .assertions(
+      global.responseTime.max.lt(5000),
+      forAll.failedRequests.count.lt(20)
+    )
 
 }

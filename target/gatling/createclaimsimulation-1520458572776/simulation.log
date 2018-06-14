@@ -1,9 +1,0 @@
-RUN	uk.gov.hmcts.reform.cmc.performance.simulations.CreateClaimSimulation		createclaimsimulation	1520458572776	 	2.0
-USER	Create Claim	1	START	1520458573759	1520458573759
-REQUEST	Create Claim	1		TX01_CMC_Login_LandingLoginPage	1520458573789	1520458574297	OK	 
-REQUEST	Create Claim	1		TX01_CMC_Login_LandingLoginPage Redirect 1	1520458574328	1520458574419	OK	 
-REQUEST	Create Claim	1		TX01_CMC_Login_LandingLoginPage Redirect 2	1520458574422	1520458574958	OK	 
-REQUEST	Create Claim	1		TX02_CMC_Login_SubmitLogin	1520458589990	1520458590536	OK	 
-REQUEST	Create Claim	1		TX02_CMC_Login_SubmitLogin Redirect 1	1520458590539	1520458591355	OK	 
-REQUEST	Create Claim	1		TX02_CMC_Login_SubmitLogin Redirect 2	1520458591357	1520458591565	OK	 
-USER	Create Claim	1	END	1520458573759	1520458606574

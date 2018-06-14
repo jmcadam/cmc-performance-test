@@ -1,9 +1,0 @@
-RUN	uk.gov.hmcts.reform.cmc.performance.simulations.CreateClaimSimulation		createclaimsimulation	1519855600829	 	2.0
-USER	Create Claim	1	START	1519855601288	1519855601288
-REQUEST	Create Claim	1		Trigger login	1519855601314	1519855601576	OK	 
-REQUEST	Create Claim	1		Trigger login Redirect 1	1519855601606	1519855601658	OK	 
-REQUEST	Create Claim	1		Trigger login Redirect 2	1519855601661	1519855601988	OK	 
-REQUEST	Create Claim	1		Login - submit	1519855603012	1519855603521	OK	 
-REQUEST	Create Claim	1		Login - submit Redirect 1	1519855603524	1519855604136	OK	 
-REQUEST	Create Claim	1		Login - submit Redirect 2	1519855604139	1519855604661	KO	regex(Make a money claim).find.exists, found nothing
-USER	Create Claim	1	END	1519855601288	1519855614667

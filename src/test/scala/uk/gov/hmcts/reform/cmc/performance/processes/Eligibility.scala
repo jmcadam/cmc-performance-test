@@ -28,13 +28,13 @@ object Eligibility {
 //      .pause(thinktime)
       
       exec(http("TX05_CMC_Eligibility_TotalAmountYouAreclaiming_GET")
-        .get(s"$eligibilityPath/claim-value")
+        .get("/eligibility/claim-value")
         .check(CsrfCheck.save)
         .check(regex("Total amount you’re claiming")))
         .pause(thinktime)
         
       .exec(http("TX06_CMC_Eligibility_TotalAmountYouAreclaiming_POST")
-        .post(s"$eligibilityPath/claim-value")
+        .post("/eligibility/claim-value")
         .formParam(csrfParameter, csrfTemplate)
         .formParam("claimValue", "UNDER_10000")
         .check(CurrentPageCheck.save)

@@ -1,5 +1,0 @@
-RUN	uk.gov.hmcts.reform.cmc.performance.simulations.CreateClaimSimulation		createclaimsimulation	1519892874894	 	2.0
-USER	Create Claim	1	START	1519892875340	1519892875340
-REQUEST	Create Claim	1		Trigger login	1519892875363	1519892875454	KO	css((input[name='_csrf'],Some(value))).find.exists, found nothing
-GROUP	Failed to build request Login - submit: No attribute named 'continue' is defined 	1519892876481
-USER	Create Claim	1	END	1519892875340	1519892886478
