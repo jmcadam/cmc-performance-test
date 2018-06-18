@@ -23,7 +23,7 @@ object LoginDefendantPage {
  val claimNumber =   exec(http("TX02_CMC_Def_Login_ClaimNumber")
        .post("/first-contact/claim-reference")
    .formParam(csrfParameter, csrfTemplate)
-   .formParam("reference", "013MC129")
+   .formParam("reference", "${claimnumber}")
    .check(css(".form-group>input[name='response_type']", "value").saveAs("responseType"))
    .check(css(".form-group>input[name='client_id']", "value").saveAs("clientId"))
    .check(css(".form-group>input[name='state']", "value").saveAs("state"))
@@ -40,7 +40,7 @@ object LoginDefendantPage {
     .post(currentPageTemplate)
     //view-source:https://idam.preprod.ccidam.reform.hmcts.net/login/pin?response_type=code&state=012MC999&client_id=cmc_citizen&redirect_uri=https://moneyclaim.nonprod.platform.hmcts.net/receiver
     .formParam(csrfParameter, csrfTemplate)
-    .formParam("pinnumber", "fe4AHTqm")
+    .formParam("pinnumber", "${pinnumber}")
     .formParam("response_type", "${responseType}")
     .formParam("redirect_uri", "${redirectUri}")
     .formParam("client_id", "${clientId}")

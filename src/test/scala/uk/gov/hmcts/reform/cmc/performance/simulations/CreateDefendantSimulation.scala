@@ -20,7 +20,7 @@ class CreateDefendantSimulation extends Simulation{
 
   val WaitForNextIteration = Environment.waitForNextIteration
   
-  val httpProtocol: HttpProtocolBuilder = http.proxy(Proxy("proxyout.reform.hmcts.net",8080))
+  val httpProtocol: HttpProtocolBuilder = http
     .baseURL(Environment.cmcBashURL)
     .headers(Environment.commonHeader)
 
@@ -36,7 +36,7 @@ class CreateDefendantSimulation extends Simulation{
         LoginDefendantPage.enterCode,
         LoginDefendantPage.ClaimSummary,
         LoginDefendantPage.receiver_get,
-        /*LoginDefendantPage.loginAsDefendant,
+        LoginDefendantPage.loginAsDefendant,
         DefendantDetails.dashBoard,
         DefendantDetails.casetaskList,
         DefendantDetails.defendantDetails,
@@ -49,12 +49,7 @@ class CreateDefendantSimulation extends Simulation{
         DefendantDetails.timeLine,
         DefendantDetails.evidence,
         DefendantDetails.freeMediation,
-        DefendantDetails.checkAndSend*/
-
-
-
-
-
+        DefendantDetails.checkAndSend
 
       )
       

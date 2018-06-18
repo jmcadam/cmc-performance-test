@@ -2,6 +2,7 @@ package uk.gov.hmcts.reform.cmc.performance.defendantprocess
 
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
+import uk.gov.hmcts.reform.cmc.performance.defendantprocess.LoginDefendantPage.feeder
 import uk.gov.hmcts.reform.cmc.performance.simulations.checks.CsrfCheck.{csrfParameter, csrfTemplate}
 import uk.gov.hmcts.reform.cmc.performance.simulations.checks.CurrentPageCheck.currentPageTemplate
 import uk.gov.hmcts.reform.cmc.performance.simulations.checks.{CsrfCheck, CurrentPageCheck}
@@ -13,7 +14,7 @@ object LandingPage {
 
   val thinktime = Environment.thinkTime
   
-    val feeder = csv("IdamUserDataPreprodEnv.csv").circular
+    val feeder = csv("defendant-details.csv").circular
    
   //def logIn(user: User)(implicit postHeaders: Map[String, String]): ChainBuilder = {
  val landingPage =   exec(http("TX01_CMC_Def_LandingPage_Get")
@@ -32,5 +33,6 @@ object LandingPage {
 
   )
     .pause(thinktime)
+    .feed(feeder)
 
 }
