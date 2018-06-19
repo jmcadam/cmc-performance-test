@@ -71,7 +71,8 @@ object CheckAndSend {
 			}
 
 			.exec(http("TX040_CMC_PDF_Download")
-			  	.get("${pdfDownload}"))
+			  	.get("${pdfDownload}")
+			.check(status.is(200)))
 			  	.pause(thinktime)
 
 

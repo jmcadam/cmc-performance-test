@@ -14,7 +14,7 @@ import uk.gov.hmcts.reform.cmc.performance.processes._
 
 import scala.concurrent.duration.FiniteDuration
 
-class CreateLegalSimulation extends Simulation{
+object CreateLegalSimulation {
 //  testUsers = List(User.legal)
 
   val baseURL: String = System.getenv("LEGAL_URL")
@@ -30,8 +30,8 @@ class CreateLegalSimulation extends Simulation{
     "Origin" -> baseURL
   )
 
-  val createLegalClaimScenario: ScenarioBuilder = scenario("Create legal Claim")
-    .exec(
+  val createLegalClaimScenario=
+    exec(
      // LoginPage.legalLogIn(testUsers.head),
       LoginPage.logIn,
       ClaimantLegalRepresentative.run,
@@ -40,7 +40,7 @@ class CreateLegalSimulation extends Simulation{
       AmountClaimDetails.run
     )
 
-  setUp(createLegalClaimScenario
+  /*setUp(createLegalClaimScenario
     .inject(rampUsers(10).over(10 seconds))
     .protocols(httpProtocol))
     .maxDuration(10 minutes)
@@ -48,5 +48,5 @@ class CreateLegalSimulation extends Simulation{
       global.responseTime.max.lt(5000),
       forAll.failedRequests.count.lt(1)
     )
-
+*/
 }

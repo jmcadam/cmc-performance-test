@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c2405d1-d928-4cc3-af69-ea3d5738c5c1" name="Default" comment="addded defendant journey and pdf download">
+    <list default="true" id="3c2405d1-d928-4cc3-af69-ea3d5738c5c1" name="Default" comment="change the simulation class to CMC Simulation">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/simulations/CMCSimulation.scala" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/defendantprocess/LandingPage.scala" afterPath="$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/defendantprocess/LandingPage.scala" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/defendantprocess/LoginDefendantPage.scala" afterPath="$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/defendantprocess/LoginDefendantPage.scala" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/data/IdamUserDataPreprodEnv.csv" afterPath="$PROJECT_DIR$/src/test/resources/data/IdamUserDataPreprodEnv.csv" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/processes/CheckAndSend.scala" afterPath="$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/processes/CheckAndSend.scala" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/simulations/CreateClaimSimulation.scala" afterPath="$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/simulations/CreateClaimSimulation.scala" />
       <change beforePath="$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/simulations/CreateDefendantSimulation.scala" afterPath="$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/simulations/CreateDefendantSimulation.scala" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/simulations/CreateLegalSimulation.scala" afterPath="$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/simulations/CreateLegalSimulation.scala" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,9 +37,33 @@
       <file leaf-file-name="CreateClaimSimulation.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/simulations/CreateClaimSimulation.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+            <state relative-caret-position="248">
+              <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="29" />
+              <folding>
+                <element signature="e#57#88#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckAndSend.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/processes/CheckAndSend.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="73" column="32" lean-forward="true" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMCSimulation.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/simulations/CMCSimulation.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="30" column="49" lean-forward="false" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+              <folding>
+                <element signature="e#57#85#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,28 +71,18 @@
       <file leaf-file-name="CreateDefendantSimulation.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/simulations/CreateDefendantSimulation.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+            <state relative-caret-position="100">
+              <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginDefendantPage.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/defendantprocess/LoginDefendantPage.scala">
+      <file leaf-file-name="CreateLegalSimulation.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/simulations/CreateLegalSimulation.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="577">
-              <caret line="42" column="28" lean-forward="true" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefendantDetails.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/defendantprocess/DefendantDetails.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3700">
-              <caret line="154" column="0" lean-forward="false" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
+            <state relative-caret-position="397">
+              <caret line="50" column="2" lean-forward="false" selection-start-line="42" selection-start-column="2" selection-end-line="50" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -93,22 +110,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CheckAndSend.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/processes/CheckAndSend.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="67" column="75" lean-forward="false" selection-start-line="67" selection-start-column="75" selection-end-line="67" selection-end-column="75" />
-              <folding>
-                <element signature="e#55#86#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Environment.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/utils/Environment.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
+            <state relative-caret-position="150">
               <caret line="6" column="110" lean-forward="false" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="110" />
               <folding />
             </state>
@@ -125,11 +130,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IdamUserDataPreprodEnv.csv" pinned="false" current-in-tab="false">
+      <file leaf-file-name="IdamUserDataPreprodEnv.csv" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/data/IdamUserDataPreprodEnv.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="26" />
+            <state relative-caret-position="650">
+              <caret line="26" column="29" lean-forward="false" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -179,7 +184,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/processes/LoginPage.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/simulations/CreateLegalSimulation.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/defendantprocess/StartPage.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/defendantprocess/DashBoard.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/vvtest/RecordedSimulation.scala" />
@@ -189,13 +193,16 @@
         <option value="$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/processes/Eligibility.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/vvtest/CMCDefendant.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/utils/Environment.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/simulations/CreateClaimSimulation.scala" />
-        <option value="$PROJECT_DIR$/src/test/resources/data/IdamUserDataPreprodEnv.csv" />
-        <option value="$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/processes/CheckAndSend.scala" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/simulations/CreateDefendantSimulation.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/defendantprocess/LandingPage.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/defendantprocess/LoginDefendantPage.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/processes/CheckAndSend.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/simulations/Divorce.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/simulations/CreateClaimSimulation.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/simulations/CreateDefendantSimulation.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/simulations/CreateLegalSimulation.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/simulations/CMCSimulation.scala" />
+        <option value="$PROJECT_DIR$/src/test/resources/data/IdamUserDataPreprodEnv.csv" />
       </list>
     </option>
   </component>
@@ -307,6 +314,15 @@
               <item name="performance" type="462c0819:PsiDirectoryNode" />
               <item name="simulations" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="PerformanceTest_CMC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CMC_PerformanceTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="performance" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -327,6 +343,7 @@
       <recent name="uk.gov.hmcts.reform.cmc.performance.defendantprocess" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\vijay\mojprojects\CMC\CMC_PerformanceTest\src\test\scala\uk\gov\hmcts\reform\cmc\performance\simulations" />
       <recent name="C:\Users\vijay\mojprojects\CMC\CMC_PerformanceTest\src\test\resources\data" />
       <recent name="C:\Users\vijay\mojprojects\CMC\CMC_PerformanceTest" />
     </key>
@@ -514,7 +531,7 @@
       <workItem from="1528800723391" duration="2081000" />
       <workItem from="1528883863081" duration="605000" />
       <workItem from="1528971003028" duration="15833000" />
-      <workItem from="1529314169557" duration="5852000" />
+      <workItem from="1529314169557" duration="16110000" />
     </task>
     <task id="LOCAL-00001" summary="addded defendant journey and pdf download">
       <created>1528993682948</created>
@@ -530,31 +547,38 @@
       <option name="project" value="LOCAL" />
       <updated>1529331493955</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="modified small changes in the code">
+      <created>1529331935408</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1529331935408</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183398000" />
+    <option name="totallyTimeSpent" value="193656000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.030805686" sideWeight="0.45459458" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.030805686" sideWeight="0.45027027" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.264218" sideWeight="0.5151351" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.61018956" sideWeight="0.51729727" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.04810811" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.264218" sideWeight="0.48486486" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.105450235" sideWeight="0.8308108" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.61018956" sideWeight="0.4827027" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5876777" sideWeight="0.8243243" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5189573" sideWeight="0.59567565" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41135135" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.056756757" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938388" sideWeight="0.49351352" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.06398104" sideWeight="0.49135137" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -576,7 +600,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="addded defendant journey and pdf download" />
-    <option name="LAST_COMMIT_MESSAGE" value="addded defendant journey and pdf download" />
+    <MESSAGE value="modified small changes in the code" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified small changes in the code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -585,20 +610,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/legalprocesses/AmountClaimDetails.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/legalprocesses/DefendantDetails.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/legalprocesses/ClaimantLegalRepresentative.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -719,13 +730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/simulations/CreateLegalSimulation.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="36" column="28" lean-forward="false" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/CMCRun.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -831,52 +835,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/processes/CheckAndSend.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="67" column="75" lean-forward="false" selection-start-line="67" selection-start-column="75" selection-end-line="67" selection-end-column="75" />
-          <folding>
-            <element signature="e#55#86#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/simulations/CreateClaimSimulation.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.project">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/data/IdamUserDataPreprodEnv.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/utils/Environment.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="6" column="110" lean-forward="false" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="110" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/simulations/CreateDefendantSimulation.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -901,7 +863,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/defendantprocess/DefendantDetails.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3700">
+        <state relative-caret-position="-701">
           <caret line="154" column="0" lean-forward="false" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
           <folding />
         </state>
@@ -909,8 +871,76 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/defendantprocess/LoginDefendantPage.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="42" column="28" lean-forward="true" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+        <state relative-caret-position="582">
+          <caret line="42" column="28" lean-forward="false" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/processes/CheckAndSend.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="73" column="32" lean-forward="true" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/gatling/gatling-core/2.3.0/gatling-core-2.3.0.jar!/io/gatling/core/scenario/Simulation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/simulations/CreateClaimSimulation.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="29" />
+          <folding>
+            <element signature="e#57#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/simulations/CreateLegalSimulation.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="50" column="2" lean-forward="false" selection-start-line="42" selection-start-column="2" selection-end-line="50" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/simulations/CreateDefendantSimulation.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/simulations/CMCSimulation.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="30" column="49" lean-forward="false" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+          <folding>
+            <element signature="e#57#85#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/uk/gov/hmcts/reform/cmc/performance/utils/Environment.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="110" lean-forward="false" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="110" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/data/IdamUserDataPreprodEnv.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="26" column="29" lean-forward="false" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
           <folding />
         </state>
       </provider>

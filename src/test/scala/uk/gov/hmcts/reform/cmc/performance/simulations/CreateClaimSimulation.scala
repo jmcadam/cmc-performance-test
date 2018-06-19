@@ -13,10 +13,10 @@ import uk.gov.hmcts.reform.cmc.performance.utils._
 
 import scala.concurrent.duration.FiniteDuration
 
-class CreateClaimSimulation extends Simulation{
+object  CreateClaimSimulation {
 
   val WaitForNextIteration = Environment.waitForNextIteration
-  
+
   val httpProtocol: HttpProtocolBuilder = http
     .baseURL(Environment.cmcBashURL)
     .headers(Environment.commonHeader)
@@ -25,28 +25,28 @@ class CreateClaimSimulation extends Simulation{
     "Origin" -> Environment.cmcBashURL
   )
 
-  val createClaimScenario: ScenarioBuilder = scenario("Create Claim")
-      .exec(
-        LoginPage.logIn,        //  LoginPage.logIn(testUsers.head),
-        Eligibility.run,
-        ResolvingThisDispute.run,
-        CompletingYourClaim.run,
-        YourDetails.run,
-        TheirDetails.run,
-        Amount.run,
-        Reason.run,
-        CheckAndSend.run
-      )
-      
-      pace(WaitForNextIteration)
+  def createClaimScenario =
+    exec(
+      LoginPage.logIn,        //  LoginPage.logIn(testUsers.head),
+      Eligibility.run,
+      ResolvingThisDispute.run,
+      CompletingYourClaim.run,
+      YourDetails.run,
+      TheirDetails.run,
+      Amount.run,
+      Reason.run,
+      CheckAndSend.run
+    )
 
-  setUp(createClaimScenario
+  pace(WaitForNextIteration)
+
+  /*setUp(createClaimScenario
     .inject(rampUsers(1).over(10 seconds))
     .protocols(httpProtocol))
     .maxDuration(90 minutes)
     .assertions(
       global.responseTime.max.lt(5000),
       forAll.failedRequests.count.lt(20)
-    )
+    )*/
 
 }

@@ -16,7 +16,7 @@ import scala.concurrent.duration._
 
 import uk.gov.hmcts.reform.cmc.performance.utils._
 
-class CreateDefendantSimulation extends Simulation{
+object CreateDefendantSimulation {
 
   val WaitForNextIteration = Environment.waitForNextIteration
   
@@ -28,8 +28,8 @@ class CreateDefendantSimulation extends Simulation{
     "Origin" -> Environment.cmcBashURL
   )
 
-  val createDefendantScenario: ScenarioBuilder = scenario("Create Defendant Response")
-      .exec(
+  val createDefendantScenario=
+      exec(
         LandingPage.landingPage,
         LandingPage.startPage,//  LoginPage.logIn(testUsers.head),
         LoginDefendantPage.claimNumber,
@@ -55,13 +55,9 @@ class CreateDefendantSimulation extends Simulation{
       
       pace(WaitForNextIteration)
 
-  setUp(createDefendantScenario
+ /* setUp(createDefendantScenario
     .inject(rampUsers(1).over(5 seconds))
-    .protocols(httpProtocol))
-   // .maxDuration(10 minutes)
-   // .assertions(
-   //   global.responseTime.max.lt(5000),
-   //   forAll.failedRequests.count.lt(1)
-  //  )
+    .protocols(httpProtocol))*/
+
 
 }
