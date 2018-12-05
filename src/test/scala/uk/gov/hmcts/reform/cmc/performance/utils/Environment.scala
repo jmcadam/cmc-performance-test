@@ -3,8 +3,8 @@ package uk.gov.hmcts.reform.cmc.performance.utils
 object Environment {
   val httpConfig = scala.util.Properties.envOrElse("httpConfig", "http")
   
-  //val cmcBashURL = scala.util.Properties.envOrElse("baseURL", "https://www-dev.moneyclaim.reform.hmcts.net")
-  val cmcBashURL = scala.util.Properties.envOrElse("baseURL", "https://www.moneyclaims.demo.platform.hmcts.net")
+  val cmcBashURL = scala.util.Properties.envOrElse("baseURL", "https://cmc-citizen-frontend-sprod.service.core-compute-sprod.internal")
+  //val cmcBashURL = scala.util.Properties.envOrElse("baseURL", "https://www.moneyclaims.demo.platform.hmcts.net")
  // val cmcBashURL = scala.util.Properties.envOrElse("baseURL", "https://moneyclaim.nonprod.platform.hmcts.net")
   //val cmcBashURL = scala.util.Properties.envOrElse("baseURL", "https://www-demo.moneyclaim.reform.hmcts.net")
   //val cmcBashURL = scala.util.Properties.envOrElse("baseURL", "https://moneyclaim.nonprod.platform.hmcts.net")

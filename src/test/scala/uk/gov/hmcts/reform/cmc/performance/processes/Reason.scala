@@ -17,7 +17,7 @@ object Reason {
       .get("/claim/reason")
         .check(CsrfCheck.save)
         .check(CurrentPageCheck.save)
-        .check(regex("Why you’re owed the money")))
+        .check(regex("Briefly explain your claim")))
       .pause(thinktime)
       
       .exec(http("TX035_CMC_ClaimDetail_Reason_POST")

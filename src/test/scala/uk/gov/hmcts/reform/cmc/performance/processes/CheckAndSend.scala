@@ -26,13 +26,17 @@ object CheckAndSend {
 				.formParam("_csrf", "${_csrfCardDetailPage}")
 				.formParam("signed", "true")
 				.formParam("type", "basic")
-				.check(css("input[name='csrfToken']", "value").saveAs("_csrfTokenCardDetailPage"))
+				.check(regex("Claim submitted"))//this code for next 3 lines are added becuase payment is bypassed.
+				.check(css(".receipt-download-container>a", "href").saveAs("pdfDownload"))
+				.check(css(".reference-number>h1.bold-large").saveAs("claimNumber"))
+				//below is the code with payments and later we need to add this code
+			/*	.check(css("input[name='csrfToken']", "value").saveAs("_csrfTokenCardDetailPage"))
 				.check(regex("""/card_details/(.+)',""").saveAs("_csrfCardDetailPageChargeId"))
-				.check(regex("Enter card details"))
+				.check(regex("Enter card details"))*/
 			)
 			.pause(thinktime)
 
-			.exec(http("TX038_CMC_CardDetail_SubmitCardDetail")
+		/*	.exec(http("TX038_CMC_CardDetail_SubmitCardDetail")
 				.post(paymentURL + "/card_details/${_csrfCardDetailPageChargeId}")
 				.formParam("chargeId", "${_csrfCardDetailPageChargeId}")
 				.formParam("csrfToken", "${_csrfTokenCardDetailPage}")
@@ -61,7 +65,7 @@ object CheckAndSend {
 
 			.pause(thinktime)
 
-
+*/
 			.exec {
 				session =>
 					println("this is a receipt ....." + session("pdfDownload").as[String])
