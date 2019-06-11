@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="Maven 1" modules="PerformanceTest_CMC" />
+    <profile name="Gradle 1" modules="pipeline-performance-test-common_main,pipeline-performance-test-common_test,CMC_PerformanceTest_main,CMC_PerformanceTest_test">
+      <option name="deprecationWarnings" value="true" />
+      <option name="uncheckedWarnings" value="true" />
+      <parameters>
+        <parameter value="-target:jvm-1.8" />
+      </parameters>
+    </profile>
   </component>
 </project>
