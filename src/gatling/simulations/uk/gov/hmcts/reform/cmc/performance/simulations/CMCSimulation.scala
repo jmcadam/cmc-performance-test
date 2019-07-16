@@ -1,14 +1,9 @@
 package uk.gov.hmcts.reform.cmc.performance.simulations
 
-import com.typesafe.config._
 import io.gatling.core.Predef._
 import io.gatling.http.Predef.{Proxy, http}
 import io.gatling.http.protocol.HttpProtocolBuilder
 import uk.gov.hmcts.reform.cmc.performance.utils.Environment
-import uk.gov.hmcts.reform.cmc.performance.simulations.CreateClaimSimulation
-import io.gatling.core.structure.ScenarioBuilder
-
-import scala.collection.mutable.ArrayBuffer
 
 class CMCSimulation extends Simulation
      {
@@ -45,10 +40,10 @@ class CMCSimulation extends Simulation
            rampUsers(1) during (20))
          .protocols(httpProtocol))
          .maxDuration(5400)
-         .assertions(
+        /* .assertions(
            global.responseTime.max.lt(5000),
            forAll.failedRequests.count.lt(20)
-         )
+         )*/
 
        /*setUp(scenario1
          .inject(
