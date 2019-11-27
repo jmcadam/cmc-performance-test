@@ -1,7 +1,6 @@
 package uk.gov.hmcts.reform.cmc.performance.processes
 
 import io.gatling.core.Predef._
-import io.gatling.core.structure.ChainBuilder
 import io.gatling.http.Predef._
 import uk.gov.hmcts.reform.cmc.performance.simulations.checks.{CsrfCheck, CurrentPageCheck}
 //import uk.gov.hmcts.reform.idam.User
@@ -68,8 +67,9 @@ object LoginPage {
       .exec(http("Login - legal submit")
         .post("${currentPage}")
      //   .headers(postHeaders)
-        .formParam("username", "civilmoneyclaims+vivekcmct1@gmail.com")
-        .formParam("password", "Password1234")
+       // .formParam("username", "civilmoneyclaims+vivekcmct1@gmail.com")
+       // .formParam("password", "Password1234")
+        .formParamMap(Map("username" -> "${generatedEmail}", "password" -> "${generatedPassword}"))
         .formParam("response_type", "code")
         .formParam("continue", "${continue}") // tactical idam maps redirect_uri to continue =/
         .formParam("upliftToken", "")

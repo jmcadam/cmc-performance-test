@@ -18,12 +18,12 @@ class CMCSimulation extends Simulation
        val scenario1 = scenario("Create Claim Journey")
          .exec(CreateClaimSimulation.createClaimScenario)
 
-       val scenario2 = scenario("Basic Divorce Not Completed")
+       val scenario2 = scenario("Defendant Journey")
          .exec(CreateDefendantSimulation.createDefendantScenario)
 
        /*setUp(
          scenario1.inject(
-           atOnceUsers(1)).protocols(httpProtocol))*/
+           atOnceUsers(100)).protocols(httpProtocol))*/
 
          /*setUp(scenario1
            .inject(
@@ -37,7 +37,7 @@ class CMCSimulation extends Simulation
 
        setUp(scenario1
          .inject(
-           rampUsers(10) during (200))
+           rampUsers(1) during (200))
          .protocols(httpProtocol))
          .maxDuration(5400)
         /* .assertions(

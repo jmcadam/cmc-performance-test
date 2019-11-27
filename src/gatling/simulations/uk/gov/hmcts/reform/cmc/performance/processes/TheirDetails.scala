@@ -27,7 +27,7 @@ object TheirDetails {
        // .formParam("saveAndContinue", "Save and continue")
         .check(CsrfCheck.save)
         .check(CurrentPageCheck.save)
-        .check(regex("Their details")))
+        .check(regex("Enter the defendant’s details")))
       .pause(thinktime)
       
       .exec(http("TX026_CMC_TheirDetail_TheirDetails_POST")
@@ -59,7 +59,16 @@ object TheirDetails {
         .formParam(csrfParameter, csrfTemplate)
         .formParam("address", "")
         .formParam("saveAndContinue", "Save and continue")
-        .check(regex("Claim amount"))
+        .check(regex("Their phone number"))
+      )
+      .pause(thinktime)
+
+      .exec(http("TX027_CMC_TheirDetail_Mobile_POST")
+        .post(currentPageTemplate)
+        .formParam(csrfParameter, csrfTemplate)
+        .formParam("number", "")
+        .formParam("saveAndContinue", "Save and continue")
+      //  .check(regex("Make a money claim"))
       )
       .pause(thinktime)
   }

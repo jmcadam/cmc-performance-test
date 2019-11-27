@@ -1,10 +1,10 @@
 package uk.gov.hmcts.reform.cmc.performance.processes
 
-import com.typesafe.config._
+//import com.typesafe.config._
 
 object Feeders {
 
-  val conf = ConfigFactory.load()
+  //val conf = ConfigFactory.load()
 
   val random = new scala.util.Random
 

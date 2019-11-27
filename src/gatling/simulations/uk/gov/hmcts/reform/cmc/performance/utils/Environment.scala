@@ -3,14 +3,16 @@ package uk.gov.hmcts.reform.cmc.performance.utils
 object Environment {
   val httpConfig = scala.util.Properties.envOrElse("httpConfig", "http")
   
-  val cmcBashURL = scala.util.Properties.envOrElse("baseURL", "https://cmc-citizen-frontend-aat.service.core-compute-aat.internal")
+ val cmcBashURL = scala.util.Properties.envOrElse("baseURL", "https://cmc-citizen-frontend-perftest.service.core-compute-perftest.internal")
+ //val cmcBashURL = scala.util.Properties.envOrElse("baseURL", "https://cmc-citizen-frontend-aat.service.core-compute-aat.internal")
   //val cmcBashURL = scala.util.Properties.envOrElse("baseURL", "https://www.moneyclaims.demo.platform.hmcts.net")
  // val cmcBashURL = scala.util.Properties.envOrElse("baseURL", "https://moneyclaim.nonprod.platform.hmcts.net")
   //val cmcBashURL = scala.util.Properties.envOrElse("baseURL", "https://www-demo.moneyclaim.reform.hmcts.net")
   //val cmcBashURL = scala.util.Properties.envOrElse("baseURL", "https://moneyclaim.nonprod.platform.hmcts.net")
   //val iadmURL = "https://idam-test.dev.ccidam.reform.hmcts.net"
   val PaymentURL = scala.util.Properties.envOrElse("paymentURL", "https://www.payments.service.gov.uk")
-  val idamBaseURL=scala.util.Properties.envOrElse("idamBaseURL", "https://idam-api-idam-aat.service.core-compute-idam-aat.internal")
+  val idamBaseURL=scala.util.Properties.envOrElse("idamBaseURL", "https://idam-api-idam-perftest.service.core-compute-idam-perftest.internal")
+ //val idamBaseURL=scala.util.Properties.envOrElse("idamBaseURL", "https://idam-api-idam-aat.service.core-compute-idam-aat.internal")
   
   val users = scala.util.Properties.envOrElse("numberOfUser", "10")
   val maxResponseTime = scala.util.Properties.envOrElse("maxResponseTime", "500")
@@ -25,6 +27,6 @@ object Environment {
 		"User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36")
 
     
-    val thinkTime = 3
+    val thinkTime = 52
     val waitForNextIteration = 80
 }

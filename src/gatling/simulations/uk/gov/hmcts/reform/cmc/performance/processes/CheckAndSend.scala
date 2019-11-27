@@ -36,7 +36,7 @@ object CheckAndSend {
 			/*.exec(http("TX038_CMC_CardDetail_CheckCardDetail")
 				.post(paymentURL + "/check_card/${_csrfCardDetailPageChargeId}"))
 */
-				.exec(http("TX039_CMC_CardDetail_SubmitCardDetail")
+				.exec(http("TX038_CMC_CardDetail_SubmitCardDetail")
           .post(paymentURL + "/card_details/${_csrfCardDetailPageChargeId}")
           .formParam("chargeId", "${_csrfCardDetailPageChargeId}")
           .formParam("csrfToken", "${_csrfTokenCardDetailPage}")
@@ -73,7 +73,7 @@ object CheckAndSend {
 				session
 		}
 
-			.exec(http("TX038_CMC_PDF_Download")
+			.exec(http("TX040_CMC_PDF_Download")
 				.get("${pdfDownload}")
 				.check(status.is(200)))
 			.pause(thinktime)

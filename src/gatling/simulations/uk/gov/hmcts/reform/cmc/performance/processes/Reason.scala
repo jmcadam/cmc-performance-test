@@ -13,6 +13,7 @@ object Reason {
   val thinktime = Environment.thinkTime
   
   def run(implicit postHeaders: Map[String, String]): ChainBuilder = {
+
     exec(http("TX032_CMC_ClaimDetail_Reason_GET")
       .get("/claim/reason")
         .check(CsrfCheck.save)
@@ -22,7 +23,7 @@ object Reason {
       
       .exec(http("TX033_CMC_ClaimDetail_Reason_POST")
         .post(currentPageTemplate)
-        .formParam(csrfParameter, csrfTemplate)
+        .formParam("_csrf", "${csrf}")
         .formParam("reason", "Performance test")
         .check(CsrfCheck.save)
         .check(CurrentPageCheck.save)
