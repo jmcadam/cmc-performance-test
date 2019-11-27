@@ -35,20 +35,20 @@ class CMCSimulation extends Simulation
                forAll.failedRequests.count.lt(20)*/
 
 
-       setUp(scenario1
+       /*setUp(scenario1
          .inject(
            rampUsers(1) during (200))
          .protocols(httpProtocol))
-         .maxDuration(5400)
+         .maxDuration(5400)*/
         /* .assertions(
            global.responseTime.max.lt(5000),
            forAll.failedRequests.count.lt(20)
          )*/
 
-       /*setUp(scenario1
+       setUp(scenario1
          .inject(
-           rampUsers(714) over (1200))
+           rampUsers(714) during  (1500))
          .protocols(httpProtocol))
-         .maxDuration(7200)*/
+         .maxDuration(7200)
 
 }
