@@ -1,14 +1,15 @@
 package uk.gov.hmcts.reform.cmc.performance.simulations
 
 import io.gatling.core.Predef._
-import io.gatling.http.Predef.{Proxy, http}
+import io.gatling.http.Predef.http
 import io.gatling.http.protocol.HttpProtocolBuilder
 import uk.gov.hmcts.reform.cmc.performance.utils.Environment
 
 class CMCSimulation extends Simulation
      {
 
-       val httpProtocol: HttpProtocolBuilder = http.proxy(Proxy("proxyout.reform.hmcts.net", 8080))
+       val httpProtocol: HttpProtocolBuilder = http
+         //.proxy(Proxy("proxyout.reform.hmcts.net", 8080))
          .baseUrl(Environment.cmcBashURL)
          .headers(Environment.commonHeader)
 
