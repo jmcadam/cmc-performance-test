@@ -7,6 +7,7 @@ object Feeders {
   //val conf = ConfigFactory.load()
 
   val random = new scala.util.Random
+  //val feeder_data=csv("IdamUserDataPreprodEnv.csv").circular
 
   def randomString(alphabet: String)(n: Int): String =
     Stream.continually(random.nextInt(alphabet.size)).map(alphabet).take(n).mkString
@@ -18,7 +19,7 @@ object Feeders {
   var generatedPassword = ""
 
   def generateEmailAddress() :String = {
-    generatedEmail = ("simulate-delivered-cmc-aat" + randomAlphanumericString(6) + "@mailinator.com")
+    generatedEmail = ("cmc-perftest-" + randomAlphanumericString(6) + "@mailtest.gov.uk")
     generatedEmail
   }
 
@@ -38,12 +39,11 @@ object Feeders {
   }
 
   private def addIdamUsers(): String = {
-
     generateEmailAddress()
     generatePassword()
 
     var body =
-      s"""{"email":"${generatedEmail}",
+      """{"email":"${iaDMUserName}",
          |"forename":"john",
          |"surname":"smith",
          |"userGroup": {"code": "citizens"},
@@ -55,7 +55,7 @@ object Feeders {
     return body
   }
 
-  val createIdamUsersFeeder = Iterator.continually(Map("addUser" -> ({
+  val createIdamUsersFeeder =Iterator.continually(Map("addUser" -> ({
     addIdamUsers()
   }), "generatedEmail" -> (generatedEmail), "generatedPassword" -> (generatedPassword)));
 

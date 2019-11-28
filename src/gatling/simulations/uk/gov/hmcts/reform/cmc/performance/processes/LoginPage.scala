@@ -14,7 +14,7 @@ object LoginPage {
     val feeder = csv("IdamUserDataPreprodEnv.csv").circular
    
   //def logIn(user: User)(implicit postHeaders: Map[String, String]): ChainBuilder = {
- val logIn =   exec(http("TX01_CMC_Login_LandingLoginPage")
+ val logIn =   feed(feeder).exec(http("TX01_CMC_Login_LandingLoginPage")
       .get("/")
       .check(CurrentPageCheck.save)
       .check(CsrfCheck.save)
@@ -25,14 +25,12 @@ object LoginPage {
       .check(regex("Email address")))
       .pause(thinktime)
       .feed(feeder)
-      
-      
       .exec(http("TX02_CMC_Login_SubmitLogin")
         .post("${currentPage}")
       //  .headers(headers_9)
-       // .formParam("username", "${iaDMUserName}")  //Demo - Kapil.Jain@hmcts.net , Non Prod civilmoneyclaims+vivekcmct1@gmail.com
-       // .formParam("password", "Pass19word")
-        .formParamMap(Map("username" -> "${generatedEmail}", "password" -> "${generatedPassword}"))
+        .formParam("username", "${iaDMUserName}")  //Demo - Kapil.Jain@hmcts.net , Non Prod civilmoneyclaims+vivekcmct1@gmail.com
+        .formParam("password", "Pass19word")
+        //.formParamMap(Map("username" -> "${generatedEmail}", "password" -> "${generatedPassword}"))
        /* .formParam("response_type", "code")
         .formParam("continue", "${continue}") // tactical idam maps redirect_uri to continue =/
         .formParam("upliftToken", "")*/
@@ -41,6 +39,7 @@ object LoginPage {
         .formParam("client_id", "${clientId}")
         .formParam("scope", "")
         .formParam("state", "${state}")*/
+
 
         .check(regex("Find out if you can make a claim using this service")))
       
