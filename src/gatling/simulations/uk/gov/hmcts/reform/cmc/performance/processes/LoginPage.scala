@@ -18,10 +18,6 @@ object LoginPage {
       .get("/")
       .check(CurrentPageCheck.save)
       .check(CsrfCheck.save)
-      /*.check(css(".form-group>input[name='client_id']", "value").saveAs("clientId"))
-      .check(css(".form-group>input[name='state']", "value").saveAs("state"))
-      .check(css(".form-group>input[name='redirect_uri']", "value").saveAs("redirectUri"))
-      .check(css(".form-group>input[name='continue']", "value").saveAs("continue"))*/
       .check(regex("Email address")))
       .pause(thinktime)
       .feed(feeder)
@@ -31,18 +27,8 @@ object LoginPage {
         .formParam("username", "${iaDMUserName}")  //Demo - Kapil.Jain@hmcts.net , Non Prod civilmoneyclaims+vivekcmct1@gmail.com
         .formParam("password", "Pass19word")
         //.formParamMap(Map("username" -> "${generatedEmail}", "password" -> "${generatedPassword}"))
-       /* .formParam("response_type", "code")
-        .formParam("continue", "${continue}") // tactical idam maps redirect_uri to continue =/
-        .formParam("upliftToken", "")*/
         .formParam("_csrf", "${csrf}")
-        /*.formParam("redirect_uri", "${redirectUri}")
-        .formParam("client_id", "${clientId}")
-        .formParam("scope", "")
-        .formParam("state", "${state}")*/
-
-
         .check(regex("Find out if you can make a claim using this service")))
-      
       .pause(thinktime)
  // }
 

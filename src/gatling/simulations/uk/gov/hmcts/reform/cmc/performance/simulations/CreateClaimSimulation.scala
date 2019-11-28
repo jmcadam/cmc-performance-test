@@ -38,19 +38,19 @@ object  CreateClaimSimulation {
 
    // createUsers
       exec(
-        LoginPage.logIn, //  LoginPage.logIn(testUsers.head),
-        Eligibility.run,
+        LoginPage.logIn //  LoginPage.logIn(testUsers.head),
+        /*Eligibility.run,
         ResolvingThisDispute.run,
         CompletingYourClaim.run,
         YourDetails.run,
         TheirDetails.run,
         Amount.run,
         Reason.run,
-        CheckAndSend.run
+        CheckAndSend.run*/
       )
 
 
-  pace(WaitForNextIteration)
+  //pace(WaitForNextIteration)
 
 
 

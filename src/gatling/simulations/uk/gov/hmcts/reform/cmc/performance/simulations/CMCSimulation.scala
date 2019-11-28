@@ -9,6 +9,7 @@ class CMCSimulation extends Simulation
      {
 
        val httpProtocol: HttpProtocolBuilder = http
+         //.proxy(Proxy("proxyout.reform.hmcts.net", 8080).httpsPort(8080))
          //.proxy(Proxy("proxyout.reform.hmcts.net", 8080))
          .baseUrl(Environment.cmcBashURL)
          .headers(Environment.commonHeader)
@@ -48,7 +49,7 @@ class CMCSimulation extends Simulation
 
        setUp(scenario1
          .inject(
-           rampUsers(714) during  (1500))
+           rampUsers(714) during  (1800))
          .protocols(httpProtocol))
          .maxDuration(7200)
 
