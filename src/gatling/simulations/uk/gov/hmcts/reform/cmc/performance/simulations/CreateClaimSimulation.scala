@@ -34,6 +34,8 @@ object  CreateClaimSimulation {
     .check(status.is(201)))
     .pause(60)
 
+
+
   def createClaimScenario =
 
    // createUsers
@@ -46,8 +48,17 @@ object  CreateClaimSimulation {
         TheirDetails.run,
         Amount.run,
         Reason.run,
-        CheckAndSend.run
+        CheckAndSend.run,
+        LoginPage.deleteUser
       )
+
+  def deleteUserScenario =
+
+  // createUsers
+    exec(
+
+      LoginPage.deleteUser
+    )
 
 
   //pace(WaitForNextIteration)

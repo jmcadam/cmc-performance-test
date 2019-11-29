@@ -1,15 +1,14 @@
 package uk.gov.hmcts.reform.cmc.performance.simulations
 
 import io.gatling.core.Predef._
-import io.gatling.http.Predef.http
+import io.gatling.http.Predef.{Proxy, http}
 import io.gatling.http.protocol.HttpProtocolBuilder
 import uk.gov.hmcts.reform.cmc.performance.utils.Environment
 
 class CMCSimulation extends Simulation
      {
 
-       val httpProtocol: HttpProtocolBuilder = http
-         //.proxy(Proxy("proxyout.reform.hmcts.net", 8080).httpsPort(8080))
+       val httpProtocol: HttpProtocolBuilder = http.proxy(Proxy("proxyout.reform.hmcts.net", 8080).httpsPort(8080))
          //.proxy(Proxy("proxyout.reform.hmcts.net", 8080))
          .baseUrl(Environment.cmcBashURL)
          .headers(Environment.commonHeader)
@@ -19,6 +18,9 @@ class CMCSimulation extends Simulation
        )
        val scenario1 = scenario("Create Claim Journey")
          .exec(CreateClaimSimulation.createClaimScenario)
+
+       val scenario3 = scenario("Delete User Journey")
+         .exec(CreateClaimSimulation.deleteUserScenario)
 
        val scenario2 = scenario("Defendant Journey")
          .exec(CreateDefendantSimulation.createDefendantScenario)
@@ -49,7 +51,7 @@ class CMCSimulation extends Simulation
 
        setUp(scenario1
          .inject(
-           rampUsers(714) during  (1800))
+           rampUsers(714) during  (1500))
          .protocols(httpProtocol))
          .maxDuration(7200)
 

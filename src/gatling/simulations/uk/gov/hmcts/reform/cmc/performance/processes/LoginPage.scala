@@ -2,6 +2,7 @@ package uk.gov.hmcts.reform.cmc.performance.processes
 
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
+import uk.gov.hmcts.reform.cmc.performance.simulations.CreateClaimSimulation.addIdamUserUrl
 import uk.gov.hmcts.reform.cmc.performance.simulations.checks.{CsrfCheck, CurrentPageCheck}
 //import uk.gov.hmcts.reform.idam.User
 
@@ -66,6 +67,11 @@ object LoginPage {
         .check(regex("Issue civil court proceedings"))
       )
       .pause(thinktime)
- // }
+
+  val deleteUser = feed(feeder).exec(http("Delete IDAM users")
+    .delete(addIdamUserUrl+"/${iaDMUserName}")
+    .headers(Map("Content-Type" -> "application/json"))
+    .check(status.is(200)))
+    .pause(60)
 
 }
