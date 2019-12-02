@@ -38,8 +38,8 @@ object  CreateClaimSimulation {
 
   def createClaimScenario =
 
-   // createUsers
-      exec(
+    //createUsers
+        exec(
         LoginPage.logIn, //  LoginPage.logIn(testUsers.head),
         Eligibility.run,
         ResolvingThisDispute.run,

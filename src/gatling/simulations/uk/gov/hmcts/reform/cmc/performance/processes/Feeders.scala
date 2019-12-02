@@ -19,14 +19,14 @@ object Feeders {
   var generatedPassword = ""
 
   def generateEmailAddress() :String = {
-    generatedEmail = ("cmc-perftest-" + randomAlphanumericString(6) + "@mailtest.gov.uk")
+    generatedEmail = ("cmc0312-perftest-" + randomAlphanumericString(6) + "@mailtest.gov.uk")
     generatedEmail
   }
 
-  /*def generatePassword() :String = {
+ /* def generatePassword() :String = {
     generatedPassword = randomAlphanumericString(9)
     generatedPassword
-  }*/
+  } */
 
  /* def generateEmailAddress() :String = {
     generatedEmail = ("simulate-delivered-demo-3330@mailinator.com")
@@ -43,7 +43,7 @@ object Feeders {
     generatePassword()
 
     var body =
-      """{"email":"${iaDMUserName}",
+      s"""{"email":"${generatedEmail}",
          |"forename":"john",
          |"surname":"smith",
          |"userGroup": {"code": "citizens"},

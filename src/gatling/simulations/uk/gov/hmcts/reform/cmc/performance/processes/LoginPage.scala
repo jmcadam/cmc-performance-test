@@ -27,7 +27,7 @@ object LoginPage {
       //  .headers(headers_9)
         .formParam("username", "${iaDMUserName}")  //Demo - Kapil.Jain@hmcts.net , Non Prod civilmoneyclaims+vivekcmct1@gmail.com
         .formParam("password", "Pass19word")
-        //.formParamMap(Map("username" -> "${generatedEmail}", "password" -> "${generatedPassword}"))
+       // .formParamMap(Map("username" -> "${generatedEmail}", "password" -> "${generatedPassword}"))
         .formParam("_csrf", "${csrf}")
         .check(regex("Find out if you can make a claim using this service")))
       .pause(thinktime)
@@ -69,7 +69,7 @@ object LoginPage {
       .pause(thinktime)
 
   val deleteUser = feed(feeder).exec(http("Delete IDAM users")
-    .delete(addIdamUserUrl+"/${iaDMUserName}")
+    .delete(addIdamUserUrl+"/${generatedEmail}")
     .headers(Map("Content-Type" -> "application/json"))
     .check(status.is(204)))
     .pause(60)
