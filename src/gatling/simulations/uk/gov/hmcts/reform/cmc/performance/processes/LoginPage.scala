@@ -69,9 +69,9 @@ object LoginPage {
       .pause(thinktime)
 
   val deleteUser = feed(feeder).exec(http("Delete IDAM users")
-    .delete(addIdamUserUrl+"/${generatedEmail}")
+    .delete(addIdamUserUrl+"/${iaDMUserName}")
     .headers(Map("Content-Type" -> "application/json"))
     .check(status.is(204)))
-    .pause(60)
+    .pause(20)
 
 }
