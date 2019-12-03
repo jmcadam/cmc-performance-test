@@ -21,7 +21,6 @@ object LoginPage {
       .check(CsrfCheck.save)
       .check(regex("Email address")))
       .pause(thinktime)
-      .feed(feeder)
       .exec(http("TX02_CMC_Login_SubmitLogin")
         .post("${currentPage}")
       //  .headers(headers_9)
