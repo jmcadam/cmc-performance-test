@@ -28,5 +28,5 @@ object Environment {
 
     
     val thinkTime = 50
-    val waitForNextIteration = 30
+    val waitForNextIteration = 80
 }
