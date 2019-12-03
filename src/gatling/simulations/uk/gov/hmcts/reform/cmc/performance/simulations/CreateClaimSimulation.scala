@@ -41,7 +41,7 @@ object  CreateClaimSimulation {
     //createUsers
         exec(
         LoginPage.logIn, //  LoginPage.logIn(testUsers.head),
-        /*Eligibility.run,
+        Eligibility.run,
         ResolvingThisDispute.run,
         CompletingYourClaim.run,
         YourDetails.run,
@@ -49,7 +49,7 @@ object  CreateClaimSimulation {
         Amount.run,
         Reason.run,
         CheckAndSend.run,
-        LoginPage.deleteUser*/
+        LoginPage.deleteUser
       )
 
   def deleteUserScenario =
