@@ -11,6 +11,15 @@ object CheckAndSend {
 
 		val paymentURL = Environment.PaymentURL
 		val thinktime = Environment.thinkTime
+    val headers_996 = Map(
+      "Accept" -> "*/*",
+      "Accept-Encoding" -> "gzip, deflate, br",
+      "Accept-Language" -> "en-US,en;q=0.9",
+      "Content-type" -> "application/json",
+      "Origin" -> "https://www.payments.service.gov.uk",
+      "Sec-Fetch-Mode" -> "cors",
+      "Sec-Fetch-Site" -> "same-origin",
+      "User-Agent" -> "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36")
 
 		exec(http("TX036_CMC_CheckAndSend_Checkandsend_GET")
 			.get("/claim/check-and-send")
@@ -33,10 +42,11 @@ object CheckAndSend {
 			)
 			.pause(thinktime)
 
-			/*.exec(http("TX038_CMC_CardDetail_CheckCardDetail")
+			.exec(http("TX038_CMC_CardDetail_CheckCardDetail")
 				.post(paymentURL + "/check_card/${_csrfCardDetailPageChargeId}")
+        .headers(headers_996)
 			.body(RawFileBody("RecordedSimulationCMC0412latest_0996_request.txt")))
-		  	.pause(thinktime)*/
+		  	.pause(thinktime)
 				.exec(http("TX038_CMC_CardDetail_SubmitCardDetail")
           .post(paymentURL + "/card_details/${_csrfCardDetailPageChargeId}")
           .formParam("chargeId", "${_csrfCardDetailPageChargeId}")
