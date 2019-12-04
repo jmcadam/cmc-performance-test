@@ -34,8 +34,9 @@ object CheckAndSend {
 			.pause(thinktime)
 
 			/*.exec(http("TX038_CMC_CardDetail_CheckCardDetail")
-				.post(paymentURL + "/check_card/${_csrfCardDetailPageChargeId}"))
-*/
+				.post(paymentURL + "/check_card/${_csrfCardDetailPageChargeId}")
+			.body(RawFileBody("RecordedSimulationCMC0412latest_0996_request.txt")))
+		  	.pause(thinktime)*/
 				.exec(http("TX038_CMC_CardDetail_SubmitCardDetail")
           .post(paymentURL + "/card_details/${_csrfCardDetailPageChargeId}")
           .formParam("chargeId", "${_csrfCardDetailPageChargeId}")
