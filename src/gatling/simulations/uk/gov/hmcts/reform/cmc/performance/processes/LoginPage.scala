@@ -19,7 +19,9 @@ object LoginPage {
       .get("/")
       .check(CurrentPageCheck.save)
       .check(CsrfCheck.save)
+   .check(status.is(200))
       .check(regex("Email address")))
+     .exitHereIfFailed
       .pause(thinktime)
       .exec(http("TX02_CMC_Login_SubmitLogin")
         .post("${currentPage}")
@@ -29,6 +31,7 @@ object LoginPage {
        // .formParamMap(Map("username" -> "${generatedEmail}", "password" -> "${generatedPassword}"))
         .formParam("_csrf", "${csrf}")
         .check(regex("Find out if you can make a claim using this service")))
+     .exitHereIfFailed
       .pause(thinktime)
  // }
 
