@@ -31,7 +31,9 @@ object Eligibility {
         .get("/eligibility/claim-value")
         .check(CsrfCheck.save)
         .check(regex("Total amount you’re claiming")))
+        .exitHereIfFailed
         .pause(thinktime)
+
         
       .exec(http("TX04_CMC_Eligibility_TotalAmountYouAreclaiming_POST")
         .post("/eligibility/claim-value")
@@ -40,6 +42,7 @@ object Eligibility {
         .check(CurrentPageCheck.save)
         .check(CsrfCheck.save)
         .check(regex("Do you need help paying your court fees?")))
+        .exitHereIfFailed
         .pause(thinktime)
         
       .exec(http("TX05_CMC_Eligibility_HelpWithCourtyFees")
@@ -48,7 +51,8 @@ object Eligibility {
         .formParam("helpWithFees", "no")
         .check(CurrentPageCheck.save)
         .check(CsrfCheck.save)
-        .check(regex("Is this claim against more than one person or organisation?"))) //
+        .check(regex("Is this claim against more than one person or organisation?")))
+        .exitHereIfFailed//
         .pause(thinktime)
 
         .exec(http("TX06_CMC_Eligibility_SingleDefendant")
@@ -58,6 +62,7 @@ object Eligibility {
           .check(CurrentPageCheck.save)
           .check(CsrfCheck.save)
           .check(regex("Does the person or organisation you’re claiming against have a postal address in England or Wales?"))) //
+        .exitHereIfFailed
         .pause(thinktime)
 
         .exec(http("TX07_CMC_Eligibility_DefendantAddress")
@@ -66,7 +71,8 @@ object Eligibility {
           .formParam("defendantAddress", "yes")
           .check(CurrentPageCheck.save)
           .check(CsrfCheck.save)
-          .check(regex("Who are you making the claim for?"))) //Are you 18 or over?
+          .check(regex("Who are you making the claim for?")))
+        .exitHereIfFailed//Are you 18 or over?
         .pause(thinktime)
 
 
@@ -78,6 +84,7 @@ object Eligibility {
           .check(CurrentPageCheck.save)
           .check(CsrfCheck.save)
           .check(regex("Do you have a postal address in the UK?")))
+        .exitHereIfFailed
         .pause(thinktime)
 
         .exec(http("TX09_CMC_Eligibility_ClaimantAddress")
@@ -87,6 +94,7 @@ object Eligibility {
        .check(CurrentPageCheck.save)
        .check(CsrfCheck.save)
        .check(regex("Is your claim for a tenancy deposit?")))
+        .exitHereIfFailed
        .pause(thinktime)
 
         .exec(http("TX010_CMC_Eligibility_TenancyDeposit")
@@ -95,6 +103,7 @@ object Eligibility {
           .formParam("claimIsForTenancyDeposit", "no")
           .check(CurrentPageCheck.save)
           .check(regex("Are you claiming against a government department?")))
+        .exitHereIfFailed
         .pause(thinktime)
 
         .exec(http("TX011_CMC_Eligibility_GovernmentDepartment")
@@ -104,6 +113,7 @@ object Eligibility {
           .check(CurrentPageCheck.save)
           .check(CsrfCheck.save)
           .check(regex("Do you believe the person you’re claiming against is 18 or over?")))
+        .exitHereIfFailed
         .pause(thinktime)
 
 
@@ -113,7 +123,8 @@ object Eligibility {
           .formParam("defendantAge", "yes")
           .check(CurrentPageCheck.save)
           .check(CsrfCheck.save)
-          .check(regex("Are you 18 or over?"))) //Do you believe the person you’re claiming against is 18 or over?
+          .check(regex("Are you 18 or over?")))
+        .exitHereIfFailed//Do you believe the person you’re claiming against is 18 or over?
         .pause(thinktime)
         
       .exec(http("TX013_CMC_Eligibility_Over18")
@@ -122,7 +133,8 @@ object Eligibility {
         .formParam("eighteenOrOver", "yes")
         .check(CurrentPageCheck.save)
         //.check(CsrfCheck.save)
-        .check(regex("You can use this service"))) //Do you believe the person you’re claiming against is 18 or over?
+        .check(regex("You can use this service")))
+        .exitHereIfFailed//Do you believe the person you’re claiming against is 18 or over?
         .pause(thinktime)
 
         //Who are you making the claim for?
@@ -169,6 +181,7 @@ object Eligibility {
           .formParam(csrfParameter, csrfTemplate)
           .formParam("consentResponse", "yes")
           .check(CurrentPageCheck.save))
+        .exitHereIfFailed
         .pause(thinktime)
 
 
