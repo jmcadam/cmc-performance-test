@@ -48,8 +48,8 @@ object  CreateClaimSimulation {
         TheirDetails.run,
         Amount.run,
         Reason.run,
-        CheckAndSend.run,
-        LoginPage.deleteUser
+        CheckAndSend.run
+        //LoginPage.deleteUser
       )
 
   def deleteUserScenario =
