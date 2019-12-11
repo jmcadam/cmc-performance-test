@@ -76,8 +76,7 @@ object YourDetails {
         .formParam(csrfParameter, csrfTemplate)
         .formParam("number", "07123456789")
         .formParam("saveAndContinue", "Save and continue")
-        .check(regex("Their details"))
-      )
+        .check(regex("Their details")))
       .pause(thinktime)
   }
 

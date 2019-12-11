@@ -31,8 +31,7 @@ object ResolvingThisDispute {
       .exec(http("TX016_CMC_ResolvingThisDispute_ResolvingThisDispute-POST")
         .post(currentPageTemplate)
         .formParam(csrfParameter, csrfTemplate)
-        .check(regex("Prepare your claim"))
-      )
+        .check(regex("Prepare your claim")))
       .pause(thinktime)
   }
 
