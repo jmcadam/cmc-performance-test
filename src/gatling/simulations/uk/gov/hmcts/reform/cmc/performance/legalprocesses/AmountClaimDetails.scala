@@ -1,5 +1,7 @@
 package uk.gov.hmcts.reform.cmc.performance.legalprocesses
 
+import java.io.{BufferedWriter, FileWriter}
+
 import io.gatling.core.Predef._
 import io.gatling.core.structure.ChainBuilder
 import io.gatling.http.Predef._
@@ -108,11 +110,21 @@ object AmountClaimDetails {
       )
         .pause(thinktime)
 
-      .exec {
+      /*.exec {
         session =>
           println("this is a pdf download url ....." + session("pdfDownload").as[String])
           println("claim number ....." + session("claimNumber").as[String])
 
+          session
+      }*/
+
+      .exec {
+        session =>
+          val fw = new BufferedWriter(new FileWriter("ClaimNumber.csv", true))
+          try {
+            fw.write(session("claimNumber").as[String] + "\r\n")
+          }
+          finally fw.close()
           session
       }
 
