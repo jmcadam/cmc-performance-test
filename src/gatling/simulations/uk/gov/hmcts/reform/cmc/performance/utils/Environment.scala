@@ -4,6 +4,7 @@ object Environment {
   val httpConfig = scala.util.Properties.envOrElse("httpConfig", "http")
   
  val cmcBashURL = scala.util.Properties.envOrElse("baseURL", "https://cmc-citizen-frontend-perftest.service.core-compute-perftest.internal")
+  val cmcLegalURL = scala.util.Properties.envOrElse("cmcLegalURL", "https://moneyclaims-legal.perftest.platform.hmcts.net")
  //val cmcBashURL = scala.util.Properties.envOrElse("baseURL", "https://cmc-citizen-frontend-aat.service.core-compute-aat.internal")
   //val cmcBashURL = scala.util.Properties.envOrElse("baseURL", "https://www.moneyclaims.demo.platform.hmcts.net")
  // val cmcBashURL = scala.util.Properties.envOrElse("baseURL", "https://moneyclaim.nonprod.platform.hmcts.net")
@@ -28,6 +29,6 @@ object Environment {
 		"User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36")
 
     
-    val thinkTime = 50
+    val thinkTime = 7
     val waitForNextIteration = 80
 }

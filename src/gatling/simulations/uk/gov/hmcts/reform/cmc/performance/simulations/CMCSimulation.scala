@@ -13,6 +13,12 @@ class CMCSimulation extends Simulation
          .baseUrl(Environment.cmcBashURL)
          .headers(Environment.commonHeader)
 
+       val legalhttpProtocol: HttpProtocolBuilder = http
+         //.proxy(Proxy("proxyout.reform.hmcts.net", 8080).httpsPort(8080))
+         //.proxy(Proxy("proxyout.reform.hmcts.net", 8080))
+         .baseUrl(Environment.cmcLegalURL)
+         .headers(Environment.commonHeader)
+
        implicit val postHeaders: Map[String, String] = Map(
          "Origin" -> Environment.cmcBashURL
        )
@@ -24,6 +30,11 @@ class CMCSimulation extends Simulation
 
        val scenario2 = scenario("Defendant Journey")
          .exec(CreateDefendantSimulation.createDefendantScenario)
+
+       val scenario4 = scenario("Legal Rep Journey")
+         .exec(CreateLegalSimulation.createLegalClaimScenario)
+
+
 
        /*setUp(
          scenario1.inject(
@@ -49,10 +60,18 @@ class CMCSimulation extends Simulation
            forAll.failedRequests.count.lt(20)
          )*/
 
-       setUp(scenario1
+      /* setUp(scenario1
          .inject(
            rampUsers(714) during  (1600))
          .protocols(httpProtocol))
+         .maxDuration(7200)*/
+       setUp(scenario4
+         .inject(
+           rampUsers(50) during  (1800))
+         .protocols(legalhttpProtocol))
          .maxDuration(7200)
 
-}
+
+
+
+     }
