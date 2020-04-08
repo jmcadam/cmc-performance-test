@@ -72,10 +72,10 @@ class CMCSimulation extends Simulation
          .inject(
            rampUsers(80) during  (2700))
          .protocols(legalhttpProtocol),
-         scenario_LC
+         /*scenario_NLC
            .inject(
              rampUsers(220) during  (2700))
-           .protocols(legalhttpProtocol)
+           .protocols(legalhttpProtocol)*/
 
        )
          .maxDuration(7200)
