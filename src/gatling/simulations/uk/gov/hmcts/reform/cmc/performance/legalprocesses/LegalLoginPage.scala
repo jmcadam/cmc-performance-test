@@ -16,7 +16,7 @@ object LegalLoginPage {
     val feeder = csv("IdamUsers.csv").circular
 
   //def legalLogIn(user: User)(implicit postHeaders: Map[String, String]): ChainBuilder = {
-   val legalLogIn =  feed(feeder).exec(http("CLR01_010_Homepage")
+   val legalLogIn =  exec(http("CLR01_010_Homepage")
       .get("/")
       .check(CurrentPageCheck.save)
       .check(CsrfCheck.save)

@@ -23,7 +23,10 @@ object CreateLegalSimulation {
     "Origin" -> baseURL
   )
 
-  val createLegalClaimScenario=
+  val feeder = csv("IdamUsers.csv").circular
+  val feeder_noclaim = csv("IdamUsers_noclaim.csv").circular
+
+  val createLegalClaimScenario=feed(feeder).
     exec(
      // LoginPage.legalLogIn(testUsers.head),
       LegalLoginPage.legalLogIn,
@@ -32,6 +35,16 @@ object CreateLegalSimulation {
       DefendantDetails.run,
       AmountClaimDetails.run,
         LegalLoginPage.legalLogout
+    )
+
+  val createLegalNoClaimScenario=feed(feeder_noclaim).
+    exec(
+      // LoginPage.legalLogIn(testUsers.head),
+      LegalLoginPage.legalLogIn,
+      ClaimantLegalRepresentative.run,
+      ClaimantDetails.run,
+      DefendantDetails.run,
+      LegalLoginPage.legalLogout
     )
 
   /*setUp(createLegalClaimScenario
