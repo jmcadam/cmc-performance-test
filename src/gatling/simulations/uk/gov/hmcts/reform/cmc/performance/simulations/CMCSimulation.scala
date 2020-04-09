@@ -34,9 +34,8 @@ class CMCSimulation extends Simulation
        val scenario_LC = scenario("Legal Rep Journey With Claims")
          .exec(CreateLegalSimulation.createLegalClaimScenario)
 
-       /*val scenario_NLC = scenario("Legal Rep Journey Without Claims")
+       val scenario_NLC = scenario("Legal Rep Journey Without Claims")
          .exec(CreateLegalSimulation.createLegalNoClaimScenario)
-*/
 
 
        /*setUp(
@@ -70,12 +69,12 @@ class CMCSimulation extends Simulation
          .maxDuration(7200)*/
        setUp(scenario_LC
          .inject(
-           rampUsers(50) during  (2400))
+           rampUsers(80) during  (2700))
          .protocols(legalhttpProtocol),
-         /*scenario_NLC
+         scenario_NLC
            .inject(
              rampUsers(220) during  (2700))
-           .protocols(legalhttpProtocol)*/
+           .protocols(legalhttpProtocol)
 
        )
          .maxDuration(7200)

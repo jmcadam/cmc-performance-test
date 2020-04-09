@@ -37,15 +37,14 @@ object CreateLegalSimulation {
         LegalLoginPage.legalLogout
     )
 
-  /*val createLegalNoClaimScenario=feed(feeder_noclaim).
+  val createLegalNoClaimScenario=feed(feeder_noclaim).
     exec(
-      // LoginPage.legalLogIn(testUsers.head),
       LegalLoginPage.legalLogIn,
       ClaimantLegalRepresentative.run,
       ClaimantDetails.run,
       DefendantDetails.run,
       LegalLoginPage.legalLogout
-    )*/
+    )
 
   /*setUp(createLegalClaimScenario
     .inject(rampUsers(10).over(10 seconds))
