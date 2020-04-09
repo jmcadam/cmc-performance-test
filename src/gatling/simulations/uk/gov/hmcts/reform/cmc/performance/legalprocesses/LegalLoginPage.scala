@@ -2,8 +2,6 @@ package uk.gov.hmcts.reform.cmc.performance.legalprocesses
 
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
-import uk.gov.hmcts.reform.cmc.performance.simulations.CreateClaimSimulation.addIdamUserUrl
-import uk.gov.hmcts.reform.cmc.performance.simulations.checks.CsrfCheck.{csrfParameter, csrfTemplate}
 import uk.gov.hmcts.reform.cmc.performance.simulations.checks.{CsrfCheck, CurrentPageCheck}
 //import uk.gov.hmcts.reform.idam.User
 
@@ -22,7 +20,7 @@ object LegalLoginPage {
       .check(CsrfCheck.save)
    )
      .pause(thinktime)
-      .exec(http("CLR01_020_Login")
+      /*.exec(http("CLR01_020_Login")
         .post("${currentPage}")
         .formParam("username", "${idamUser}")
         .formParam("password", "Pass19word")
@@ -35,17 +33,17 @@ object LegalLoginPage {
       )
       .pause(thinktime)
 
-  val deleteUser = exec(http("Delete IDAM users")
+  /*val deleteUser = exec(http("Delete IDAM users")
     .delete(addIdamUserUrl+"/${iaDMUserName}")
     .headers(Map("Content-Type" -> "application/json"))
     .check(status.is(204)))
-    .pause(20)
+    .pause(20)*/
 
   val legalLogout=
   exec(http("CLR01_0330_HomepageTX040_Logout")
     .get("/logout")
     .check(status.in(200,201,204))
   )
-    .pause(thinktime)
+    .pause(thinktime)*/
 
 }
