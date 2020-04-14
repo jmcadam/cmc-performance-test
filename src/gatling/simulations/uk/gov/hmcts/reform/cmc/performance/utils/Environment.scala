@@ -29,6 +29,6 @@ object Environment {
 		"User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36")
 
     
-    val thinkTime = 27
+    val thinkTime = 10
     val waitForNextIteration = 80
 }

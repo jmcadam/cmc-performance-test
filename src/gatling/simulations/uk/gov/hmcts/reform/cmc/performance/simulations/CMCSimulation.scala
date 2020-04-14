@@ -1,14 +1,15 @@
 package uk.gov.hmcts.reform.cmc.performance.simulations
 
 import io.gatling.core.Predef._
-import io.gatling.http.Predef.{Proxy, http}
+import io.gatling.http.Predef.http
 import io.gatling.http.protocol.HttpProtocolBuilder
 import uk.gov.hmcts.reform.cmc.performance.utils.Environment
 
 class CMCSimulation extends Simulation
      {
 
-       val httpProtocol: HttpProtocolBuilder = http.proxy(Proxy("proxyout.reform.hmcts.net", 8080).httpsPort(8080))
+       val httpProtocol: HttpProtocolBuilder = http
+         //.proxy(Proxy("proxyout.reform.hmcts.net", 8080).httpsPort(8080))
          //.proxy(Proxy("proxyout.reform.hmcts.net", 8080))
          .baseUrl(Environment.cmcBashURL)
          .headers(Environment.commonHeader)
@@ -69,12 +70,12 @@ class CMCSimulation extends Simulation
          .maxDuration(7200)*/
        setUp(scenario_LC
          .inject(
-           rampUsers(80) during  (2700))
+           rampUsers(20) during  (600))
          .protocols(legalhttpProtocol),
-         scenario_NLC
+         /*scenario_NLC
            .inject(
              rampUsers(220) during  (2700))
-           .protocols(legalhttpProtocol)
+           .protocols(legalhttpProtocol)*/
 
        )
          .maxDuration(7200)
