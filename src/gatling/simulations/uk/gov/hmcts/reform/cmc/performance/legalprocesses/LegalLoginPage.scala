@@ -17,9 +17,10 @@ object LegalLoginPage {
   //def legalLogIn(user: User)(implicit postHeaders: Map[String, String]): ChainBuilder = {
    val legalLogIn =  exec(http("CLR01_010_Homepage")
       .get("/")
+     .check(status.in(200,201,204))
       .check(CurrentPageCheck.save)
       .check(CsrfCheck.save)
-   )
+   ).exitHereIfFailed
      .pause(thinktime)
       .exec(http("CLR01_020_Login")
         .post("${currentPage}")

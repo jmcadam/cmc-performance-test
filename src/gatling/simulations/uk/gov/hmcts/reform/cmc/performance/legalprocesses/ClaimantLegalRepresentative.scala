@@ -70,9 +70,8 @@ object ClaimantLegalRepresentative {
         .check(status.in(200,201,204))
         .check(CurrentPageCheck.save)
         .check(CsrfCheck.save)
-      //  .check(regex("Choose claimant type"))
       )
-
+      .pause(thinktime)
 
   }
 
